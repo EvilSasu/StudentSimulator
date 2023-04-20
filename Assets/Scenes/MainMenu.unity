@@ -6366,7 +6366,7 @@ MonoBehaviour:
   lines:
   - Hello word
   - fuck szarek
-  textSpeed: 0.3
+  textSpeed: 0.05
 --- !u!114 &2101118021
 MonoBehaviour:
   m_ObjectHideFlags: 0
