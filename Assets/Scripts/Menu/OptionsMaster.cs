@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using TMPro;
 
 public class OptionsMaster : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public Dropdown resolutionDropdown;
+    public TMP_Dropdown resolutionDropdown;
+    //public Dropdown resolutionDropdown;
     public Slider audioSlider;
     public Toggle FullscreenToggle;
     Resolution[] resolutions;
