@@ -9,6 +9,7 @@ public class OptionsMaster : MonoBehaviour
     public AudioMixer audioMixer;
     public Dropdown resolutionDropdown;
     public Slider audioSlider;
+    public Toggle FullscreenToggle;
     Resolution[] resolutions;
 
     private void Start()
@@ -40,14 +41,12 @@ public class OptionsMaster : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("volume", audioSlider.value);
+        audioMixer.SetFloat("Sounds", audioSlider.value);
         //audioMixer.SetFloat("volume", volume);
     }
 
     public void SetResolution(int resolutionIndex)
     {
-        //Debug.Log(resolutionDropdown.value);
-        //Resolution resolution = resolutions[resolutionIndex];
         Resolution resolution = resolutions[resolutionDropdown.value];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
@@ -57,10 +56,11 @@ public class OptionsMaster : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndex);
     }
 
-    public void SetFullscreen(int isFullscreen)
+    public void SetFullscreen()
     {
-        if (isFullscreen == 0) Screen.fullScreen = true;
-        else Screen.fullScreen = false;
-        Debug.Log(Screen.fullScreenMode);
+        if (FullscreenToggle.isOn)
+            Screen.fullScreen = true;
+        else
+            Screen.fullScreen = false;
     }
 }
