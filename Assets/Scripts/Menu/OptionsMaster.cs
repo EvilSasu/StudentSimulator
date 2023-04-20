@@ -8,6 +8,7 @@ public class OptionsMaster : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public Dropdown resolutionDropdown;
+    public Slider audioSlider;
     Resolution[] resolutions;
 
     private void Start()
@@ -39,7 +40,8 @@ public class OptionsMaster : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioMixer.SetFloat("volume", audioSlider.value);
+        //audioMixer.SetFloat("volume", volume);
     }
 
     public void SetResolution(int resolutionIndex)
