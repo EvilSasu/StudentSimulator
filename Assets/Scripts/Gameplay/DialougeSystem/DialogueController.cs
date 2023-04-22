@@ -32,6 +32,7 @@ public class DialogueController : MonoBehaviour
                     dialoguePanel.PlayScene(currentScene);
                 }
                 dialoguePanel.PlayNextSentence();
+                //dialoguePanel.PlayScene(currentScene);
             }
         }
     }

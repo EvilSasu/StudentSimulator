@@ -17,6 +17,7 @@ public class DialoguePanelController : MonoBehaviour
 
     public void PlayScene(StoryScene scene)
     {
+        //Debug.Log(sentenceIndex);
         sentenceIndex = -1;
         currentScene = scene;
         PlayNextSentence();
@@ -34,12 +35,12 @@ public class DialoguePanelController : MonoBehaviour
 
     public void PlayNextSentence()
     {
-        if (sentenceIndex < currentScene.sentences.Count - 1)
-        {
+        //if (sentenceIndex < currentScene.sentences.Count - 1)
+        //{
             StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
             personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
             personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
-        }   
+        //}   
     }
 
     private enum State
