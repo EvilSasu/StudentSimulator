@@ -6,10 +6,17 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public List<Dialog> dialog;
     public string[] lines;
     public float textSpeed;
-
     private int index;
+
+    [System.Serializable]
+    public struct Dialog
+    {
+        public Speaker speaker;
+        public string[] lines;
+    }
 
     private void Start()
     {
@@ -21,7 +28,7 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(textComponent.text == lines[index])
+            /*if(textComponent.text == lines[index])
             {
                 NextLine();
             }
@@ -29,6 +36,15 @@ public class Dialogue : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+            }*/
+            if (textComponent.text == dialog[index].lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = dialog[index].lines[index];
             }
         }
     }
@@ -41,7 +57,12 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach(char c in lines[index].ToCharArray())
+        /*foreach(char c in lines[index].ToCharArray())
+        {
+            textComponent.text += c;
+            yield return new WaitForSeconds(textSpeed);
+        }*/
+        foreach(char c in dialog[index].lines[index].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -50,7 +71,7 @@ public class Dialogue : MonoBehaviour
 
     void NextLine()
     {
-        if(index < lines.Length - 1)
+        /*if(index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -58,7 +79,16 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-
+            gameObject.SetActive(false);
+        }*/
+        if (index < dialog.Count - 1)
+        {
+            index++;
+            textComponent.text = string.Empty;
+            StartCoroutine(TypeLine());
+        }
+        else
+        {
             gameObject.SetActive(false);
         }
     }
