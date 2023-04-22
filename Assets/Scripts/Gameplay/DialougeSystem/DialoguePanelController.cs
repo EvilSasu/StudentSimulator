@@ -34,7 +34,7 @@ public class DialoguePanelController : MonoBehaviour
 
     public void PlayNextSentence()
     {
-        if (sentenceIndex < currentScene.sentences.Count)
+        if (sentenceIndex < currentScene.sentences.Count - 1)
         {
             StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
             personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
@@ -52,7 +52,7 @@ public class DialoguePanelController : MonoBehaviour
         dialogueText.text = string.Empty;
         state = State.PLAYING;
         int wordIndex = 0;
-        //speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
+        speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
 
         while (state != State.COMPLETED)
         {
