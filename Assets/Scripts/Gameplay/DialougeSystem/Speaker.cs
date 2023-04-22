@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName ="NewSpeaker", menuName = "Data/New Speaker")]
+[CreateAssetMenu(fileName ="NewSpeaker", menuName = "DialogueSystem/New Speaker")]
 [System.Serializable]
 public class Speaker : ScriptableObject
 {

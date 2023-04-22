@@ -28,7 +28,7 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            /*if(textComponent.text == lines[index])
+            if (textComponent.text == lines[index])
             {
                 NextLine();
             }
@@ -36,8 +36,8 @@ public class Dialogue : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
-            }*/
-            if (textComponent.text == dialog[index].lines[index])
+            }
+            /*if (textComponent.text == dialog[index].lines[index])
             {
                 NextLine();
             }
@@ -45,7 +45,7 @@ public class Dialogue : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = dialog[index].lines[index];
-            }
+            }*/
         }
     }
 
@@ -57,21 +57,31 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        /*foreach(char c in lines[index].ToCharArray())
-        {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
-        }*/
-        foreach(char c in dialog[index].lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+        /*foreach(char c in dialog[index].lines[index].ToCharArray())
+        {
+            textComponent.text += c;
+            yield return new WaitForSeconds(textSpeed);
+        }*/
     }
 
     void NextLine()
     {
-        /*if(index < lines.Length - 1)
+        if (index < lines.Length - 1)
+        {
+            index++;
+            textComponent.text = string.Empty;
+            StartCoroutine(TypeLine());
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+       /* if (index < dialog.Count - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -81,15 +91,5 @@ public class Dialogue : MonoBehaviour
         {
             gameObject.SetActive(false);
         }*/
-        if (index < dialog.Count - 1)
-        {
-            index++;
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
-        }
-        else
-        {
-            gameObject.SetActive(false);
-        }
     }
 }

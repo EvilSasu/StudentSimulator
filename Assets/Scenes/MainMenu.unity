@@ -6592,6 +6592,7 @@ GameObject:
   - component: {fileID: 2101118022}
   - component: {fileID: 2101118021}
   - component: {fileID: 2101118020}
+  - component: {fileID: 2101118023}
   m_Layer: 5
   m_Name: DialoguePanel
   m_TagString: Untagged
@@ -6628,7 +6629,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101118018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d2b50bdcb19bea46917d619b0b413ea, type: 3}
   m_Name: 
@@ -6681,6 +6682,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101118018}
   m_CullTransparentMesh: 1
+--- !u!114 &2101118023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101118018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab995f27dcfdf6547aaed7c95407eaa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 63809019}
+  personNameText: {fileID: 1820592276}
+  dialogueSpeed: 0.05
+  currentScene: {fileID: 11400000, guid: 882afca9c9637bf46850ef8dfb41ab95, type: 2}
 --- !u!1 &2105762056
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,7 +6756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c79e03ec9d1d96044bde1715cf5cdd73, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 24899cb561769594c88264b3e260ea31, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
