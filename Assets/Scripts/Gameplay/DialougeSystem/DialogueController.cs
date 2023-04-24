@@ -38,4 +38,9 @@ public class DialogueController : MonoBehaviour
             }
         }
     }
+
+    public void PlayDialogue()
+    {
+        dialoguePanel.PlayScene(currentScene);
+    }
 }

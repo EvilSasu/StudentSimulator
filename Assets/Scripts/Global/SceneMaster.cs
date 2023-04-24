@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneMaster : MonoBehaviour
 {
+    public GameObject dialoguePanel;
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -13,5 +14,12 @@ public class SceneMaster : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void StartNewDialogue(StoryScene scene)
+    {
+        dialoguePanel.SetActive(true);
+        dialoguePanel.GetComponent<DialogueController>().currentScene = scene;
+        dialoguePanel.GetComponent<DialogueController>().PlayDialogue();
     }
 }
