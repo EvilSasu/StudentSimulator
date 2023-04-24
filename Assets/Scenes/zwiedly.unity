@@ -168,6 +168,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 195691242}
+    - target: {fileID: 8338151022767878981, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8338151022821399576, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -868,7 +872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e229dd53f2e9c1748b31e98eda1ad422, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1054,7 +1058,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 195691242}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
