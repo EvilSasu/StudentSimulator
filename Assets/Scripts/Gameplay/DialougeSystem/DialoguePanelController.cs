@@ -15,10 +15,13 @@ public class DialoguePanelController : MonoBehaviour
     public int sentenceIndex = 0;
     private State state = State.COMPLETED;
 
+    private void Awake()
+    {
+        speaker1Image.gameObject.SetActive(true);
+    }
+
     public void PlayScene(StoryScene scene)
     {
-        //Debug.Log(sentenceIndex);
-
         currentScene = scene;
         sentenceIndex = 0;
         PlayNextSentence();
@@ -36,7 +39,6 @@ public class DialoguePanelController : MonoBehaviour
 
     public void PlayNextSentence()
     {
-        //Debug.Log
         StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;  

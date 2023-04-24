@@ -23,7 +23,7 @@ public class OptionsMaster : MonoBehaviour
 
         for (int i = 0; i < resolutions.Length; i++)
         {
-            if (resolutions[i].width >= 800)
+            if (resolutions[i].width >= 800 && resolutions[i].width <= 1980)
             {
                 string option = resolutions[i].width + " x " + resolutions[i].height;
 
