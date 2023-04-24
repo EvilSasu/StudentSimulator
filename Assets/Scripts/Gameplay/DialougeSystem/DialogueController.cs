@@ -6,12 +6,6 @@ public class DialogueController : MonoBehaviour
 {
     public StoryScene currentScene;
     public DialoguePanelController dialoguePanel;
-
-    void Start()
-    {
-        dialoguePanel.PlayScene(currentScene);
-    }
-
     
     void Update()
     {
