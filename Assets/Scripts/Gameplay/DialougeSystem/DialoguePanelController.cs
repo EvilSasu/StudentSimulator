@@ -12,14 +12,15 @@ public class DialoguePanelController : MonoBehaviour
     public Image speaker2Image;
 
     private StoryScene currentScene;
-    public int sentenceIndex = -1;
+    public int sentenceIndex = 0;
     private State state = State.COMPLETED;
 
     public void PlayScene(StoryScene scene)
     {
         //Debug.Log(sentenceIndex);
-        sentenceIndex = -1;
+
         currentScene = scene;
+        sentenceIndex = 0;
         PlayNextSentence();
     }
 
@@ -35,12 +36,10 @@ public class DialoguePanelController : MonoBehaviour
 
     public void PlayNextSentence()
     {
-        //if (sentenceIndex < currentScene.sentences.Count - 1)
-        //{
-            StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
-            personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
-            personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
-        //}   
+        //Debug.Log
+        StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));
+        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
+        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;  
     }
 
     private enum State

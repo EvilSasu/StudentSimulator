@@ -16,6 +16,5 @@ public class StoryScene : ScriptableObject
     {
         public string text;
         public Speaker speaker;
-        //public Sprite image;
     }
 }

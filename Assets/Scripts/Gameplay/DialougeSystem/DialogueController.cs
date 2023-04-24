@@ -21,18 +21,20 @@ public class DialogueController : MonoBehaviour
             {
                 if (dialoguePanel.IsLastSentence())
                 {
-                    /*if (currentScene.nextScene == null)
-                        dialoguePanel.gameObject.SetActive(false);
-                    else
+                    if (currentScene.nextScene != null)
                     {
                         currentScene = currentScene.nextScene;
+                        dialoguePanel.sentenceIndex = 0;
                         dialoguePanel.PlayScene(currentScene);
-                    }*/
-                    currentScene = currentScene.nextScene;
-                    dialoguePanel.PlayScene(currentScene);
+                    }
+                    else
+                        this.gameObject.SetActive(false);                  
                 }
-                dialoguePanel.PlayNextSentence();
-                //dialoguePanel.PlayScene(currentScene);
+                else
+                {
+                    dialoguePanel.sentenceIndex++;
+                    dialoguePanel.PlayNextSentence();
+                }
             }
         }
     }
