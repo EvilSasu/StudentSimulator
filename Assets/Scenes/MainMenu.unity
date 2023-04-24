@@ -5547,5 +5547,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameMaster
       objectReference: {fileID: 0}
+    - target: {fileID: 8338151024800600118, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338151024800600118, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338151024800600118, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 542
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338151024800600120, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39416029594c1ac42a0501015208bb61, type: 3}
