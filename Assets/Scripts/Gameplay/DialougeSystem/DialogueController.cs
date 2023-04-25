@@ -9,7 +9,7 @@ public class DialogueController : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             if (dialoguePanel.isCompleted())
             {
