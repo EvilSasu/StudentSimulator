@@ -31,5 +31,26 @@ MonoBehaviour:
   - text: "*Wachasz si\u0119, lecz b\xF3l g\u0142owy jest nie do zniesienia. Po kr\xF3tkim
       namy\u015Ble postanawiasz wypi\u0107 mikstur\u0119* "
     speaker: {fileID: 0}
+  - text: "\u0141ueghhhh...."
+    speaker: {fileID: 0}
+  - text: '*otwierasz oczy*'
+    speaker: {fileID: 0}
+  - text: "Ho! Ho! Ho! Wiedzia\u0142em, \u017Ce podzia\u0142a. Zawsze dzia\u0142a."
+    speaker: {fileID: 0}
+  - text: "Keh! Keh! Keh! Co ty... Co ty do cholery poda\u0142e\u015B mi za g\xF3wno!"
+    speaker: {fileID: 0}
+  - text: "Amarenk\u0119."
+    speaker: {fileID: 0}
+  - text: ....
+    speaker: {fileID: 0}
+  - text: "Ahh... Ale gdzie moje maniery, pozw\xF3l, \u017Ce si\u0119 przedstawi\u0119. "
+    speaker: {fileID: 0}
+  - text: "M\xF3wi\u0105 na mnie M\u0119drzec. Pomagam takim zagubionym duszyczkom
+      jak ty."
+    speaker: {fileID: 0}
+  - text: "Umm... Dzi\u0119ki. Ja jestem...."
+    speaker: {fileID: 0}
+  - text: "Umm... Dzi\u0119ki. Ja jestem...."
+    speaker: {fileID: 0}
   backgroud: {fileID: 0}
   nextScene: {fileID: 0}
