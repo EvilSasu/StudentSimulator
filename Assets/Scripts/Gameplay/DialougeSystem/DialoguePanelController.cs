@@ -7,6 +7,7 @@ public class DialoguePanelController : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI personNameText;
+    public GameObject animationMaster;
     private float dialogueSpeed = 0.02f;
     public Image speaker1Image;
     public Image speaker2Image;
@@ -71,8 +72,18 @@ public class DialoguePanelController : MonoBehaviour
 
     private void PlayAnimation()
     {
-        if (currentScene.sentences[sentenceIndex].animation != null)
-            currentScene.sentences[sentenceIndex].animation.Play();
+        /*if (currentScene.sentences[sentenceIndex].animation != null)
+            animationMaster.GetComponent<PlayAnimation>().PlayAnimat(currentScene.sentences[sentenceIndex].animation);*/
+        /*if (currentScene.sentences[sentenceIndex].animationTrigger != null)
+        {
+            animationMaster.GetComponent<PlayAnimation>().UseTrigger(currentScene.sentences[sentenceIndex].animationTrigger);
+            Debug.Log(currentScene.sentences[sentenceIndex].animationTrigger);
+        }*/
+        if (currentScene.sentences[sentenceIndex].animationTrigger != "")
+        {
+            animationMaster.GetComponent<BackgroundController>().SwitchImage(animationMaster.GetComponent<BackgroundController>().background.sprite);
+        }
+
     }
 
     private IEnumerator TypeText(string text)

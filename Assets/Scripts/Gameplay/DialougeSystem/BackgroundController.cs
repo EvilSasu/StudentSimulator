@@ -12,7 +12,7 @@ public class BackgroundController : MonoBehaviour
 
     private void Start()
     {
-        SwitchImage(background.sprite);
+        //SwitchImage(background.sprite);
     }
 
     public void SwitchImage(Sprite sprite)
