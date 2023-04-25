@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1ee830730190a499b3290863f51df2, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  speakerName: Szarek
+  speakerName: Student
   textColor: {r: 0, g: 0.00012755394, b: 1, a: 1}
   image: {fileID: 21300000, guid: c79e03ec9d1d96044bde1715cf5cdd73, type: 3}

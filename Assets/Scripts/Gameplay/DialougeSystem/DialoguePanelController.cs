@@ -7,7 +7,7 @@ public class DialoguePanelController : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI personNameText;
-    public float dialogueSpeed = 0.02f;
+    private float dialogueSpeed = 0.02f;
     public Image speaker1Image;
     public Image speaker2Image;
 
@@ -41,7 +41,20 @@ public class DialoguePanelController : MonoBehaviour
     {
         StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
-        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;  
+        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+        if(currentScene.sentences[sentenceIndex].speaker.speakerName == "Student")
+        {
+            speaker2Image.gameObject.SetActive(true);
+            speaker2Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
+            speaker1Image.gameObject.SetActive(false);
+        }
+        else
+        {
+            speaker1Image.gameObject.SetActive(true);
+            speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
+            speaker2Image.gameObject.SetActive(false);
+        }
+        //speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
     }
 
     private enum State
@@ -54,7 +67,7 @@ public class DialoguePanelController : MonoBehaviour
         dialogueText.text = string.Empty;
         state = State.PLAYING;
         int wordIndex = 0;
-        speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
+        
 
         while (state != State.COMPLETED)
         {

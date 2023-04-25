@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 8338151022858331933}
   - component: {fileID: 8338151022858331932}
   m_Layer: 5
-  m_Name: Image
+  m_Name: NPCImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -451,7 +451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 8338151023600356283}
   personNameText: {fileID: 8338151022768126570}
-  dialogueSpeed: 0.05
   speaker1Image: {fileID: 8338151022858331932}
   speaker2Image: {fileID: 8338151024819531242}
   sentenceIndex: 0
@@ -656,7 +655,7 @@ GameObject:
   - component: {fileID: 8338151024819531243}
   - component: {fileID: 8338151024819531242}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: PlayerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -669,17 +668,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8338151024819531245}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8338151024800600118}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 623, y: -14.795715}
+  m_AnchoredPosition: {x: -599, y: -14.79572}
   m_SizeDelta: {x: 700, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8338151024819531243
