@@ -7,6 +7,8 @@ public class BackgroundController : MonoBehaviour
     public bool isSwitched = false;
     public Image background;
     public Animator animator;
+    public GameObject gameMaster;
+    public StoryScene firstScene;
 
     private void Start()
     {
@@ -29,5 +31,10 @@ public class BackgroundController : MonoBehaviour
         {
             background.sprite = sprite;
         }
+    }
+
+    public void PlayFirstDialogue()
+    {
+        gameMaster.GetComponent<SceneMaster>().StartNewDialogue(firstScene);
     }
 }

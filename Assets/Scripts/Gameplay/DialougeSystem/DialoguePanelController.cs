@@ -39,6 +39,7 @@ public class DialoguePanelController : MonoBehaviour
 
     public void PlayNextSentence()
     {
+        PlayAnimation();
         StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
@@ -66,6 +67,12 @@ public class DialoguePanelController : MonoBehaviour
     private enum State
     {
         PLAYING, COMPLETED
+    }
+
+    private void PlayAnimation()
+    {
+        if (currentScene.sentences[sentenceIndex].animation != null)
+            currentScene.sentences[sentenceIndex].animation.Play();
     }
 
     private IEnumerator TypeText(string text)
