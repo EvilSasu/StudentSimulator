@@ -564,7 +564,7 @@ MonoBehaviour:
         m_MethodName: StartNewDialogue
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 910fe31a293faed42a654c5a388221ea, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: f1dac514ed358d747b5098c2654a9bc6, type: 2}
           m_ObjectArgumentAssemblyTypeName: StoryScene, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
