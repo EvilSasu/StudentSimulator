@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: NotKnownYet
   m_EditorClassIdentifier: 
   speakerName: ????
-  textColor: {r: 0, g: 0, b: 0, a: 0}
-  image: {fileID: 21300000, guid: cb7ee811edb461543ab24586150ead67, type: 3}
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  image: {fileID: 21300000, guid: b565c11c23c5c39479e5091cd6cd11b9, type: 3}

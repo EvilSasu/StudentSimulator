@@ -7,7 +7,7 @@ public class DialoguePanelController : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI personNameText;
-    public float dialogueSpeed = 0.05f;
+    public float dialogueSpeed = 0.02f;
     public Image speaker1Image;
     public Image speaker2Image;
 

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1ee830730190a499b3290863f51df2, type: 3}
-  m_Name: SoundSpeaker
+  m_Name: "NotKnownYetM\u0119drzec 1"
   m_EditorClassIdentifier: 
-  speakerName: ' '
-  textColor: {r: 0, g: 0, b: 0, a: 0}
-  image: {fileID: 21300000, guid: b565c11c23c5c39479e5091cd6cd11b9, type: 3}
+  speakerName: ????
+  textColor: {r: 0, g: 0.0016258842, b: 0.5943396, a: 1}
+  image: {fileID: 21300000, guid: 24899cb561769594c88264b3e260ea31, type: 3}
