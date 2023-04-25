@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: Prolog
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: " Uhhh... Moja g\u0142owa... Gdzie ja jestem..."
+    speaker: {fileID: 0}
+  - text: "*s\u0142yszysz tupot krok\xF3w*"
+    speaker: {fileID: 0}
+  - text: "Hej \u017Cyjesz?"
+    speaker: {fileID: 0}
+  - text: Uhhhhh....
+    speaker: {fileID: 0}
+  - text: "Niedobrze, zosta\u0142e\u015B otruty. Napij si\u0119 tej mikstury leczniczej"
+    speaker: {fileID: 0}
+  - text: "*Wyci\u0105gasz d\u0142o\u0144 do nieznajomego, po czym chwytasz dziwn\u0105
+      butelk\u0119*"
+    speaker: {fileID: 0}
+  - text: "No! \u015Amia\u0142o! Pij."
+    speaker: {fileID: 0}
+  - text: "*Wachasz si\u0119, lecz b\xF3l g\u0142owy jest nie do zniesienia. Po kr\xF3tkim
+      namy\u015Ble postanawiasz wypi\u0107 mikstur\u0119* "
+    speaker: {fileID: 0}
+  backgroud: {fileID: 0}
+  nextScene: {fileID: 0}
