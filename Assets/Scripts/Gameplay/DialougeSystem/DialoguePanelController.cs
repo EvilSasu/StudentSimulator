@@ -54,7 +54,13 @@ public class DialoguePanelController : MonoBehaviour
             speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
             speaker2Image.gameObject.SetActive(false);
         }
-        //speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
+    }
+
+    public void SkipDialogue()
+    {
+        StopAllCoroutines();
+        dialogueText.text = currentScene.sentences[sentenceIndex].text;
+        state = State.COMPLETED;
     }
 
     private enum State

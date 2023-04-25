@@ -30,6 +30,8 @@ public class DialogueController : MonoBehaviour
                     dialoguePanel.PlayNextSentence();
                 }
             }
+            else
+                dialoguePanel.SkipDialogue();
         }
     }
 
