@@ -25,8 +25,8 @@ public class DialogueController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
-            //state == State.NORMAL && 
-            if (dialoguePanel.isCompleted())
+            //
+            if (state == State.NORMAL && dialoguePanel.isCompleted())
             {
                 if (dialoguePanel.IsLastSentence())
                 {
@@ -37,10 +37,10 @@ public class DialogueController : MonoBehaviour
                         dialoguePanel.PlayScene(currentScene);
                         if (currentScene.backgroud != null)
                             backgroundController.SwitchImage(currentScene.backgroud);*/
-                        //PlayScene(currentScene.nextScene);
-                        currentScene = currentScene.nextScene;
+                        PlayScene(currentScene.nextScene);
+                       /* currentScene = currentScene.nextScene;
                         dialoguePanel.PlayScene(currentScene);
-                        backgroundController.SwitchImage(currentScene.backgroud);
+                        backgroundController.SwitchImage(currentScene.backgroud);*/
 
                     }
                     else
