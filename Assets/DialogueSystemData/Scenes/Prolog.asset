@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: " Uhhh... Moja g\u0142owa... Gdzie ja jestem..."
-    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    speaker: {fileID: 11400000, guid: 5b6ae5522cf9c9c4187623360c9fb127, type: 2}
     animationTrigger: 
   - text: "*s\u0142yszysz tupot krok\xF3w*"
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
@@ -23,7 +23,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 7e8c8dcb46d08c24ca9c00022ac7f71c, type: 2}
     animationTrigger: 
   - text: Uhhhhh....
-    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    speaker: {fileID: 11400000, guid: 5b6ae5522cf9c9c4187623360c9fb127, type: 2}
     animationTrigger: 
   - text: "Niedobrze, zosta\u0142e\u015B otruty. Napij si\u0119 tej mikstury leczniczej"
     speaker: {fileID: 11400000, guid: 7e8c8dcb46d08c24ca9c00022ac7f71c, type: 2}
@@ -40,7 +40,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     animationTrigger: 
   - text: "\u0141ueghhhh...."
-    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    speaker: {fileID: 11400000, guid: 5b6ae5522cf9c9c4187623360c9fb127, type: 2}
     animationTrigger: 
   - text: '*otwierasz oczy*'
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: "M\u0119drzec"
   m_EditorClassIdentifier: 
   speakerName: "M\u0119drzec"
-  textColor: {r: 0, g: 0.003921569, b: 0.59607846, a: 1}
+  textColor: {r: 0.9528302, g: 0.29785144, b: 0.29124242, a: 1}
   image: {fileID: 21300000, guid: 24899cb561769594c88264b3e260ea31, type: 3}
