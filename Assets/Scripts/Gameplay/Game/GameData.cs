@@ -7,7 +7,7 @@ public class GameData : MonoBehaviour
     public bool firstGameStart = false;
     void Start()
     {
-        if(SceneManager.GetActiveScene().name == "Prolog")
+        if (SceneManager.GetActiveScene().name == "Prolog")
         {
             transform.parent.GetComponent<SceneMaster>().dialoguePanel.GetComponent<DialogueController>().backgroundController.PlayFirstDialogue();
         }

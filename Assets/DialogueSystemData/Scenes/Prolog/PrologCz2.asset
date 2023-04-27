@@ -10,38 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: Prolog
+  m_Name: PrologCz2
   m_EditorClassIdentifier: 
   sentences:
-  - text: " Uhhh... Moja g\u0142owa... Gdzie ja jestem..."
-    speaker: {fileID: 11400000, guid: 5b6ae5522cf9c9c4187623360c9fb127, type: 2}
-    animationTrigger: 
-  - text: "*s\u0142yszysz tupot krok\xF3w*"
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    animationTrigger: 
-  - text: "Hej \u017Cyjesz?"
-    speaker: {fileID: 11400000, guid: 7e8c8dcb46d08c24ca9c00022ac7f71c, type: 2}
-    animationTrigger: 
-  - text: Uhhhhh....
-    speaker: {fileID: 11400000, guid: 5b6ae5522cf9c9c4187623360c9fb127, type: 2}
-    animationTrigger: 
-  - text: "Niedobrze, zosta\u0142e\u015B otruty. Napij si\u0119 tej mikstury leczniczej"
-    speaker: {fileID: 11400000, guid: 7e8c8dcb46d08c24ca9c00022ac7f71c, type: 2}
-    animationTrigger: 
-  - text: "*Wyci\u0105gasz d\u0142o\u0144 do nieznajomego, po czym chwytasz dziwn\u0105
-      butelk\u0119*"
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    animationTrigger: 
-  - text: "No! \u015Amia\u0142o! Pij."
-    speaker: {fileID: 11400000, guid: 7e8c8dcb46d08c24ca9c00022ac7f71c, type: 2}
-    animationTrigger: 
-  - text: "*Wachasz si\u0119, lecz b\xF3l g\u0142owy jest nie do zniesienia. Po kr\xF3tkim
-      namy\u015Ble postanawiasz wypi\u0107 mikstur\u0119* "
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    animationTrigger: 
-  - text: "\u0141ueghhhh...."
-    speaker: {fileID: 11400000, guid: 5b6ae5522cf9c9c4187623360c9fb127, type: 2}
-    animationTrigger: 
   - text: '*otwierasz oczy*'
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     animationTrigger: Switch
@@ -97,5 +68,5 @@ MonoBehaviour:
       kieszenie, nie podjeba\u0142 ci nikt telefonu czy portfela?"
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
     animationTrigger: 
-  backgroud: {fileID: 0}
+  backgroud: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
   nextScene: {fileID: 0}

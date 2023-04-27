@@ -8,13 +8,21 @@ public class DialoguePanelController : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI personNameText;
     public GameObject animationMaster;
-    private float dialogueSpeed = 0.02f;
     public Image speaker1Image;
     public Image speaker2Image;
+    public Animator animator;
+    public int sentenceIndex = 0;
 
     private StoryScene currentScene;
-    public int sentenceIndex = 0;
+    private float dialogueSpeed = 0.02f;   
     private State state = State.COMPLETED;
+    private bool isHidden = false;
+    
+
+    private void Start()
+    {
+        animator = transform.parent.GetComponent<Animator>();
+    }
 
     private void Awake()
     {
@@ -44,6 +52,7 @@ public class DialoguePanelController : MonoBehaviour
         StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+
         if(currentScene.sentences[sentenceIndex].speaker.speakerName == "Student")
         {
             speaker2Image.gameObject.SetActive(true);
@@ -65,6 +74,29 @@ public class DialoguePanelController : MonoBehaviour
         state = State.COMPLETED;
     }
 
+    public void ShowDialogue()
+    {
+        if (isHidden)
+        {
+            animator.SetTrigger("ShowDialogue");
+            isHidden = false;
+        }    
+    }
+
+    public void HideDialogue()
+    {
+        if (!isHidden)
+        {
+            animator.SetTrigger("HideDialogue");
+            isHidden = true;
+        }      
+    }
+
+    public void ClearText()
+    {
+        this.dialogueText.text = string.Empty;
+    }
+
     private enum State
     {
         PLAYING, COMPLETED
@@ -72,18 +104,11 @@ public class DialoguePanelController : MonoBehaviour
 
     private void PlayAnimation()
     {
-        /*if (currentScene.sentences[sentenceIndex].animation != null)
-            animationMaster.GetComponent<PlayAnimation>().PlayAnimat(currentScene.sentences[sentenceIndex].animation);*/
-        /*if (currentScene.sentences[sentenceIndex].animationTrigger != null)
-        {
-            animationMaster.GetComponent<PlayAnimation>().UseTrigger(currentScene.sentences[sentenceIndex].animationTrigger);
-            Debug.Log(currentScene.sentences[sentenceIndex].animationTrigger);
-        }*/
-        if (currentScene.sentences[sentenceIndex].animationTrigger != "")
+        /*if (currentScene.sentences[sentenceIndex].animationTrigger != "")
         {
             animationMaster.GetComponent<BackgroundController>().SwitchImage(animationMaster.GetComponent<BackgroundController>().background.sprite);
-        }
-
+            animator.SetTrigger(currentScene.sentences[sentenceIndex].animationTrigger);
+        }*/
     }
 
     private IEnumerator TypeText(string text)
@@ -105,4 +130,5 @@ public class DialoguePanelController : MonoBehaviour
             }
         }
     }
+
 }
