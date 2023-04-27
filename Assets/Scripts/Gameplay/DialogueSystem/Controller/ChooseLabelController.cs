@@ -11,7 +11,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 
     private TextMeshProUGUI textMesh;
     private ChooseController controller;
-    private void Start()
+    private void Awake()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
         textMesh.color = defaultColor;

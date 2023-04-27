@@ -21,7 +21,7 @@ public class ChooseController : MonoBehaviour
         animator.SetTrigger("ShowChoice");
         for(int i = 0; i < scene.labels.Count; i++)
         {
-            ChooseLabelController newLabel = Instantiate(label.gameObject, transform).GetComponent<ChooseLabelController>();
+            ChooseLabelController newLabel = Instantiate(label.gameObject, rectTransform.transform).GetComponent<ChooseLabelController>();
 
             if (labelHeight == -1)
             {

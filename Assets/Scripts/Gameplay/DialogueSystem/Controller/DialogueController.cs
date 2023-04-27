@@ -35,12 +35,12 @@ public class DialogueController : MonoBehaviour
             {
                 if (dialoguePanel.IsLastSentence())
                 {
-                    if ((currentScene as StoryScene).nextScene != null)
-                    {
+                    //if ((currentScene as StoryScene).nextScene != null)
+                    //{
                         PlayScene((currentScene as StoryScene).nextScene);
-                    }
-                    else
-                        this.gameObject.SetActive(false);                  
+                    //}
+                    //else
+                        //this.gameObject.SetActive(false);                  
                 }
                 else
                 {
@@ -80,7 +80,7 @@ public class DialogueController : MonoBehaviour
             yield return new WaitForSeconds(1f);
             dialoguePanel.PlayScene(storyScene);
             state = State.NORMAL;
-        }else if(scene is GameScene)
+        }else if(scene is ChooseScene)
         {
             state = State.CHOICE;
             chooseController.SetupChoices(scene as ChooseScene);
