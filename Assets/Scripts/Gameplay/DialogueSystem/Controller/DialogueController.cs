@@ -66,7 +66,7 @@ public class DialogueController : MonoBehaviour
     private IEnumerator SwitchScene(GameScene scene)
     {
         state = State.ANIMATE;
-        //currentScene = scene;
+        currentScene = scene;
         dialoguePanel.HideDialogue();
         yield return new WaitForSeconds(1f);
         if(scene is StoryScene)

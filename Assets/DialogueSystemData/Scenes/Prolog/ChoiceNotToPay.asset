@@ -16,6 +16,5 @@ MonoBehaviour:
   - text: Twoja strata.
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
     animationTrigger: 
-  backgroud: {fileID: 21300000, guid: e84f32c8f6078f345a69a2d02128d26a, type: 3}
+  backgroud: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
   nextScene: {fileID: 11400000, guid: 3e742638cbb545f43bcd09a110966437, type: 2}
-  NEextScene: {fileID: 0}

@@ -5,23 +5,27 @@ using UnityEngine;
 public class ChooseController : MonoBehaviour
 {
     public ChooseLabelController label;
-    public Animator animator;
+    private Animator animator;
     public DialogueController dialogController;
 
     private RectTransform rectTransform;
     private float labelHeight = -1;
+
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
+        animator = GetComponent<Animator>();
     }
+
 
     public void SetupChoices(ChooseScene scene)
     {
         DestroyLabels();
         animator.SetTrigger("ShowChoice");
-        for(int i = 0; i < scene.labels.Count; i++)
+
+        for (int i = 0; i < scene.labels.Count; i++)
         {
-            ChooseLabelController newLabel = Instantiate(label.gameObject, rectTransform.transform).GetComponent<ChooseLabelController>();
+            ChooseLabelController newLabel = Instantiate(label.gameObject, transform).GetComponent<ChooseLabelController>();
 
             if (labelHeight == -1)
             {

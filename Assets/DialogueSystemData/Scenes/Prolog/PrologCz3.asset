@@ -12,7 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
   m_Name: PrologCz3
   m_EditorClassIdentifier: 
-  sentences: []
-  backgroud: {fileID: 0}
-  nextScene: {fileID: 0}
-  NEextScene: {fileID: 0}
+  sentences:
+  - text: "Na mnie ju\u017C pora, zaraz zaczynam zaj\u0119cia."
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    animationTrigger: 
+  - text: "Wiadomo. Jednak zanim p\xF3jdziesz, wiesz chocia\u017C gdzie masz i\u015B\u0107?"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    animationTrigger: 
+  - text: ...
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    animationTrigger: 
+  - text: Nie.
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    animationTrigger: 
+  - text: "Z wami \u015Bwie\u017Cakami zawsze tak samo. Niech b\u0119dzie, trzymaj!"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    animationTrigger: 
+  - text: "*M\u0119drzec wr\u0119cza ci zmi\u0119tolony kawa\u0142em papieru, \u015Bmierdzi
+      tanim alkoholem*"
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    animationTrigger: 
+  backgroud: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
+  nextScene: {fileID: 11400000, guid: f06e09c6b93ec1d459cb81bbed36ab85, type: 2}

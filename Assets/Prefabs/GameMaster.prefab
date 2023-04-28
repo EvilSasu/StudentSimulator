@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 3357792625295981930}
   - component: {fileID: 4170402368474617374}
   - component: {fileID: 5008634031221453880}
+  - component: {fileID: 1542531956624539698}
   m_Layer: 5
   m_Name: ChoiceGroup
   m_TagString: Untagged
@@ -140,7 +141,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8338151022767878982}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -168,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -193,7 +194,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3616156696555848182}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -210,8 +211,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 4539542048841433993, guid: 5751a5ab4b1ef8f4c8f7720cdb1db73f, type: 3}
-  animator: {fileID: 5885352779874452346}
   dialogController: {fileID: 8338151024800600121}
+--- !u!95 &1542531956624539698
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616156696555848182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abc501fba63100a43b5eca9453994e14, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5996329161657761300
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,8 +481,8 @@ RectTransform:
   - {fileID: 8359390592165014293}
   - {fileID: 3205172301556261491}
   - {fileID: 7825144240533021569}
-  - {fileID: 8338151024800600118}
   - {fileID: 9024619726467757231}
+  - {fileID: 8338151024800600118}
   m_Father: {fileID: 8338151022821399576}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1080,7 +1101,7 @@ RectTransform:
   - {fileID: 8338151024819531240}
   - {fileID: 8338151022940055055}
   m_Father: {fileID: 8338151022767878982}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}

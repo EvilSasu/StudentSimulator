@@ -53,18 +53,21 @@ public class DialoguePanelController : MonoBehaviour
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
 
-        if(currentScene.sentences[sentenceIndex].speaker.speakerName == "Student")
+        if(currentScene is StoryScene)
         {
-            speaker2Image.gameObject.SetActive(true);
-            speaker2Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
-            speaker1Image.gameObject.SetActive(false);
-        }
-        else
-        {
-            speaker1Image.gameObject.SetActive(true);
-            speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
-            speaker2Image.gameObject.SetActive(false);
-        }
+            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Student")
+            {
+                speaker2Image.gameObject.SetActive(true);
+                speaker2Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
+                speaker1Image.gameObject.SetActive(false);
+            }
+            else
+            {
+                speaker1Image.gameObject.SetActive(true);
+                speaker1Image.sprite = currentScene.sentences[sentenceIndex].speaker.image;
+                speaker2Image.gameObject.SetActive(false);
+            }
+        }      
     }
 
     public void SkipDialogue()
