@@ -10,38 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: Prolog
+  m_Name: PrologCz2
   m_EditorClassIdentifier: 
   sentences:
-  - text: " Uhhh... Moja g\u0142owa... Gdzie ja jestem..."
-    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
-  - text: "*s\u0142yszysz tupot krok\xF3w*"
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    animationTrigger: 
-  - text: "Hej \u017Cyjesz?"
-    speaker: {fileID: 11400000, guid: 7e8c8dcb46d08c24ca9c00022ac7f71c, type: 2}
-    animationTrigger: 
-  - text: Uhhhhh....
-    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
-  - text: "Niedobrze, zosta\u0142e\u015B otruty. Napij si\u0119 tej mikstury leczniczej"
-    speaker: {fileID: 11400000, guid: 7e8c8dcb46d08c24ca9c00022ac7f71c, type: 2}
-    animationTrigger: 
-  - text: "*Wyci\u0105gasz d\u0142o\u0144 do nieznajomego, po czym chwytasz dziwn\u0105
-      butelk\u0119*"
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    animationTrigger: 
-  - text: "No! \u015Amia\u0142o! Pij."
-    speaker: {fileID: 11400000, guid: 7e8c8dcb46d08c24ca9c00022ac7f71c, type: 2}
-    animationTrigger: 
-  - text: "*Wachasz si\u0119, lecz b\xF3l g\u0142owy jest nie do zniesienia. Po kr\xF3tkim
-      namy\u015Ble postanawiasz wypi\u0107 mikstur\u0119* "
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    animationTrigger: 
-  - text: "\u0141ueghhhh...."
-    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
   - text: '*otwierasz oczy*'
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     animationTrigger: Switch
@@ -74,7 +45,7 @@ MonoBehaviour:
   - text: ....
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
     animationTrigger: 
-  - text: "M\xF3wi\u0105 na mnie M\u0119drzec poniewa\u017C prowadz\u0119 nowych
+  - text: "M\xF3wi\u0105 na mnie M\u0119drzec, poniewa\u017C prowadz\u0119 nowych
       do skarbu kt\xF3rego sam nie jestem w stanie posi\u0105\u015B\u0107. Nasza
       uczelnia wyci\u0105ga ze student\xF3w najczarniejsze demony i tylko nielicznym
       b\u0119dzie dane j\u0105 uko\u0144czy\u0107. Dlatego nie b\u0119d\u0119 ci
@@ -97,5 +68,45 @@ MonoBehaviour:
       kieszenie, nie podjeba\u0142 ci nikt telefonu czy portfela?"
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
     animationTrigger: 
-  backgroud: {fileID: 0}
-  nextScene: {fileID: 0}
+  - text: '*Sprawdzasz kieszenie*'
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    animationTrigger: 
+  - text: "Ufff... Wygl\u0105da na to, \u017Ce nie."
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    animationTrigger: 
+  - text: "Masz szcz\u0119\u015Bcie nowy. Widzisz, aby prze\u017Cy\u0107 w tym \u015Bwiecie
+      b\u0119dziesz musia\u0142 perfekcyjnie opanowa\u0107 zarz\u0105dzanie swoimi
+      zasobami. A bez telefonu ci\u0119\u017Cko b\u0119dzie ci sprawdzi\u0107 ich
+      stan. Dodatkowo bez pieni\u0119dzy, ***** w tym \u015Bwiecie zdzia\u0142asz
+      , mo\u017Cesz umrze\u0107 z g\u0142odu, a co gorsza  z *he, he* pragnienia."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    animationTrigger: 
+  - text: "Pami\u0119taj nowy, czas kt\xF3rym dysponujesz r\xF3wnie\u017C jest ograniczony
+      dlatego m\u0105drze wybieraj czynno\u015Bci kt\xF3rych si\u0119 podejmujesz."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    animationTrigger: 
+  - text: "Dzi\u0119ki, to przydatne informacje."
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    animationTrigger: 
+  - text: "Wiadomo, nie bez powodu m\xF3wi\u0105 na mnie m\u0119drzec."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    animationTrigger: 
+  - text: "Je\u015Bli chcesz, mog\u0119 ci\u0119 r\xF3wnie\u017C nauczy\u0107 wielu
+      umiej\u0119tno\u015Bci. Na przyk\u0142ad jak zapobiec zatruciu."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    animationTrigger: 
+  - text: "Nie pogardzi\u0142bym tak\u0105 wiedz\u0105, m\xF3w."
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    animationTrigger: 
+  - text: "Hola, hola. Nie tak szybko. M\u0119drzec te\u017C musi z czego\u015B \u017Cy\u0107,
+      taka wiedza nie przychodzi za darmo."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    animationTrigger: 
+  - text: Ile?
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    animationTrigger: 
+  - text: "Mmmmm... Powiedzmy... 5 z\u0142otych monet."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    animationTrigger: 
+  backgroud: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
+  nextScene: {fileID: 11400000, guid: 6e78f82121f2d2c42aa5a336179094a0, type: 2}
