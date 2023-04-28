@@ -34,6 +34,9 @@ public class ChooseController : MonoBehaviour
 
             newLabel.Setup(scene.labels[i], this, CalculateLabelPos(i, scene.labels.Count));
         }
+        Vector2 size = rectTransform.sizeDelta;
+        size.y = (scene.labels.Count + 2) * labelHeight;
+        rectTransform.sizeDelta = size;
     }
 
     public void PerfomChoose(StoryScene scene)
