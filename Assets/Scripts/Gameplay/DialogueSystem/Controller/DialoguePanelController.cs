@@ -12,6 +12,8 @@ public class DialoguePanelController : MonoBehaviour
     public Image speaker2Image;
     public Animator animator;
     public int sentenceIndex = 0;
+    //public UnityGameEventListener unityGameEventListener;
+    public GameEvent gameEvent;
 
     private StoryScene currentScene;
     private float dialogueSpeed = 0.02f;   
@@ -48,6 +50,7 @@ public class DialoguePanelController : MonoBehaviour
 
     public void PlayNextSentence()
     {
+        DoEvent();
         PlayAnimation();
         StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
@@ -68,6 +71,19 @@ public class DialoguePanelController : MonoBehaviour
                 speaker2Image.gameObject.SetActive(false);
             }
         }      
+    }
+
+    public void DoEvent()
+    {
+        if(currentScene is StoryScene)
+        {
+            if(currentScene.sentences[sentenceIndex].gameEvent != null)
+            {
+                Debug.Log("im here in event");
+                gameEvent = currentScene.sentences[sentenceIndex].gameEvent;
+                gameEvent.Raise();
+            }         
+        }
     }
 
     public void SkipDialogue()

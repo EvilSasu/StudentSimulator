@@ -30,7 +30,6 @@ public class DialogueController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
-
             if (state == State.NORMAL && dialoguePanel.isCompleted())
             {
                 if (dialoguePanel.IsLastSentence())

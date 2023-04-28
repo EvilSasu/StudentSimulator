@@ -21,18 +21,20 @@ public class BackgroundController : MonoBehaviour
     {
         if (!isSwitched)
         {
-            if(background2 != background1)
+            if(background2 != background1 && background2 != originalSceneBackground)
             {
                 background2.sprite = sprite;
                 animator.SetTrigger("Switch1");
+                isSwitched = !isSwitched;
             }       
         }
         else
         {
-            if (background1 != background2)
+            if (background1 != background2 && background1 != originalSceneBackground)
             {
                 background1.sprite = sprite;
                 animator.SetTrigger("Switch2");
+                isSwitched = !isSwitched;
             }           
         }
     }
@@ -47,7 +49,7 @@ public class BackgroundController : MonoBehaviour
         {
             background1.sprite = sprite;
         }
-        isSwitched = !isSwitched;
+        
     }
 
     public void PlayFirstDialogue()

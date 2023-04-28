@@ -17,7 +17,7 @@ public class StoryScene : GameScene
     {
         public string text;
         public Speaker speaker;
-        public string animationTrigger;
+        public GameEvent gameEvent;
     }
 }
 
