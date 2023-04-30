@@ -15,9 +15,9 @@ MonoBehaviour:
   sentences:
   - text: cos
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    gameEvent: {fileID: 11400000, guid: 04f2c5cae67ac33438bd43eeb3ec9abf, type: 2}
+    gameEvent: {fileID: 11400000, guid: a58681ba1f4d24b47b5a8a41981cc00a, type: 2}
   - text: cos2
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    gameEvent: {fileID: 11400000, guid: 04f2c5cae67ac33438bd43eeb3ec9abf, type: 2}
+    gameEvent: {fileID: 11400000, guid: 9005194b6404e494392c021c18d80a81, type: 2}
   backgroud: {fileID: 21300000, guid: e84f32c8f6078f345a69a2d02128d26a, type: 3}
   nextScene: {fileID: 11400000, guid: 6e78f82121f2d2c42aa5a336179094a0, type: 2}

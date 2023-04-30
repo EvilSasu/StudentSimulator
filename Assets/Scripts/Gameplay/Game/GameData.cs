@@ -9,7 +9,7 @@ public class GameData : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Prolog")
         {
-            transform.parent.GetComponent<SceneMaster>().dialoguePanel.GetComponent<DialogueController>().backgroundController.PlayFirstDialogue();
+            transform.parent.GetComponent<SceneMaster>().dialogueSystem.GetComponent<DialogueController>().backgroundController.PlayFirstDialogue();
         }
     }
 

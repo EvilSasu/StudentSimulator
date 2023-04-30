@@ -12,7 +12,6 @@ public class DialoguePanelController : MonoBehaviour
     public Image speaker2Image;
     public Animator animator;
     public int sentenceIndex = 0;
-    //public UnityGameEventListener unityGameEventListener;
     public GameEvent gameEvent;
 
     private StoryScene currentScene;
@@ -38,7 +37,7 @@ public class DialoguePanelController : MonoBehaviour
         PlayNextSentence();
     }
 
-    public bool isCompleted()
+    public bool IsCompleted()
     {
         return state == State.COMPLETED;
     }
@@ -51,7 +50,6 @@ public class DialoguePanelController : MonoBehaviour
     public void PlayNextSentence()
     {
         DoEvent();
-        PlayAnimation();
         StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
@@ -119,15 +117,6 @@ public class DialoguePanelController : MonoBehaviour
     private enum State
     {
         PLAYING, COMPLETED
-    }
-
-    private void PlayAnimation()
-    {
-        /*if (currentScene.sentences[sentenceIndex].animationTrigger != "")
-        {
-            animationMaster.GetComponent<BackgroundController>().SwitchImage(animationMaster.GetComponent<BackgroundController>().background.sprite);
-            animator.SetTrigger(currentScene.sentences[sentenceIndex].animationTrigger);
-        }*/
     }
 
     private IEnumerator TypeText(string text)

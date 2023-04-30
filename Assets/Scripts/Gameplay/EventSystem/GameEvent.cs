@@ -10,7 +10,6 @@ public class GameEvent : ScriptableObject
 
     public void Raise()
     {
-        Debug.Log(" im in: " + this.name + " liczba lis: " + gameEventListeners.Count);
         for (int i = gameEventListeners.Count - 1; i >= 0; i--)
             gameEventListeners[i].OnEventRaised();
     }

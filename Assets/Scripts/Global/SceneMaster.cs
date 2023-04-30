@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneMaster : MonoBehaviour
 {
-    public GameObject dialoguePanel;
+    public GameObject dialogueSystem;
+    public GameObject blocker;
 
     public void StartGame()
     {
@@ -19,9 +20,11 @@ public class SceneMaster : MonoBehaviour
 
     public void StartNewDialogue(StoryScene scene)
     {
-        dialoguePanel.SetActive(true);
-        dialoguePanel.GetComponent<DialogueController>().currentScene = scene;
-        dialoguePanel.GetComponent<DialogueController>().PlayDialogue();
+        dialogueSystem.SetActive(true);
+        blocker.SetActive(true);
+        dialogueSystem.GetComponent<DialogueController>().chooseController.gameObject.SetActive(true);
+        dialogueSystem.GetComponent<DialogueController>().currentScene = scene;
+        dialogueSystem.GetComponent<DialogueController>().PlayDialogue();
     }
 
 }

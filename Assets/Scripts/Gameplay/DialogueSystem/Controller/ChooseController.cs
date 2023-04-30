@@ -45,6 +45,11 @@ public class ChooseController : MonoBehaviour
         animator.SetTrigger("HideChoice");
     }
 
+    public void SetDisable()
+    {
+        this.gameObject.SetActive(false);
+    }
+
     private void DestroyLabels()
     {
         foreach(Transform childTrans in transform)

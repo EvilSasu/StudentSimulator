@@ -8,6 +8,7 @@ public class DialogueController : MonoBehaviour
     public DialoguePanelController dialoguePanel;
     public BackgroundController backgroundController;
     public ChooseController chooseController;
+    public GameObject blocker;
 
     private State state = State.NORMAL;
 
@@ -30,16 +31,20 @@ public class DialogueController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
-            if (state == State.NORMAL && dialoguePanel.isCompleted())
+            if (state == State.NORMAL && dialoguePanel.IsCompleted())
             {
                 if (dialoguePanel.IsLastSentence())
                 {
-                    //if ((currentScene as StoryScene).nextScene != null)
-                    //{
+                    if ((currentScene as StoryScene).nextScene != null)
+                    {
                         PlayScene((currentScene as StoryScene).nextScene);
-                    //}
-                    //else
-                        //this.gameObject.SetActive(false);                  
+                    }
+                    else
+                    {
+                        blocker.SetActive(false);
+                        gameObject.SetActive(false);
+                    }
+                                         
                 }
                 else
                 {
@@ -54,6 +59,7 @@ public class DialogueController : MonoBehaviour
 
     public void PlayDialogue()
     {
+        //dialoguePanel.gameObject.SetActive(true);
         dialoguePanel.PlayScene((currentScene as StoryScene));
     }
 
