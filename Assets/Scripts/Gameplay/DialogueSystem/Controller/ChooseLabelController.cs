@@ -35,6 +35,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 
     public void OnPointerClick(PointerEventData eventData)
     {
+
         controller.PerfomChoose(scene);
     }
 
