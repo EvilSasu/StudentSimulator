@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
   m_Name: PrologCz5
   m_EditorClassIdentifier: 
-  sentences: []
-  backgroud: {fileID: 0}
-  nextScene: {fileID: 0}
+  sentences:
+  - text: ...
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 0}
+  backgroud: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
+  nextScene: {fileID: 11400000, guid: e1d95bb4a8e40d448a936d887e7f0b33, type: 2}
