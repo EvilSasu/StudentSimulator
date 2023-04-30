@@ -31,6 +31,6 @@ MonoBehaviour:
   - text: "*M\u0119drzec wr\u0119cza ci zmi\u0119tolony kawa\u0142em papieru, \u015Bmierdzi
       tanim alkoholem*"
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 11400000, guid: 04f2c5cae67ac33438bd43eeb3ec9abf, type: 2}
+    gameEvent: {fileID: 11400000, guid: a58681ba1f4d24b47b5a8a41981cc00a, type: 2}
   backgroud: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
   nextScene: {fileID: 11400000, guid: f06e09c6b93ec1d459cb81bbed36ab85, type: 2}

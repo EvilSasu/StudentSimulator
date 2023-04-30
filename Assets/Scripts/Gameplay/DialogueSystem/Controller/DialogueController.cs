@@ -82,6 +82,7 @@ public class DialogueController : MonoBehaviour
         }else if(scene is ChooseScene)
         {
             state = State.CHOICE;
+            dialoguePanel.ClearText();
             chooseController.SetupChoices(scene as ChooseScene);
         }
         

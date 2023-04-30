@@ -9,9 +9,6 @@ public class UnityGameEventListener : MonoBehaviour, IGameEventListener
     private GameEvent @event;
 
     [SerializeField]
-    private List<GameEvent> @events;
-
-    [SerializeField]
     private UnityEvent response;
 
     public void OnEnable()
@@ -22,7 +19,8 @@ public class UnityGameEventListener : MonoBehaviour, IGameEventListener
 
     public void OnDisable()
     {
-        @event.UnregisterListener(this);
+        if (@event != null)
+            @event.UnregisterListener(this);
     }
 
     public void OnEventRaised()
