@@ -54,6 +54,7 @@ public class BackgroundController : MonoBehaviour
 
     public void PlayFirstDialogue()
     {
-        gameMaster.GetComponent<SceneMaster>().StartNewDialogue(firstScene);
+        if(firstScene != null)
+            gameMaster.GetComponent<SceneMaster>().StartNewDialogue(firstScene);
     }
 }
