@@ -22,17 +22,17 @@ public class PlayerData : MonoBehaviour
 
     public void IncreaseHunger(int value)
     {
-        money += value;
+        hunger += value;
     }
 
     public void IncreaseWinsdom(int value)
     {
-        money += value;
+        winsdom += value;
     }
 
     public void IncreaseMetalHealth(int value)
     {
-        money += value;
+        metalHealth += value;
     }
 
     public void DecreaseMoney(int value)
@@ -47,17 +47,17 @@ public class PlayerData : MonoBehaviour
 
     public void DecreaseHunger(int value)
     {
-        money -= value;
+        hunger -= value;
     }
 
     public void DecreaseWinsdom(int value)
     {
-        money -= value;
+        winsdom -= value;
     }
 
     public void DecreaseMetalHealth(int value)
     {
-        money -= value;
+        metalHealth -= value;
     }
 
     public int Getmoney()
