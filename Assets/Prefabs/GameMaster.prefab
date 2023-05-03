@@ -693,6 +693,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7257355252420090906}
+  - component: {fileID: 5906076943657413634}
+  - component: {fileID: 2490001023054580742}
   m_Layer: 0
   m_Name: PlayerData
   m_TagString: Untagged
@@ -715,6 +717,46 @@ Transform:
   m_Father: {fileID: 8338151022821399576}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5906076943657413634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0ccb08c73ee724990dc55462ac15ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2490001023054580742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c2ffe7b4f7bb74e8f2071fb02d0fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event: {fileID: 11400000, guid: b3a61110086367442b0ee3511667c325, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: DecreaseMoney
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6808550714839057433
 GameObject:
   m_ObjectHideFlags: 0

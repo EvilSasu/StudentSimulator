@@ -11,6 +11,8 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 
     private TextMeshProUGUI textMesh;
     private ChooseController controller;
+    private GameEvent gameEvent;
+
     private void Awake()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
@@ -25,6 +27,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
     public void Setup(ChooseScene.ChooseLabel label, ChooseController controller, float y)
     {
         scene = label.nextScene;
+        gameEvent = label.gameEvent;
         textMesh.text = label.text;
         this.controller = controller;
 
@@ -35,7 +38,8 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 
     public void OnPointerClick(PointerEventData eventData)
     {
-
+        if (gameEvent != null)
+            gameEvent.Raise();
         controller.PerfomChoose(scene);
     }
 

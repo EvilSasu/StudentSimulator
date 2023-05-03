@@ -534,6 +534,22 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8722090136062670137, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722090136062670137, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722090136062670137, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 034e2fc7f9c71964ca4eddc171b79783, type: 2}
+    - target: {fileID: 8722090136062670137, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9121580736130393029, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_Colors.m_DisabledColor.a
       value: 1
@@ -568,28 +584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39416029594c1ac42a0501015208bb61, type: 3}
---- !u!1 &44518492 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5996329161657761300, guid: 39416029594c1ac42a0501015208bb61, type: 3}
-  m_PrefabInstance: {fileID: 44518491}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &44518493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6808550714839057433, guid: 39416029594c1ac42a0501015208bb61, type: 3}
   m_PrefabInstance: {fileID: 44518491}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &44518494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44518492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f0ccb08c73ee724990dc55462ac15ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &44518495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,7 +1183,7 @@ MonoBehaviour:
   background2: {fileID: 906533604}
   animator: {fileID: 1585954428}
   gameMaster: {fileID: 193432264}
-  firstScene: {fileID: 11400000, guid: 080358f7d3679b94ebed37aa637fce68, type: 2}
+  firstScene: {fileID: 11400000, guid: 6343ed81e4900b646b4c75d6a5e7871b, type: 2}
 --- !u!114 &1585954431 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8338151023856238934, guid: 39416029594c1ac42a0501015208bb61, type: 3}
@@ -1560,6 +1559,10 @@ PrefabInstance:
     - target: {fileID: 6963102089491289278, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963102089491289278, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6963102089709213036, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}
       propertyPath: m_Color.a

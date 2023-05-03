@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    private int money;
-    private int energy;
-    private int hunger;
-    private int winsdom;
-    private int metalHealth;
+    public int money;
+    public int energy;
+    public int hunger;
+    public int winsdom;
+    public int metalHealth;
 
     public void IncreaseMoney(int value)
     {

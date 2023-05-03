@@ -15,5 +15,7 @@ MonoBehaviour:
   labels:
   - text: "[ Nie mam tyle pieni\u0119dzy ]"
     nextScene: {fileID: 11400000, guid: 5ba0f02ec79b99a46ba3ddc2109d02bf, type: 2}
+    gameEvent: {fileID: 0}
   - text: "[ Trzymaj (daj 5 z\u0142) ]"
     nextScene: {fileID: 11400000, guid: a348de1ba18da9a458b998c5b69ea485, type: 2}
+    gameEvent: {fileID: 11400000, guid: b3a61110086367442b0ee3511667c325, type: 2}
