@@ -52,8 +52,13 @@ public class DialogueController : MonoBehaviour
                     dialoguePanel.PlayNextSentence();
                 }
             }
-            else
+            else if(!dialoguePanel.IsCompleted() && state == State.NORMAL)
                 dialoguePanel.SkipDialogue();
+        }
+        if(currentScene == null && this.gameObject.activeSelf == true)
+        {
+            blocker.SetActive(false);
+            this.gameObject.SetActive(false);
         }
     }
 
@@ -61,6 +66,7 @@ public class DialogueController : MonoBehaviour
     {
         //dialoguePanel.gameObject.SetActive(true);
         dialoguePanel.PlayScene((currentScene as StoryScene));
+        //PlayScene((currentScene));
     }
 
     public void PlayScene(GameScene scene)
@@ -73,6 +79,7 @@ public class DialogueController : MonoBehaviour
         state = State.ANIMATE;
         currentScene = scene;
         dialoguePanel.HideDialogue();
+        dialoguePanel.sentenceIndex = 0;
         yield return new WaitForSeconds(1f);
         if(scene is StoryScene)
         {

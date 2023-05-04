@@ -17,7 +17,11 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 5ba0f02ec79b99a46ba3ddc2109d02bf, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
   - text: "[ Trzymaj (daj 5 z\u0142) ]"
     nextScene: {fileID: 11400000, guid: a348de1ba18da9a458b998c5b69ea485, type: 2}
-    gameEvent: {fileID: 11400000, guid: b3a61110086367442b0ee3511667c325, type: 2}
+    gameEvent: {fileID: 11400000, guid: 2c323779474b8bc4dacd75c6b107d78f, type: 2}
     gameEventWarunek: {fileID: 11400000, guid: b6fb98a3bdb108b4ab6429409e052653, type: 2}
+    eventValue: 5
+    warunekEventValue: 5

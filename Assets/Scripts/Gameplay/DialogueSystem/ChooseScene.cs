@@ -13,7 +13,9 @@ public class ChooseScene : GameScene
     {
         public string text;
         public StoryScene nextScene;
-        public GameEvent gameEvent;
-        public GameEvent gameEventWarunek;
+        public MainGameEvent gameEvent;
+        public MainGameEvent gameEventWarunek;
+        public int eventValue;
+        public int warunekEventValue;
     }
 }

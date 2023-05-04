@@ -29,6 +29,7 @@ public class UnityIntGameEventListener : MonoBehaviour, IGameEventListener
 
     public void OnEventRaised(int value)
     {
+        Debug.Log("Jestem w raised i val = " + value);
         intResponse?.Invoke(value);
     }
 }

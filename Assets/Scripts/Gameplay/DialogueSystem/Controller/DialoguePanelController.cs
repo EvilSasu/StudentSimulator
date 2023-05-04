@@ -33,6 +33,8 @@ public class DialoguePanelController : MonoBehaviour
     public void PlayScene(StoryScene scene)
     {
         currentScene = scene;
+        if (dialogueText.color.a == 0)
+            ShowDialogue();
         sentenceIndex = 0;
         PlayNextSentence();
     }

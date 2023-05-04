@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerData
+  - Blocker
   layers:
   - Default
   - TransparentFX
