@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-[CreateAssetMenu(fileName = "GameEvent", menuName = "EventSystem/ Game Event")]
-public class GameEvent : MainGameEvent
+
+[CreateAssetMenu(fileName = "IntGameEvent", menuName = "EventSystem/Int Game Event")]
+public class IntGameEvent : ScriptableObject
 {
     private readonly List<IGameEventListener> gameEventListeners =
        new List<IGameEventListener>();
 
-    public void Raise()
+    public void Raise(int value)
     {
         for (int i = gameEventListeners.Count - 1; i >= 0; i--)
-            gameEventListeners[i].OnEventRaised();
+            gameEventListeners[i].OnEventRaised(value);
     }
 
     public void RegisterListener(IGameEventListener listener)
@@ -25,7 +25,4 @@ public class GameEvent : MainGameEvent
         if (gameEventListeners.Contains(listener))
             gameEventListeners.Remove(listener);
     }
-
 }
-
-public class MainGameEvent : ScriptableObject { }

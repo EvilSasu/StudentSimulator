@@ -222,6 +222,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: money
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996329161657761300, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_TagString
+      value: PlayerData
+      objectReference: {fileID: 0}
     - target: {fileID: 6266075029767950237, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_Sprite
       value: 

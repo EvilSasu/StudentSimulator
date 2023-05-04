@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 7016050946011157395}
   - component: {fileID: 273292108034190419}
   - component: {fileID: 4539542048841433993}
+  - component: {fileID: 2453764336384034114}
+  - component: {fileID: 2140481524486518949}
+  - component: {fileID: 3781441029875370257}
   m_Layer: 5
   m_Name: ChooseLabel
   m_TagString: Untagged
@@ -150,4 +153,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 1, g: 1, b: 1, a: 0.78431374}
+  cantChooseColorColor: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 0.78431374}
   scene: {fileID: 0}
+  isWarunekSpelniony: 0
+--- !u!114 &2453764336384034114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983505066874059393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c2ffe7b4f7bb74e8f2071fb02d0fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event: {fileID: 11400000, guid: b6fb98a3bdb108b4ab6429409e052653, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4539542048841433993}
+        m_TargetAssemblyTypeName: ChooseLabelController, Assembly-CSharp
+        m_MethodName: CheckMoneyBiggierThan
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4539542048841433993}
+        m_TargetAssemblyTypeName: ChooseLabelController, Assembly-CSharp
+        m_MethodName: CheckWarunek
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2140481524486518949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983505066874059393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c2ffe7b4f7bb74e8f2071fb02d0fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event: {fileID: 11400000, guid: b477fc6addea9ee4faabe157f0bcebde, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6983505066874059393}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3781441029875370257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983505066874059393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: e363672e2ed86124084859c4a082564d, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls: []

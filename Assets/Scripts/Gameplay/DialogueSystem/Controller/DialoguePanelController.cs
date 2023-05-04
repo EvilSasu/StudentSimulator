@@ -77,7 +77,6 @@ public class DialoguePanelController : MonoBehaviour
         {
             if(currentScene.sentences[sentenceIndex].gameEvent != null)
             {
-                Debug.Log("im here in event");
                 gameEvent = currentScene.sentences[sentenceIndex].gameEvent;
                 gameEvent.Raise();
             }         

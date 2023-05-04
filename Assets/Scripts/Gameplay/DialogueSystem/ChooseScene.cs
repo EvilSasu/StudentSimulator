@@ -14,5 +14,6 @@ public class ChooseScene : GameScene
         public string text;
         public StoryScene nextScene;
         public GameEvent gameEvent;
+        public GameEvent gameEventWarunek;
     }
 }

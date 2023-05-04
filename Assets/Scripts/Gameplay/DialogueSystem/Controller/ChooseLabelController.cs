@@ -7,14 +7,21 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 {
     public Color defaultColor;
     public Color hoverColor;
+    public Color cantChooseColorColor;
+
     public StoryScene scene;
+    public bool isWarunekSpelniony;
 
     private TextMeshProUGUI textMesh;
     private ChooseController controller;
     private GameEvent gameEvent;
+    private GameEvent gameEventWarunek;
+    private PlayerData playerData;
 
     private void Awake()
     {
+        isWarunekSpelniony = false;
+        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
         textMesh = GetComponent<TextMeshProUGUI>();
         textMesh.color = defaultColor;
     }
@@ -27,8 +34,26 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
     public void Setup(ChooseScene.ChooseLabel label, ChooseController controller, float y)
     {
         scene = label.nextScene;
-        gameEvent = label.gameEvent;
-        textMesh.text = label.text;
+
+        if (label.gameEventWarunek != null)
+        {
+            gameEventWarunek = label.gameEventWarunek;
+            gameEventWarunek.Raise();
+        }
+        else
+            isWarunekSpelniony = true;
+        
+        if(label.gameEvent != null)
+            gameEvent = label.gameEvent;
+
+        if (isWarunekSpelniony == true)
+            textMesh.text = label.text;
+        else
+        {
+            textMesh.text = label.text + " (Brak)";
+            textMesh.color = cantChooseColorColor;
+        }
+            
         this.controller = controller;
 
         Vector3 pos = textMesh.rectTransform.localPosition;
@@ -40,16 +65,67 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
     {
         if (gameEvent != null)
             gameEvent.Raise();
-        controller.PerfomChoose(scene);
+
+        if(isWarunekSpelniony == true)
+            controller.PerfomChoose(scene);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        textMesh.color = hoverColor;
+        if (isWarunekSpelniony == true)
+            textMesh.color = hoverColor;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        textMesh.color = defaultColor;
+        if (isWarunekSpelniony == true)
+            textMesh.color = defaultColor;
     }
+
+    public void CheckWarunek()
+    {
+        if (gameEventWarunek == null)
+            isWarunekSpelniony = true;
+    }
+
+    public void CheckMoneyBiggierThan(int value)
+    {
+        if (playerData.money >= value)
+            isWarunekSpelniony = true;
+        else
+            isWarunekSpelniony = false;
+    }
+
+    public void CheckEnergyBiggierThan(int value)
+    {
+        if (playerData.energy >= value)
+            isWarunekSpelniony = true;
+        else
+            isWarunekSpelniony = false;
+    }
+
+    public void CheckHungerBiggierThan(int value)
+    {
+        if (playerData.hunger >= value)
+            isWarunekSpelniony = true;
+        else
+            isWarunekSpelniony = false;
+    }
+
+    public void CheckWinsdomBiggierThan(int value)
+    {
+        if (playerData.winsdom >= value)
+            isWarunekSpelniony = true;
+        else
+            isWarunekSpelniony = false;
+    }
+
+    private void CheckMetalHealthBiggierThan(int value)
+    {
+        if (playerData.metalHealth >= value)
+            isWarunekSpelniony = true;
+        else
+            isWarunekSpelniony = false;
+    }
+
 }
