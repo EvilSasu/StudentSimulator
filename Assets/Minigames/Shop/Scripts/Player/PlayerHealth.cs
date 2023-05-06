@@ -22,9 +22,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("Damage Screen")]
     public Color damageColor;
     public Image damageImage;
-    public Image armorImage;
     public Image pickupHealthImage;
-    public Image pickupArmorImage;
     float colorSmoothing = 6f;
     bool isTakingDamage = false;
     bool isTakingArmor = false;
@@ -97,17 +95,6 @@ public class PlayerHealth : MonoBehaviour
         }
         isTakingDamage = false;
 
-        // wizualizacja obra¿eñ - pancerz
-        if (isTakingArmor)
-        {
-            armorImage.color = damageColor;
-        }
-        else
-        {
-            armorImage.color = Color.Lerp(armorImage.color, Color.clear, colorSmoothing * Time.deltaTime);
-        }
-        isTakingArmor = false;
-
         // podnoszenie - zdrowie
         if (isGettingHealth)
         {
@@ -119,16 +106,6 @@ public class PlayerHealth : MonoBehaviour
         }
         isGettingHealth = false;
 
-        // podnoszenie - pancerz
-        if (isGettingArmor)
-        {
-            pickupArmorImage.color = damageColor;
-        }
-        else
-        {
-            pickupArmorImage.color = Color.Lerp(pickupArmorImage.color, Color.clear, colorSmoothing * Time.deltaTime);
-        }
-        isGettingArmor = false;
 
     }
 
