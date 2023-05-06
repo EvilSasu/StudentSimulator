@@ -694,6 +694,14 @@ GameObject:
   m_Component:
   - component: {fileID: 7257355252420090906}
   - component: {fileID: 5906076943657413634}
+  - component: {fileID: 7023821572792851087}
+  - component: {fileID: 5123565175875431965}
+  - component: {fileID: 9062289916827417722}
+  - component: {fileID: 7833008254899354510}
+  - component: {fileID: 1000893356557619078}
+  - component: {fileID: 9086050354754527858}
+  - component: {fileID: 7906553333502527282}
+  - component: {fileID: 2866325839869262696}
   m_Layer: 0
   m_Name: PlayerData
   m_TagString: Untagged
@@ -733,6 +741,230 @@ MonoBehaviour:
   hunger: 0
   winsdom: 0
   metalHealth: 0
+--- !u!114 &7023821572792851087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: b40eb1dd41e681c448a460c065427674, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: IncreaseMoney
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5123565175875431965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: 2c323779474b8bc4dacd75c6b107d78f, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: DecreaseMoney
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9062289916827417722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: 14c37c9f49374f1449c25f2909678f27, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: IncreaseHunger
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7833008254899354510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: 88e4fa6d92752aa409a57b7aaa026695, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: DecreaseHunger
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1000893356557619078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: IncreaseWinsdom
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9086050354754527858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: e49062dcd1099414382b2e1e4aeeb8bc, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: DecreaseWinsdom
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7906553333502527282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: 4c05f40f326e9264dbecce9fe09ecf71, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: IncreaseMetalHealth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2866325839869262696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996329161657761300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: aed5ee94304007e44901b99c4ae76a3f, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5906076943657413634}
+        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
+        m_MethodName: DecreaseMetalHealth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6808550714839057433
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5980737808699684906}
   - component: {fileID: 895385565141274944}
   - component: {fileID: 9142562412847560863}
+  - component: {fileID: 6531910398029841971}
+  - component: {fileID: 5283924129087074396}
   m_Layer: 5
   m_Name: ChooseLabel
   m_TagString: Untagged
@@ -255,6 +257,86 @@ MonoBehaviour:
       - m_Target: {fileID: 4539542048841433993}
         m_TargetAssemblyTypeName: ChooseLabelController, Assembly-CSharp
         m_MethodName: CheckMoneyBiggierThan
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4539542048841433993}
+        m_TargetAssemblyTypeName: ChooseLabelController, Assembly-CSharp
+        m_MethodName: CheckWarunek
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6531910398029841971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983505066874059393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: 72757b779abe4f141bb4c4f72aae5105, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4539542048841433993}
+        m_TargetAssemblyTypeName: ChooseLabelController, Assembly-CSharp
+        m_MethodName: CheckWinsdomBiggierThan
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4539542048841433993}
+        m_TargetAssemblyTypeName: ChooseLabelController, Assembly-CSharp
+        m_MethodName: CheckWarunek
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5283924129087074396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983505066874059393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: 6e83337d753d6a64a8c784c92aeaf624, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4539542048841433993}
+        m_TargetAssemblyTypeName: ChooseLabelController, Assembly-CSharp
+        m_MethodName: CheckMetalHealthBiggierThan
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

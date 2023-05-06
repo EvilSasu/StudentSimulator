@@ -17,7 +17,8 @@ public class StoryScene : GameScene
     {
         public string text;
         public Speaker speaker;
-        public GameEvent gameEvent;
+        public MainGameEvent gameEvent;
+        public int gameEventValue;
     }
 }
 

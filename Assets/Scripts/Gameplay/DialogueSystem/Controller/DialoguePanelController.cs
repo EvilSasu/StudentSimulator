@@ -12,7 +12,7 @@ public class DialoguePanelController : MonoBehaviour
     public Image speaker2Image;
     public Animator animator;
     public int sentenceIndex = 0;
-    public GameEvent gameEvent;
+    public MainGameEvent gameEvent;
 
     private StoryScene currentScene;
     private float dialogueSpeed = 0.02f;   
@@ -79,8 +79,15 @@ public class DialoguePanelController : MonoBehaviour
         {
             if(currentScene.sentences[sentenceIndex].gameEvent != null)
             {
-                gameEvent = currentScene.sentences[sentenceIndex].gameEvent;
-                gameEvent.Raise();
+                if(currentScene.sentences[sentenceIndex].gameEvent is GameEvent)
+                {
+                    gameEvent = currentScene.sentences[sentenceIndex].gameEvent;
+                    (gameEvent as GameEvent).Raise();
+                }else
+                {
+                    gameEvent = currentScene.sentences[sentenceIndex].gameEvent;
+                    (gameEvent as IntGameEvent).Raise(currentScene.sentences[sentenceIndex].gameEventValue);
+                }
             }         
         }
     }
