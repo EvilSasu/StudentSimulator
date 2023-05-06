@@ -4963,15 +4963,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630402074}
   m_CullTransparentMesh: 1
---- !u!114 &1683856193 stripped
+--- !u!114 &1683856195 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6963102089491289276, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5051290481156187242, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}
   m_PrefabInstance: {fileID: 1768763422}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42883d421892c354090c751cb7fd4a98, type: 3}
+  m_Script: {fileID: 11500000, guid: 57216aaa8b2271a4cab55118f28f22d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1689056746
@@ -5194,8 +5194,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1683856193}
-        m_TargetAssemblyTypeName: LevelLodaerScript, Assembly-CSharp
+      - m_Target: {fileID: 1683856195}
+        m_TargetAssemblyTypeName: LevelLoaderScript, Assembly-CSharp
         m_MethodName: LoadChoosenLevel
         m_Mode: 3
         m_Arguments:
@@ -6213,9 +6213,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1347804269708484416, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 184.48999
+      objectReference: {fileID: 0}
     - target: {fileID: 2900625786154697488, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590062677416848904, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828104997111970414, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563376665161881706, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7104857942590722405, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_IsActive
@@ -6224,6 +6240,14 @@ PrefabInstance:
     - target: {fileID: 7229303903616012668, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017970513901302800, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8184557721016701491, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8338151022767878981, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_Camera
@@ -6292,6 +6316,10 @@ PrefabInstance:
     - target: {fileID: 8338151024800600120, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944191334770799099, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39416029594c1ac42a0501015208bb61, type: 3}

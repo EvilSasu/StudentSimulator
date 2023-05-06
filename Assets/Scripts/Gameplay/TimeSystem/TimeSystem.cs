@@ -14,7 +14,6 @@ public class TimeSystem : MonoBehaviour
 
     private void Update()
     {
-        clock.AddMinutes(1);
         if (timeRunning == false)
             StartCoroutine(TimeTicking());
         PrintTimeAndCalendar();
