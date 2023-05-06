@@ -5,6 +5,15 @@ public class Calendar : MonoBehaviour
 {
     public int month = 10;
     public int day = 1;
+    public int dayOfWeek = 0;
+    public string dayOfWeekName;
+
+    private string[] nameOfDay = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
+
+    private void Start()
+    {
+        dayOfWeekName = nameOfDay[dayOfWeek]; 
+    }
 
     public void CalculateMonth(int val)
     {
@@ -18,7 +27,8 @@ public class Calendar : MonoBehaviour
 
     public void CalculateDay(int val)
     {
-        if(month == 2)
+        CalculateDayOfWeek();
+        if (month == 2)
         {
             if ((day + val) > 28)
             {
@@ -61,5 +71,15 @@ public class Calendar : MonoBehaviour
     public int GetDay()
     {
         return day;
+    }
+
+    private void CalculateDayOfWeek()
+    {
+        if (dayOfWeek >= 6)
+            dayOfWeek = 0;
+        else
+            dayOfWeek++;
+
+        dayOfWeekName = nameOfDay[dayOfWeek];
     }
 }

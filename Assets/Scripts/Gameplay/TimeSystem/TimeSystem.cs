@@ -14,7 +14,7 @@ public class TimeSystem : MonoBehaviour
 
     private void Update()
     {
-        clock.AddHours(1);
+        clock.AddMinutes(1);
         if (timeRunning == false)
             StartCoroutine(TimeTicking());
         PrintTimeAndCalendar();
@@ -36,8 +36,8 @@ public class TimeSystem : MonoBehaviour
     private void PrintTimeAndCalendar()
     {
         clockText.text = LeadingZero(clock.hours) + ":" +
-            LeadingZero(clock.minutes) + ":" + LeadingZero(clock.secondes);
+            LeadingZero(clock.minutes) + ":" + LeadingZero(clock.seconds);
 
-        calendarText.text = LeadingZero(calendar.day) + "/" + LeadingZero(calendar.month);
+        calendarText.text = calendar.dayOfWeekName + " " + LeadingZero(calendar.day) + "/" + LeadingZero(calendar.month);
     }
 }

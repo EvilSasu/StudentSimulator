@@ -7,7 +7,7 @@ public class Clock : MonoBehaviour
 
     public int hours;
     public int minutes;
-    public int secondes;
+    public int seconds;
 
     public void AddHours(int value)
     {
@@ -31,12 +31,13 @@ public class Clock : MonoBehaviour
 
     public void AddSeconds(int value)
     {
-        if((secondes + value) >= 60)
+        if((seconds + value) >= 60)
         {
-            secondes = ((secondes + value) % 60);
+            seconds = ((seconds + value) % 60);
             AddMinutes(1);
         }
         else
-            secondes += value;
+            seconds += value;
     }
+
 }

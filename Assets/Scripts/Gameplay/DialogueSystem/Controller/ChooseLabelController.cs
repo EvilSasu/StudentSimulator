@@ -16,7 +16,9 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
     private ChooseController controller;
     private MainGameEvent gameEvent;
     private MainGameEvent gameEventWarunek;
+    private MainGameEvent gameEventWarunek2;
     private PlayerData playerData;
+    private GameData gameData;
     private int eventValue;
     private GameObject blocker;
 
@@ -24,6 +26,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
     {
         isWarunekSpelniony = false;
         playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        gameData = GameObject.FindGameObjectWithTag("GameData").GetComponent<GameData>();
         blocker = GameObject.FindGameObjectWithTag("Blocker");
         textMesh = GetComponent<TextMeshProUGUI>();
         textMesh.color = defaultColor;
@@ -42,21 +45,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
         {
             if (label.gameEvent is GameEvent)
             {
-                if (label.gameEventWarunek != null)
-                {
-                    if (label.gameEventWarunek is GameEvent)
-                    {
-                        gameEventWarunek = label.gameEventWarunek as GameEvent;
-                        (gameEventWarunek as GameEvent).Raise();
-                    }
-                    else if (label.gameEventWarunek is IntGameEvent)
-                    {
-                        gameEventWarunek = label.gameEventWarunek as IntGameEvent;
-                        (gameEventWarunek as IntGameEvent).Raise(label.warunekEventValue);
-                    }
-                }
-                else
-                    isWarunekSpelniony = true;
+                CheckGameEventWarunki(label);
 
                 if (label.gameEvent != null)
                     gameEvent = label.gameEvent as GameEvent;
@@ -64,21 +53,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
             else if (label.gameEvent is IntGameEvent)
             {
                 eventValue = label.eventValue;
-                if (label.gameEventWarunek != null)
-                {
-                    if (label.gameEventWarunek is GameEvent)
-                    {
-                        gameEventWarunek = label.gameEventWarunek as GameEvent;
-                        (gameEventWarunek as GameEvent).Raise();
-                    }
-                    else if (label.gameEventWarunek is IntGameEvent)
-                    {
-                        gameEventWarunek = label.gameEventWarunek as IntGameEvent;
-                        (gameEventWarunek as IntGameEvent).Raise(label.warunekEventValue);
-                    }
-                }
-                else
-                    isWarunekSpelniony = true;
+                CheckGameEventWarunki(label);
 
                 if (label.gameEvent != null)
                     gameEvent = label.gameEvent as IntGameEvent;
@@ -88,7 +63,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
             isWarunekSpelniony = true;
 
         if (label.gameEvent == null)
-            DisableComponents(label);
+            DisableEventsComponents();
 
         if (isWarunekSpelniony == true)
             textMesh.text = label.text;
@@ -140,6 +115,11 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
             isWarunekSpelniony = true;
     }
 
+    /// <summary>
+    /// Warunki player
+    /// </summary>
+    /// <param name="value"></param>
+
     public void CheckMoneyBiggierThan(int value)
     {
         if (playerData.money >= value)
@@ -180,60 +160,84 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
             isWarunekSpelniony = false;
     }
 
-    public void IncreaseMoney(int value)
+    /// <summary>
+    /// Warunki danych gry
+    /// </summary>
+    /// <param name="value"></param>
+
+    public void CheckIfHourBiggerThan(int value)
     {
-        playerData.money += value;
+        if (gameData.hour >= value)
+            isWarunekSpelniony = true;
+        else
+            isWarunekSpelniony = false;
     }
 
-    public void IncreaseEnergy(int value)
+    public void CheckIfHourLessThan(int value)
     {
-        playerData.energy += value;
+        if (gameData.hour <= value)
+            isWarunekSpelniony = true;
+        else
+            isWarunekSpelniony = false;
     }
 
-    public void IncreaseHunger(int value)
+    public void CheckIfThisIsThisDay(int value)
     {
-        playerData.hunger += value;
+        if (gameData.dayOfWeek == value)
+            isWarunekSpelniony = true;
+        else
+            isWarunekSpelniony = false;
     }
 
-    public void IncreaseWinsdom(int value)
+    /// <summary>
+    /// obsu³ga warunków eventów
+    /// </summary>
+    /// <param name="label"></param>
+
+    private void CheckGameEventWarunek(ChooseScene.ChooseLabel label)
     {
-        playerData.winsdom += value;
+        if (label.gameEventWarunek is GameEvent)
+        {
+            gameEventWarunek = label.gameEventWarunek as GameEvent;
+            (gameEventWarunek as GameEvent).Raise();
+        }
+        else if (label.gameEventWarunek is IntGameEvent)
+        {
+            gameEventWarunek = label.gameEventWarunek as IntGameEvent;
+            (gameEventWarunek as IntGameEvent).Raise(label.warunekEventValue);
+        }
     }
 
-    public void IncreaseMetalHealth(int value)
+    private void CheckGameEventWarunek2(ChooseScene.ChooseLabel label)
     {
-        playerData.metalHealth += value;
+        if (label.gameEventWarunek2 is GameEvent)
+        {
+            gameEventWarunek2 = label.gameEventWarunek2 as GameEvent;
+            (gameEventWarunek2 as GameEvent).Raise();
+        }
+        else if (label.gameEventWarunek2 is IntGameEvent)
+        {
+            gameEventWarunek2 = label.gameEventWarunek2 as IntGameEvent;
+            (gameEventWarunek2 as IntGameEvent).Raise(label.warunekEventValue2);
+        }
     }
 
-    public void DecreaseMoney(int value)
+    private void CheckGameEventWarunki(ChooseScene.ChooseLabel label)
     {
-        playerData.money -= value;
+        if (label.gameEventWarunek != null)
+            CheckGameEventWarunek(label);
+        else
+            isWarunekSpelniony = true;
+
+        if (label.gameEventWarunek2 != null)
+            CheckGameEventWarunek2(label);
     }
 
-    public void DecreaseEnergy(int value)
-    {
-        playerData.energy -= value;
-    }
-
-    public void DecreaseHunger(int value)
-    {
-        playerData.hunger -= value;
-    }
-
-    public void DecreaseWinsdom(int value)
-    {
-        playerData.winsdom -= value;
-    }
-
-    public void DecreaseMetalHealth(int value)
-    {
-        playerData.metalHealth -= value;
-    }
-
-    private void DisableComponents(ChooseScene.ChooseLabel label)
+    private void DisableEventsComponents()
     {
         UnityIntGameEventListener[] unityEvents = this.gameObject.GetComponents<UnityIntGameEventListener>();
         for (int i = 0; i < unityEvents.Length - 1; i++)
             unityEvents[i].enabled = false;
     }
+
 }
