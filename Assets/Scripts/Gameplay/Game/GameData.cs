@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameData : MonoBehaviour
 {
     public bool firstGameStart = false;
+    
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "Prolog")
@@ -13,9 +14,4 @@ public class GameData : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
