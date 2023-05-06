@@ -34,7 +34,7 @@ public class PhoneController : MonoBehaviour
     {
         if (phoneShowed == true)
         {
-            moneyText.text = playerData.money.ToString();
+            moneyText.text = playerData.money.ToString() + " z³";
             hungerSlider.value = playerData.hunger;
             wisdomSlider.value = playerData.winsdom;
             mindSlider.value = playerData.metalHealth;
