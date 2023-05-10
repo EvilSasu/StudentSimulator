@@ -20,6 +20,8 @@ public class GameData : MonoBehaviour
 
     void Start()
     {
+        SetupTime();
+
         if (SceneManager.GetActiveScene().name == "Prolog")
         {
             transform.parent.GetComponent<SceneMaster>().dialogueSystem.GetComponent<DialogueController>().backgroundController.PlayFirstDialogue();
@@ -35,6 +37,17 @@ public class GameData : MonoBehaviour
         hour = timeSystem.clock.hours;
         minute = timeSystem.clock.minutes;
         second = timeSystem.clock.seconds;
+    }
+
+    private void SetupTime()
+    {
+        timeSystem.calendar.month = month;
+        timeSystem.calendar.day = day;
+        timeSystem.calendar.dayOfWeek = dayOfWeek;
+
+        timeSystem.clock.hours = hour;
+        timeSystem.clock.minutes = minute;
+        timeSystem.clock.seconds = second;
     }
 
 }

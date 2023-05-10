@@ -4,6 +4,7 @@ using UnityEngine;
 public class Clock : MonoBehaviour
 {
     public Calendar calendar;
+    public PlayerData player;
 
     public int hours;
     public int minutes;
@@ -21,6 +22,7 @@ public class Clock : MonoBehaviour
 
     public void AddMinutes(int value)
     {
+        CalculateStatusLost(value);
         if ((minutes + value) >= 60)
         {
             minutes = ((minutes + value) % 60);
@@ -40,4 +42,10 @@ public class Clock : MonoBehaviour
             seconds += value;
     }
 
+    private void CalculateStatusLost(int val)
+    {
+        int lostMulty = val / 15;
+        player.DecreaseEnergy(2 * lostMulty);
+        player.IncreaseHunger(2 * lostMulty);
+    }
 }

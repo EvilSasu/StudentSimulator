@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class MapController : MonoBehaviour
 {
+    public MapButtonController button;
+    private void OnDisable()
+    {
+        button.ShowOrHide();
+    }
+
     public void SetAct()
     {
         this.gameObject.SetActive(true);

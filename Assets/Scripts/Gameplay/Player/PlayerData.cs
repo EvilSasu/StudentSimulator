@@ -8,7 +8,7 @@ public class PlayerData : MonoBehaviour
     public int energy;
     public int hunger;
     public int winsdom;
-    public int metalHealth;
+    public int mentalHealth;
 
     public bool CheckMoneyBiggierThan(int value)
     {
@@ -42,9 +42,9 @@ public class PlayerData : MonoBehaviour
             return false;
     }
 
-    public bool CheckMetalHealthBiggierThan(int value)
+    public bool CheckMentalHealthBiggierThan(int value)
     {
-        if (metalHealth >= value)
+        if (mentalHealth >= value)
             return true;
         else
             return false;
@@ -58,46 +58,70 @@ public class PlayerData : MonoBehaviour
     public void IncreaseEnergy(int value)
     {
         energy += value;
+        if ((energy + value) >= 100)
+            energy = 100;
     }
 
     public void IncreaseHunger(int value)
     {
         hunger += value;
+        if ((hunger + value) >= 100)
+        {
+            mentalHealth -= ((hunger + value) - 100) / 10;
+            hunger = 100;
+        }
     }
 
     public void IncreaseWinsdom(int value)
     {
         winsdom += value;
+        if ((winsdom + value) >= 100)
+            winsdom = 100;
     }
 
-    public void IncreaseMetalHealth(int value)
+    public void IncreaseMentalHealth(int value)
     {
-        metalHealth += value;
+        mentalHealth += value;
+        if ((mentalHealth + value) >= 100)
+            mentalHealth = 100;
     }
 
     public void DecreaseMoney(int value)
     {
         money -= value;
+        if ((money - value) <= 0)
+            money = 0;
     }
 
     public void DecreaseEnergy(int value)
     {
         energy -= value;
+        if ((energy - value) <= 0)
+        {
+            mentalHealth -= (value / 10);
+            energy = 0;
+        }         
     }
 
     public void DecreaseHunger(int value)
     {
         hunger -= value;
+        if ((hunger - value) <= 0)
+            hunger = 0;
     }
 
     public void DecreaseWinsdom(int value)
     {
         winsdom -= value;
+        if ((winsdom - value) <= 0)
+            winsdom = 0;
     }
 
-    public void DecreaseMetalHealth(int value)
+    public void DecreaseMentalHealth(int value)
     {
-        metalHealth -= value;
+        mentalHealth -= value;
+        if ((mentalHealth - value) <= 0)
+            mentalHealth = 0;
     }
 
     public int Getmoney()
@@ -110,14 +134,14 @@ public class PlayerData : MonoBehaviour
         money = value;
     }
 
-    public int GetmetalHealth()
+    public int GetmentalHealth()
     {
-        return metalHealth;
+        return mentalHealth;
     }
 
-    public void SetmetalHealth(int value)
+    public void SetmentalHealth(int value)
     {
-        metalHealth = value;
+        mentalHealth = value;
     }
 
     public int Getwinsdom()
@@ -149,4 +173,5 @@ public class PlayerData : MonoBehaviour
     {
         energy = value;
     }
+
 }

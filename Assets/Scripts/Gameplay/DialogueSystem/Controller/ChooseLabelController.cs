@@ -154,7 +154,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 
     public void CheckMetalHealthBiggierThan(int value)
     {
-        if (playerData.metalHealth >= value)
+        if (playerData.mentalHealth >= value)
             isWarunekSpelniony = true;
         else
             isWarunekSpelniony = false;
