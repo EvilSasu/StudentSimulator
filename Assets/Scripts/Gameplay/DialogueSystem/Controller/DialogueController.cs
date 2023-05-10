@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class DialogueController : MonoBehaviour
 {
     public GameScene currentScene;
@@ -9,6 +9,8 @@ public class DialogueController : MonoBehaviour
     public BackgroundController backgroundController;
     public ChooseController chooseController;
     public GameObject blocker;
+    public GameObject mapButton;
+    public GameObject phoneButton;
 
     private State state = State.NORMAL;
 
@@ -42,6 +44,8 @@ public class DialogueController : MonoBehaviour
                     else
                     {
                         blocker.SetActive(false);
+                        phoneButton.GetComponent<Button>().interactable = true;
+                        mapButton.GetComponent<Button>().interactable = true;
                         gameObject.SetActive(false);
                     }
                                          
@@ -58,6 +62,8 @@ public class DialogueController : MonoBehaviour
         if(currentScene == null && this.gameObject.activeSelf == true)
         {
             blocker.SetActive(false);
+            phoneButton.GetComponent<Button>().interactable = true;
+            mapButton.GetComponent<Button>().interactable = true;
             this.gameObject.SetActive(false);
         }
     }
@@ -76,6 +82,8 @@ public class DialogueController : MonoBehaviour
 
     private IEnumerator SwitchScene(GameScene scene)
     {
+        phoneButton.GetComponent<Button>().interactable = false;
+        mapButton.GetComponent<Button>().interactable = false;
         state = State.ANIMATE;
         currentScene = scene;
         dialoguePanel.HideDialogue();

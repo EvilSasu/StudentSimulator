@@ -10,20 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: PrologCz8SalaWyk
+  m_Name: PrologCz15Pok
   m_EditorClassIdentifier: 
   sentences:
-  - text: "*Czas zaj\u0119\u0107*"
+  - text: ...
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
-  - text: "*Dowiedzia\u0142e\u015B si\u0119 czego\u015B nowego*"
+  - text: .....
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
-  - text: "*Czujesz si\u0119 m\u0105drzejszy* (Wiedza + 5)"
+  - text: .......
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
-    gameEventValue: 5
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Nie wiesz ile czasu ju\u017C min\u0119\u0142o. Nagle ze snu wybudza ci\u0119
+      odg\u0142osy Ligi Legend."
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: 13800b66fd8b6b24092aea91fdcd2a64, type: 2}
+    gameEventValue: 480
   backgroud: {fileID: 21300000, guid: 16cd669c77b826042998c386f67594a5, type: 3}
-  nextScene: {fileID: 11400000, guid: bd0784efb8bbf3a469b54d95cd0673fc, type: 2}
+  nextScene: {fileID: 11400000, guid: 99465b16462cd6d44bce451b952c8881, type: 2}

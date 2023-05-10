@@ -4,21 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PhoneButtonController : MonoBehaviour
 {
-    public bool isShown = false;
-    void Update()
+
+    public void SetUninteracable()
     {
-        if (GetComponent<Button>().colors.normalColor.a == 0)
-            GetComponent<Button>().interactable = false;
-        else
-            GetComponent<Button>().interactable = true;
+        GetComponent<Button>().interactable = false;
     }
 
-    public void ShowOrHide()
+    public void SetInteracable()
     {
-        if(isShown == false)
-            GetComponent<Animator>().SetTrigger("ShowButton");
-        else
-            GetComponent<Animator>().SetTrigger("HideButton");
-        isShown = !isShown;
+        GetComponent<Button>().interactable = true;
     }
 }

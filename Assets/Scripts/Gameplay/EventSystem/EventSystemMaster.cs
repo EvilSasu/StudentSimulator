@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class EventSystemMaster : MonoBehaviour
 {
     public MapController map;
-
+    public bool firstPhoneShow = false;
+    public MainGameEvent firstPhoneUseEvent;
     private Animator mapAnim;
+
 
     private void Start()
     {
@@ -55,5 +57,15 @@ public class EventSystemMaster : MonoBehaviour
     public void SetButtonNotClickable(Button b)
     {
         b.interactable = false;
+    }
+
+    public void StartDialogueWithFirstPhoneUse()
+    {
+        if (firstPhoneShow)
+        {
+            (firstPhoneUseEvent as GameEvent).Raise();
+            firstPhoneShow = false;
+        }
+            
     }
 }
