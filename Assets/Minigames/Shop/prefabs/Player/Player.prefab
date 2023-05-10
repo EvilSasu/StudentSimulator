@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8207604268228383985}
   m_RootOrder: 0
@@ -51,6 +52,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -112,6 +114,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9094535430749871049}
   - {fileID: 5488575867549855432}
@@ -182,9 +185,7 @@ MonoBehaviour:
   maxArmor: 100
   damageColor: {r: 1, g: 1, b: 1, a: 1}
   damageImage: {fileID: 0}
-  armorImage: {fileID: 0}
   pickupHealthImage: {fileID: 0}
-  pickupArmorImage: {fileID: 0}
 --- !u!114 &6613469421782952195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +264,8 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.45
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9036928774047829448, guid: d36795af636bf23459abaeb98df9e7e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d36795af636bf23459abaeb98df9e7e3, type: 3}
 --- !u!4 &3545768792238562189 stripped
 Transform:
