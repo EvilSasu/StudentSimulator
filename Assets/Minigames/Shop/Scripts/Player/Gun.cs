@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public Animator shootAnim;
+   // public Animator shootAnim;
 
     public float range = 20f;
     public float horizontalRange = 20f;
@@ -38,7 +38,6 @@ public class Gun : MonoBehaviour
         gunTrigger.size = new Vector3(horizontalRange, verticalRange, range);
         gunTrigger.center = new Vector3(0, 0, range * 0.42f);
 
-        UiManager.Instance.UpdateAmmo(ammo);
 
         //ammoLvl = ammo;
         //ammoLvl = PlayerPrefs.GetInt("ammo");
@@ -64,7 +63,7 @@ public class Gun : MonoBehaviour
     private void Fire()
     {
         //Animacja wystrza³u
-        shootAnim.SetTrigger("Shoot");
+        //shootAnim.SetTrigger("Shoot");
 
         //gunShotRadius
         Collider[] enemyColliders;
@@ -76,9 +75,6 @@ public class Gun : MonoBehaviour
             enemyCollider.GetComponent<EnemyAwareness>().isAgro = true;
         }
 
-        //dŸwiêk wystrza³u
-        GetComponent<AudioSource>().Stop();
-        GetComponent<AudioSource>().Play();
 
         //zrañ przeciwnika
         foreach (var enemy in enemyManager.enemiesInTrigger)

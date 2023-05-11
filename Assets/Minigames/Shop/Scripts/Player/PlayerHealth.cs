@@ -7,29 +7,16 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    //-----------PRZENOSZENIE STATYSTYK--------------
-    //private int hpLvl = 100;
-    //private int armorLvl = 0;
-    //-----------------------------------------------
-
 
     public int maxHp;
     private int hp;
 
-    public int maxArmor;
-    private int armor;
-
     [Header("Damage Screen")]
     public Color damageColor;
     public Image damageImage;
-    public Image armorImage;
     public Image pickupHealthImage;
-    public Image pickupArmorImage;
     float colorSmoothing = 6f;
     bool isTakingDamage = false;
-    bool isTakingArmor = false;
-    bool isGettingHealth = false;
-    bool isGettingArmor = false;
 
     private static PlayerHealth _instance;
     public static PlayerHealth Instance
@@ -38,9 +25,6 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Awake()
     {
-        //przenieœ player ze wszystkim
-        //DontDestroyOnLoad(this.gameObject);
-
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -54,14 +38,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         hp = maxHp;
-        //-----------PRZENOSZENIE STATYSTYK--------------
-        //hpLvl = PlayerPrefs.GetInt("hp");
-        //armorLvl = PlayerPrefs.GetInt("armor");
-        //hp = hpLvl;
-        //-----------------------------------------------
-
         UiManager.Instance.UpdateHp(hp);
-        UiManager.Instance.UpdateArmor(armor);
     }
 
     internal void DamagePlayer(float damage)
@@ -72,20 +49,6 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //-----------PRZENOSZENIE STATYSTYK--------------
-        //hp = hpLvl;
-        //PlayerPrefs.SetInt("hp", hpLvl);
-        //PlayerPrefs.SetInt("armor", armorLvl);
-        //-----------------------------------------------
-
-        //!!!!! zadaj obra¿enia
-/*        if (Input.GetKeyDown(KeyCode.K))
-        {
-            DamagePlayer(20);
-            //Debug.Log("ZADANO OBRA¯ENIA");
-        }*/
-
         // wizualizacja obra¿eñ - zdrowie
         if (isTakingDamage)
         {
@@ -96,68 +59,13 @@ public class PlayerHealth : MonoBehaviour
             damageImage.color = Color.Lerp(damageImage.color, Color.clear, colorSmoothing * Time.deltaTime);
         }
         isTakingDamage = false;
-
-        // wizualizacja obra¿eñ - pancerz
-        if (isTakingArmor)
-        {
-            armorImage.color = damageColor;
-        }
-        else
-        {
-            armorImage.color = Color.Lerp(armorImage.color, Color.clear, colorSmoothing * Time.deltaTime);
-        }
-        isTakingArmor = false;
-
-        // podnoszenie - zdrowie
-        if (isGettingHealth)
-        {
-            pickupHealthImage.color = damageColor;
-        }
-        else
-        {
-            pickupHealthImage.color = Color.Lerp(pickupHealthImage.color, Color.clear, colorSmoothing * Time.deltaTime);
-        }
-        isGettingHealth = false;
-
-        // podnoszenie - pancerz
-        if (isGettingArmor)
-        {
-            pickupArmorImage.color = damageColor;
-        }
-        else
-        {
-            pickupArmorImage.color = Color.Lerp(pickupArmorImage.color, Color.clear, colorSmoothing * Time.deltaTime);
-        }
-        isGettingArmor = false;
-
     }
 
     public void DamagePlayer(int damage)
     {
-        //jeœli gracz posiada pancerz najpierw uszkadza pancerz
 
-        if (armor > 0)
-        {
-            if(armor>=damage)
-            {
-                isTakingArmor = true;
-                armor -= damage;
-            }
-            else if(armor < damage)
-            {
-                int rDamage; //pozosta³e obra¿enia
-                rDamage = damage - armor;
-                armor = 0;
-                isTakingArmor = true;
-                isTakingDamage = true;
-                hp -= rDamage;
-            }
-        }
-        else
-        {
             isTakingDamage = true;
             hp -= damage;
-        }
 
         //sprawdzanie czy gracz jest martwy
         if (hp <= 0)
@@ -172,40 +80,6 @@ public class PlayerHealth : MonoBehaviour
 
         }
         UiManager.Instance.UpdateHp(hp);
-        UiManager.Instance.UpdateArmor(armor);
     }
 
-    public void GetHp(int amount, GameObject pickup) 
-    {
-        if(hp<maxHp)
-        {
-            isGettingHealth = true;
-            hp += amount;
-            Destroy(pickup);
-        }
-
-        if (hp > maxHp)
-        {
-            hp = maxHp;
-        }
-
-        UiManager.Instance.UpdateHp(hp);
-    }
-
-    public void GetArmor(int amount, GameObject pickup)
-    {
-        if (armor < maxArmor)
-        {
-            isGettingArmor = true;
-            armor += amount;
-            Destroy(pickup);
-        }
-
-        if(armor>maxArmor)
-        {
-            armor = maxArmor;
-        }
-
-        UiManager.Instance.UpdateArmor(armor);
-    }
 }
