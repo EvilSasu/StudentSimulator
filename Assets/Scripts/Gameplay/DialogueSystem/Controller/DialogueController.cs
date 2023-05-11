@@ -11,9 +11,11 @@ public class DialogueController : MonoBehaviour
     public GameObject blocker;
     public GameObject mapButton;
     public GameObject phoneButton;
+    public GameObject goToRoomButton;
+    public GameObject phone;
 
     private State state = State.NORMAL;
-
+    private PlayerData player;
     private enum State
     {
         NORMAL, ANIMATE, CHOICE
@@ -21,6 +23,7 @@ public class DialogueController : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
         if (currentScene is StoryScene)
         {
             StoryScene storyScene = currentScene as StoryScene;
@@ -46,6 +49,8 @@ public class DialogueController : MonoBehaviour
                         blocker.SetActive(false);
                         phoneButton.GetComponent<Button>().interactable = true;
                         mapButton.GetComponent<Button>().interactable = true;
+                        if(player.positionInGameMap == 3)
+                            goToRoomButton.SetActive(true);
                         gameObject.SetActive(false);
                     }
                                          
@@ -64,6 +69,7 @@ public class DialogueController : MonoBehaviour
             blocker.SetActive(false);
             phoneButton.GetComponent<Button>().interactable = true;
             mapButton.GetComponent<Button>().interactable = true;
+            goToRoomButton.SetActive(true);
             this.gameObject.SetActive(false);
         }
     }
@@ -71,6 +77,9 @@ public class DialogueController : MonoBehaviour
     public void PlayDialogue()
     {
         //dialoguePanel.gameObject.SetActive(true);
+        if(currentScene.name != "PrologCz13Aka")
+            phone.GetComponent<PhoneController>().HidePhone();
+
         dialoguePanel.PlayScene((currentScene as StoryScene));
         //PlayScene((currentScene));
     }
@@ -84,6 +93,7 @@ public class DialogueController : MonoBehaviour
     {
         phoneButton.GetComponent<Button>().interactable = false;
         mapButton.GetComponent<Button>().interactable = false;
+        goToRoomButton.SetActive(false);
         state = State.ANIMATE;
         currentScene = scene;
         dialoguePanel.HideDialogue();

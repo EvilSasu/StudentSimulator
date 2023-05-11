@@ -17,7 +17,8 @@ public class Clock : MonoBehaviour
             hours = ((hours + value) % 24);
             calendar.CalculateDay(1);
         }
-        hours += value;
+        else
+            hours += value;
     }
 
     public void AddMinutes(int value)
@@ -25,10 +26,12 @@ public class Clock : MonoBehaviour
         CalculateStatusLost(value);
         if ((minutes + value) >= 60)
         {
+            int hoursToAdd = (minutes + value) / 60;
             minutes = ((minutes + value) % 60);
-            AddHours(1);
+            AddHours(hoursToAdd);
         }
-        minutes += value;
+        else
+            minutes += value;
     }
 
     public void AddSeconds(int value)

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerData : MonoBehaviour
 {
     public int money;
@@ -9,6 +9,35 @@ public class PlayerData : MonoBehaviour
     public int hunger;
     public int winsdom;
     public int mentalHealth;
+    public int positionInGameMap = 0;
+
+    public GameObject GoToRoomButton;
+    public GameObject MiniGameButton;
+
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().name != "Prolog")
+        {
+            if (positionInGameMap != 3 && positionInGameMap != 6)
+            {
+                MiniGameButton.SetActive(true);
+                GoToRoomButton.SetActive(false);
+            }          
+            else
+            {
+                GoToRoomButton.SetActive(true);
+                MiniGameButton.SetActive(false);
+            }            
+        }
+        if (SceneManager.GetActiveScene().name == "Prolog" && positionInGameMap == 5)
+            MiniGameButton.SetActive(true);
+        
+    }
+
+    public void SetPositionOnMap(int i)
+    {
+        positionInGameMap = i;
+    }
 
     public bool CheckMoneyBiggierThan(int value)
     {

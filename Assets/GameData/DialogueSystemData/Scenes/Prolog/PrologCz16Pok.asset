@@ -47,7 +47,7 @@ MonoBehaviour:
     gameEventValue: 0
   - text: "\u015Awiat\u0142o... Razi..."
     speaker: {fileID: 11400000, guid: 1aadb60083d7c6344a5be99acc52cc6c, type: 2}
-    gameEvent: {fileID: 0}
+    gameEvent: {fileID: 11400000, guid: fbf1e8568d8681147825b890d509b246, type: 2}
     gameEventValue: 0
   - text: "To ja chyba p\xF3jd\u0119 do sklepu. Potrzebujesz czego\u015B?"
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
@@ -67,7 +67,7 @@ MonoBehaviour:
     gameEventValue: 0
   - text: Dobra, to gdzie jest ten sklep...
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    gameEvent: {fileID: 0}
+    gameEvent: {fileID: 11400000, guid: dce828ff3194f78449556a23aa9029e4, type: 2}
     gameEventValue: 0
   backgroud: {fileID: 21300000, guid: b5f70f38162573045a5a3f7d50f57fb2, type: 3}
   nextScene: {fileID: 0}

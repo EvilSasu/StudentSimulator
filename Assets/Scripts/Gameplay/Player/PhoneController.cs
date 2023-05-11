@@ -30,6 +30,15 @@ public class PhoneController : MonoBehaviour
         phoneShowed = !phoneShowed;
     }
 
+    public void HidePhone()
+    {
+        if (phoneShowed == true)
+        {
+            animator.SetTrigger("HidePhone");
+            phoneShowed = false;
+        }
+    }
+
     private void Update()
     {
         if (phoneShowed == true)

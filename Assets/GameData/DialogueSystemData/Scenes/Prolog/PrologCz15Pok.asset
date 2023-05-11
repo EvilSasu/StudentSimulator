@@ -23,7 +23,7 @@ MonoBehaviour:
     gameEventValue: 0
   - text: .......
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 0}
+    gameEvent: {fileID: 11400000, guid: 67ff49fd98d015041bb8e8d9cf43d535, type: 2}
     gameEventValue: 0
   - text: "Nie wiesz ile czasu ju\u017C min\u0119\u0142o. Nagle ze snu wybudza ci\u0119
       odg\u0142osy Ligi Legend."
