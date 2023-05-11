@@ -48,8 +48,8 @@ public class EnemyAtack : MonoBehaviour
                 {
                     //tutaj zmieniaæ fire Rate
                     fireRate = 0.5f;
-                    GetComponent<AudioSource>().Stop();
-                    GetComponent<AudioSource>().Play();
+                   // GetComponent<AudioSource>().Stop();
+                    //GetComponent<AudioSource>().Play();
                     Shoot();
                 }
             }
