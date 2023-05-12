@@ -23,12 +23,12 @@ public class Door : MonoBehaviour
                 if (rKey && other.GetComponent<PlayerInventory>().rKey && gKey && other.GetComponent<PlayerInventory>().gKey && bKey && other.GetComponent<PlayerInventory>().bKey)
                 {
 
-                    spawn.SetActive(true);
+                    //spawn.SetActive(true);
                     //nastêpny poziom
                     //Scene sceneToLoad = SceneManager.GetSceneByName("ztestWorld");
                     //SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Additive);
                     //SceneManager.MoveGameObjectToScene(transform.gameObject, sceneToLoad);
-                   // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); //SceneManager.GetActiveScene().buildIndex + 1
+                      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); //SceneManager.GetActiveScene().buildIndex + 1
                 }
             }
 
