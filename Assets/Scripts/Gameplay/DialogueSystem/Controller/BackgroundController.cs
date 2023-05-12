@@ -12,9 +12,10 @@ public class BackgroundController : MonoBehaviour
     public GameObject gameMaster;
     public StoryScene firstScene;
 
+    //public GameData gameData;
     private void Start()
     {
-
+        ///gameData = GameObject.FindWithTag("GameData").GetComponent<GameData>();
     }
 
     public void SwitchImage(Sprite sprite)
