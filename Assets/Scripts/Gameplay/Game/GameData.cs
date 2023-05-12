@@ -35,7 +35,8 @@ public class GameData : MonoBehaviour
             Debug.Log("Jestem tutaj");
             transform.parent.GetComponent<SceneMaster>().dialogueSystem.GetComponent<DialogueController>().backgroundController.PlayFirstDialogue();
             //transform.parent.GetComponent<BackgroundController>().PlayFirstDialogue();
-            firstGameStart = false;
+            if(SceneManager.GetActiveScene().name == "Prolog2")
+                firstGameStart = false;
         }
     }
 
