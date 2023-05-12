@@ -146,7 +146,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 
     public void CheckWinsdomBiggierThan(int value)
     {
-        if (playerData.winsdom >= value)
+        if (playerData.wisdom >= value)
             isWarunekSpelniony = true;
         else
             isWarunekSpelniony = false;
