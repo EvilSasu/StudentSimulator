@@ -182,7 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
-  maxArmor: 100
   damageColor: {r: 1, g: 1, b: 1, a: 1}
   damageImage: {fileID: 0}
   pickupHealthImage: {fileID: 0}
@@ -263,6 +262,10 @@ PrefabInstance:
     - target: {fileID: 9036928774047829454, guid: d36795af636bf23459abaeb98df9e7e3, type: 3}
       propertyPath: fireRate
       value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036928774047829454, guid: d36795af636bf23459abaeb98df9e7e3, type: 3}
+      propertyPath: horizontalRange
+      value: 39.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9036928774047829448, guid: d36795af636bf23459abaeb98df9e7e3, type: 3}
