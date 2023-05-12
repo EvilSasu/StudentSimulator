@@ -159,8 +159,6 @@ MonoBehaviour:
   enemyManager: {fileID: 0}
   enemyHealth: 2
   hitEffect: {fileID: 112409071443043014, guid: 8abbf13c86ee6624f88ebea10c5e57c1, type: 3}
-  trigger: {fileID: 0}
-  isFalse: 0
 --- !u!114 &3282281070296511814
 MonoBehaviour:
   m_ObjectHideFlags: 0

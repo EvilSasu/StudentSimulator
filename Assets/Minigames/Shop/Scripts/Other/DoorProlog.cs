@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour
+public class DoorProlog : MonoBehaviour
 {
     public bool Key;
     public bool rKey, gKey, bKey;
 
-
+    public LevelLoaderScript loader;
     public GameObject spawn;
     //public GameObject door;
 
@@ -22,13 +22,15 @@ public class Door : MonoBehaviour
                 //wymagany klucz
                 if (rKey && other.GetComponent<PlayerInventory>().rKey && gKey && other.GetComponent<PlayerInventory>().gKey && bKey && other.GetComponent<PlayerInventory>().bKey)
                 {
+                    loader.LoadChoosenLevel(4);
+
 
                     //spawn.SetActive(true);
                     //nastêpny poziom
                     //Scene sceneToLoad = SceneManager.GetSceneByName("ztestWorld");
                     //SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Additive);
                     //SceneManager.MoveGameObjectToScene(transform.gameObject, sceneToLoad);
-                      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); //SceneManager.GetActiveScene().buildIndex + 1
+                    // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); //SceneManager.GetActiveScene().buildIndex + 1
                 }
             }
 
