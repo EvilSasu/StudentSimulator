@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameData : MonoBehaviour
 {
     public TimeSystem timeSystem;
-    public bool firstGameStart = false;
+    public bool firstGameStart = true;
     /// <summary>
     /// Dane do zapisu
     /// </summary>
@@ -18,13 +18,24 @@ public class GameData : MonoBehaviour
     public int minute;
     public int second;
 
+    public int sceneIndex;
+
+    private void Awake()
+    {
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SaveSystem.gData = this;
+    }
+
     void Start()
     {
         SetupTime();
 
-        if (SceneManager.GetActiveScene().name == "Prolog")
+        if (SceneManager.GetActiveScene().name == "Prolog" && firstGameStart)
         {
+            Debug.Log("Jestem tutaj");
             transform.parent.GetComponent<SceneMaster>().dialogueSystem.GetComponent<DialogueController>().backgroundController.PlayFirstDialogue();
+            //transform.parent.GetComponent<BackgroundController>().PlayFirstDialogue();
+            firstGameStart = false;
         }
     }
 

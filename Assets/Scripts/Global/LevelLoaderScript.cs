@@ -7,6 +7,11 @@ public class LevelLoaderScript : MonoBehaviour
 {
     public Animator animator;
 
+    private void Awake()
+    {
+        this.gameObject.SetActive(true);
+    }
+
     public void LoadNextLevel()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex - 1));

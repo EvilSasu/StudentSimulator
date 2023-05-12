@@ -1369,6 +1369,54 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &2787364243505615007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7101382121827284492}
+  - component: {fileID: 4632921278898907730}
+  m_Layer: 0
+  m_Name: SaveSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7101382121827284492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2787364243505615007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8338151022821399576}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4632921278898907730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2787364243505615007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ea53b7ce45c954cb2108579671555d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoader: {fileID: 0}
+  playerData: {fileID: 5996329161657761300}
+  gameData: {fileID: 6808550714839057433}
+  savesExist: 0
 --- !u!1 &2900625786154697488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,7 +1525,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8338151022821399576}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6028994861308347795
 MonoBehaviour:
@@ -3277,7 +3325,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8338151022821399576}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5906076943657413634
 MonoBehaviour:
@@ -3294,9 +3342,11 @@ MonoBehaviour:
   money: 0
   energy: 0
   hunger: 0
-  winsdom: 0
+  wisdom: 0
   mentalHealth: 0
   positionInGameMap: 0
+  GoToRoomButton: {fileID: 0}
+  MiniGameButton: {fileID: 0}
 --- !u!114 &7023821572792851087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3717,7 +3767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8338151022821399576}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4640194721280223142
 MonoBehaviour:
@@ -3732,13 +3782,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeSystem: {fileID: 6101133651787779239}
-  firstGameStart: 0
+  firstGameStart: 1
   month: 0
   day: 0
   dayOfWeek: 0
   hour: 0
   minute: 0
   second: 0
+  sceneIndex: 0
 --- !u!1 &7104857942590722405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4548,7 +4599,7 @@ RectTransform:
   - {fileID: 9024619726467757231}
   - {fileID: 8338151024800600118}
   m_Father: {fileID: 8338151022821399576}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4781,6 +4832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7101382121827284492}
   - {fileID: 5839199724054291766}
   - {fileID: 7257355252420090906}
   - {fileID: 1079654376090438898}
@@ -4992,7 +5044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 8338151023600356283}
   personNameText: {fileID: 8338151022768126570}
-  animationMaster: {fileID: 0}
+  animationMaster: {fileID: 8338151024800600120}
   speaker1Image: {fileID: 8338151022858331932}
   speaker2Image: {fileID: 8338151024819531242}
   animator: {fileID: 1749026844364813754}

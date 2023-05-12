@@ -7,9 +7,9 @@ public class Gun : MonoBehaviour
 {
    // public Animator shootAnim;
 
-    public float range = 5f;
-    public float horizontalRange = 5f;
-    public float verticalRange = 5f;
+    public float range = 20f;
+    public float horizontalRange = 20f;
+    public float verticalRange = 20f;
     public float gunShotRadius = 20f;
 
     public float cDamage = 2f;
