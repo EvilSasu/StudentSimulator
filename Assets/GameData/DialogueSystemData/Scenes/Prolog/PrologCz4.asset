@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: PrologCz4
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: Co to?
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+  - text: "Mapa dzi\u0119ki niej mo\u017Cesz przemieszcza\u0107 na terenie Politechniki.
+      Ja ju\u017C jej nie potrzebuj\u0119, znam te tereny jak w\u0142asn\u0105 kiesze\u0144."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+  - text: "Teraz wypada\u0142o by, aby\u015B uda\u0142 si\u0119 na uczelni\u0119.
+      Aby tego dokona\u0107 wybierz sw\xF3j cel na mapie, po czym w trymiga znajdziesz
+      si\u0119 na miejscu."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+  - text: "Oczywi\u015Bcie jako, ze jest to tw\xF3j pierwszy raz, p\xF3jd\u0119 razem
+      z tob\u0105. Zatem ruszajmy!"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+  backgroud: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
+  nextScene: {fileID: 0}
