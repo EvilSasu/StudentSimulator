@@ -30,7 +30,7 @@ public class GameData : MonoBehaviour
     {
         SetupTime();
 
-        if (SceneManager.GetActiveScene().name == "Prolog" && firstGameStart)
+        if ((SceneManager.GetActiveScene().name == "Prolog" || SceneManager.GetActiveScene().name == "Prolog2") && firstGameStart)
         {
             Debug.Log("Jestem tutaj");
             transform.parent.GetComponent<SceneMaster>().dialogueSystem.GetComponent<DialogueController>().backgroundController.PlayFirstDialogue();
