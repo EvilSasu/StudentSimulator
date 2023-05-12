@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - text: "[ Nie mam tyle pieni\u0119dzy ]"
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 20eb21f9032c8dc4e847716ae4459007, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}
@@ -22,7 +22,7 @@ MonoBehaviour:
     warunekEventValue: 0
     warunekEventValue2: 0
   - text: "[ Trzymaj (daj 5 z\u0142) ]"
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 62c05a72bb85d3b4c80101178a6bec17, type: 2}
     gameEvent: {fileID: 11400000, guid: 2c323779474b8bc4dacd75c6b107d78f, type: 2}
     gameEventWarunek: {fileID: 11400000, guid: b6fb98a3bdb108b4ab6429409e052653, type: 2}
     gameEventWarunek2: {fileID: 0}
