@@ -7,21 +7,16 @@ public class PlayerData : MonoBehaviour
     public int money;
     public int energy;
     public int hunger;
-    public int wisdom;
+    public int winsdom;
     public int mentalHealth;
     public int positionInGameMap = 0;
 
     public GameObject GoToRoomButton;
     public GameObject MiniGameButton;
 
-    private void Awake()
-    {
-        SaveSystem.pData = this;
-    }
-
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name != "Prolog" && SceneManager.GetActiveScene().name != "MainMenu")
+        if(SceneManager.GetActiveScene().name != "Prolog")
         {
             if (positionInGameMap != 3 && positionInGameMap != 6)
             {
@@ -70,7 +65,7 @@ public class PlayerData : MonoBehaviour
 
     public bool CheckWinsdomBiggierThan(int value)
     {
-        if (wisdom >= value)
+        if (winsdom >= value)
             return true;
         else
             return false;
@@ -108,9 +103,9 @@ public class PlayerData : MonoBehaviour
 
     public void IncreaseWinsdom(int value)
     {
-        wisdom += value;
-        if ((wisdom + value) >= 100)
-            wisdom = 100;
+        winsdom += value;
+        if ((winsdom + value) >= 100)
+            winsdom = 100;
     }
 
     public void IncreaseMentalHealth(int value)
@@ -146,9 +141,9 @@ public class PlayerData : MonoBehaviour
 
     public void DecreaseWinsdom(int value)
     {
-        wisdom -= value;
-        if ((wisdom - value) <= 0)
-            wisdom = 0;
+        winsdom -= value;
+        if ((winsdom - value) <= 0)
+            winsdom = 0;
     }
 
     public void DecreaseMentalHealth(int value)
@@ -180,12 +175,12 @@ public class PlayerData : MonoBehaviour
 
     public int Getwinsdom()
     {
-        return wisdom;
+        return winsdom;
     }
 
     public void Setwinsdom(int value)
     {
-        wisdom = value;
+        winsdom = value;
     }
 
     public int Gethunger()

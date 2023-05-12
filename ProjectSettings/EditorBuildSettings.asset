@@ -5,7 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-<<<<<<< HEAD
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -13,18 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Prolog.unity
     guid: e1484cf7ab37dd5439be5e66fce9ab4b
   - enabled: 1
-=======
-  - enabled: 1
-    path: Assets/Scenes/Menu/MainMenu.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Prolog/Prolog.unity
-    guid: e1484cf7ab37dd5439be5e66fce9ab4b
-  - enabled: 1
-    path: Assets/Minigames/Floppy/Floppy.unity
-    guid: f4993718f33d2bd47ad6149dbabb6c2a
-  - enabled: 1
->>>>>>> 9afadf45bb868b21d3f826790603938f4e1aef30
     path: Assets/Minigames/Shop/Sklep.unity
     guid: e664e111ae9805f44bd70a3daabb3df2
   m_configObjects: {}

@@ -1995,11 +1995,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427342882}
   m_CullTransparentMesh: 1
---- !u!1 &429665336 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1452453047006815228, guid: 39416029594c1ac42a0501015208bb61, type: 3}
-  m_PrefabInstance: {fileID: 8338151023785663086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &432237190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,17 +3856,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1072088620 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4632921278898907730, guid: 39416029594c1ac42a0501015208bb61, type: 3}
-  m_PrefabInstance: {fileID: 8338151023785663086}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80ea53b7ce45c954cb2108579671555d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1101359387
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,11 +4462,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445645663}
   m_CullTransparentMesh: 1
---- !u!1 &1505400055 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1596883461483352208, guid: 39416029594c1ac42a0501015208bb61, type: 3}
-  m_PrefabInstance: {fileID: 8338151023785663086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1510658267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,19 +4806,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1528960969}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1072088620}
-        m_TargetAssemblyTypeName: SaveSystem, Assembly-CSharp
-        m_MethodName: Load
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1528960969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5227,18 +5194,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1072088620}
-        m_TargetAssemblyTypeName: SaveSystem, Assembly-CSharp
-        m_MethodName: DeleteSaves
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1683856195}
         m_TargetAssemblyTypeName: LevelLoaderScript, Assembly-CSharp
         m_MethodName: LoadChoosenLevel
@@ -5433,10 +5388,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6963102089491289278, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}
       propertyPath: m_Name
-      value: LevelLoader
-      objectReference: {fileID: 0}
-    - target: {fileID: 6963102089491289278, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}
-      propertyPath: m_TagString
       value: LevelLoader
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6270,10 +6221,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3512016899229451833, guid: 39416029594c1ac42a0501015208bb61, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5590062677416848904, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6282,14 +6229,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
-      propertyPath: GoToRoomButton
-      value: 
-      objectReference: {fileID: 1505400055}
-    - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
-      propertyPath: MiniGameButton
-      value: 
-      objectReference: {fileID: 429665336}
     - target: {fileID: 6563376665161881706, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
