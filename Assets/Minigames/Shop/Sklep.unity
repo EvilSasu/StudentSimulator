@@ -14167,6 +14167,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4942534829919295743, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
+      propertyPath: awarenessRadius
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
 --- !u!1001 &606402331
@@ -14818,11 +14822,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1388172806090436898, guid: 6969e48c1a4540a4fbdec859ad87e281, type: 3}
   m_PrefabInstance: {fileID: 624943141}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &628246427 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6471021453331706735, guid: ef7a243d00179c7499a0cfe2d7971cd4, type: 3}
-  m_PrefabInstance: {fileID: 301141433}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &628246428 stripped
 Transform:
@@ -22320,7 +22319,7 @@ MonoBehaviour:
   rKey: 1
   gKey: 1
   bKey: 1
-  spawn: {fileID: 628246427}
+  spawn: {fileID: 0}
 --- !u!65 &966389347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31787,6 +31786,10 @@ PrefabInstance:
     - target: {fileID: 4942534829919295741, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
       propertyPath: m_Name
       value: Slow Beggar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942534829919295743, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
+      propertyPath: awarenessRadius
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
@@ -48283,7 +48286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4942534829919295734, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.79
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 4942534829919295734, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
       propertyPath: m_LocalPosition.y
@@ -48291,7 +48294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4942534829919295734, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 31.06
+      value: 31.5
       objectReference: {fileID: 0}
     - target: {fileID: 4942534829919295734, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48332,6 +48335,10 @@ PrefabInstance:
     - target: {fileID: 4942534829919295741, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942534829919295743, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
+      propertyPath: awarenessRadius
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
@@ -48869,10 +48876,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3282281070296511814, guid: 8c5cd43ad946fed408fec6145bffe3c6, type: 3}
       propertyPath: awarenessRadius
-      value: 100
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282281070296511820, guid: 8c5cd43ad946fed408fec6145bffe3c6, type: 3}
+      propertyPath: m_Speed
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282281070296511820, guid: 8c5cd43ad946fed408fec6145bffe3c6, type: 3}
+      propertyPath: m_Acceleration
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3282281070296511820, guid: 8c5cd43ad946fed408fec6145bffe3c6, type: 3}
       propertyPath: m_AngularSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282281070296511820, guid: 8c5cd43ad946fed408fec6145bffe3c6, type: 3}
+      propertyPath: m_StoppingDistance
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3282281070296511823, guid: 8c5cd43ad946fed408fec6145bffe3c6, type: 3}
