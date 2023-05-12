@@ -52,9 +52,11 @@ public class SaveSystem : MonoBehaviour
         {
             LoadPlayerData();
             LoadGameData();
-            if(sceneToLoad != SceneManager.GetActiveScene().buildIndex)
+            /*if(sceneToLoad != SceneManager.GetActiveScene().buildIndex)
+                levelLoader.LoadChoosenLevel(sceneToLoad);*/
+            if (sceneToLoad != SceneManager.GetActiveScene().buildIndex && sceneToLoad == 0)
                 levelLoader.LoadChoosenLevel(sceneToLoad);
-        }     
+        }
     }
 
     public void DeleteSaves()
