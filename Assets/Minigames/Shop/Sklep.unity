@@ -13803,6 +13803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4942534829919295736, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1404817133}
     - target: {fileID: 4942534829919295741, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
       propertyPath: m_Name
       value: Slow Beggar
@@ -18500,6 +18504,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835253807}
     m_Modifications:
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1404817133}
     - target: {fileID: 7100499442550422933, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_Name
       value: Mid Beggar (3)
@@ -20356,6 +20368,10 @@ PrefabInstance:
     - target: {fileID: 6471021453331706730, guid: ef7a243d00179c7499a0cfe2d7971cd4, type: 3}
       propertyPath: isFalse
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471021453331706730, guid: ef7a243d00179c7499a0cfe2d7971cd4, type: 3}
+      propertyPath: enemyHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6471021453331706730, guid: ef7a243d00179c7499a0cfe2d7971cd4, type: 3}
       propertyPath: enemyManager
@@ -26857,6 +26873,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835253807}
     m_Modifications:
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1404817133}
     - target: {fileID: 7100499442550422933, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_Name
       value: Mid Beggar
@@ -30756,6 +30780,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4942534829919295736, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1404817133}
     - target: {fileID: 4942534829919295741, guid: 9d0e4c913fbf1fc4ea653b2d5161b733, type: 3}
       propertyPath: m_Name
       value: Slow Beggar (1)
@@ -38242,6 +38270,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835253807}
     m_Modifications:
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1404817133}
     - target: {fileID: 7100499442550422933, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_Name
       value: Mid Beggar (2)
@@ -41771,6 +41807,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835253807}
     m_Modifications:
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1404817133}
     - target: {fileID: 7100499442550422933, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_Name
       value: Mid Beggar (2)
@@ -41781,7 +41825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7100499442550422942, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7669983
+      value: 3.69
       objectReference: {fileID: 0}
     - target: {fileID: 7100499442550422942, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_LocalPosition.y
@@ -41789,7 +41833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7100499442550422942, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -61.084892
+      value: -60.9
       objectReference: {fileID: 0}
     - target: {fileID: 7100499442550422942, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44001,6 +44045,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835253807}
     m_Modifications:
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1404817133}
     - target: {fileID: 7100499442550422933, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_Name
       value: Mid Beggar (1)
@@ -44926,6 +44978,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835253807}
     m_Modifications:
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1404817133}
     - target: {fileID: 7100499442550422933, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: m_Name
       value: Mid Beggar (1)
@@ -45531,6 +45591,10 @@ PrefabInstance:
     - target: {fileID: 6471021453331706730, guid: ef7a243d00179c7499a0cfe2d7971cd4, type: 3}
       propertyPath: isFalse
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471021453331706730, guid: ef7a243d00179c7499a0cfe2d7971cd4, type: 3}
+      propertyPath: enemyHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6471021453331706730, guid: ef7a243d00179c7499a0cfe2d7971cd4, type: 3}
       propertyPath: enemyManager
@@ -47158,6 +47222,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835253807}
     m_Modifications:
+    - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
+      propertyPath: enemyHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7100499442550422928, guid: 2f4bb04d83d380b4fa21e6f50299cc52, type: 3}
       propertyPath: enemyManager
       value: 
