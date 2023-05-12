@@ -7,8 +7,6 @@ public class Enemy : MonoBehaviour
     public EnemyManager enemyManager;
     public float enemyHealth = 2f;
     public GameObject hitEffect;
-    public GameObject trigger;
-    public bool isFalse;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +28,6 @@ public class Enemy : MonoBehaviour
         {
             enemyManager.RemoveEnemy(this);
             Destroy(gameObject);
-            if (isFalse) { trigger.SetActive(false); }else
-            trigger.SetActive(true);
         }
     }
 
