@@ -147,6 +147,7 @@ public class SaveSystem : MonoBehaviour
             game.minute = data.minute;
             game.second = data.second;
             game.sceneIndex = data.sceneIndex;
+            game.firstGameStart = data.firstStart;
             sceneToLoad = data.sceneIndex;
         }
         else

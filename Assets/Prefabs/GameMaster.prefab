@@ -1413,8 +1413,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ea53b7ce45c954cb2108579671555d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLoader: {fileID: 0}
   playerData: {fileID: 5996329161657761300}
   gameData: {fileID: 6808550714839057433}
+  savesExist: 0
 --- !u!1 &2900625786154697488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,7 +3782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeSystem: {fileID: 6101133651787779239}
-  firstGameStart: 0
+  firstGameStart: 1
   month: 0
   day: 0
   dayOfWeek: 0
@@ -5042,7 +5044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 8338151023600356283}
   personNameText: {fileID: 8338151022768126570}
-  animationMaster: {fileID: 0}
+  animationMaster: {fileID: 8338151024800600120}
   speaker1Image: {fileID: 8338151022858331932}
   speaker2Image: {fileID: 8338151024819531242}
   animator: {fileID: 1749026844364813754}

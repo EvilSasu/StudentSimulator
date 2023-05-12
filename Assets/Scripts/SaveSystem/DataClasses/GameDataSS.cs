@@ -14,7 +14,7 @@ public class GameDataSS
     public int second;
 
     public int sceneIndex;
-
+    public bool firstStart;
     public GameDataSS(GameData g)
     {
         month = g.month;
@@ -24,5 +24,6 @@ public class GameDataSS
         minute = g.minute;
         second = g.second;
         sceneIndex = g.sceneIndex;
+        firstStart = g.firstGameStart;
     }
 }
