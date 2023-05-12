@@ -45,7 +45,7 @@ public class PhoneController : MonoBehaviour
         {
             moneyText.text = playerData.money.ToString() + " z³";
             hungerSlider.value = playerData.hunger;
-            wisdomSlider.value = playerData.winsdom;
+            wisdomSlider.value = playerData.wisdom;
             mindSlider.value = playerData.mentalHealth;
             energySlider.value = playerData.energy;
         }
