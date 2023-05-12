@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: PrologCz9SalaWyk
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Dzi\u0119kuj\u0119 wszystkim za udzia\u0142."
+    speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
+    gameEvent: {fileID: 11400000, guid: 13800b66fd8b6b24092aea91fdcd2a64, type: 2}
+    gameEventValue: 90
+  - text: "Dzisiejszy materia\u0142 b\u0119dzie za tydzie\u0144 na wej\u015Bci\xF3wce,
+      wi\u0119c radz\u0119 si\u0119 solidnie przygotowa\u0107."
+    speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "*Czujesz wewn\u0119trzy stres* (Zdrowie psychiczne -10)"
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: aed5ee94304007e44901b99c4ae76a3f, type: 2}
+    gameEventValue: 10
+  backgroud: {fileID: 21300000, guid: 7602bde28a3345348a143d654a87fea7, type: 3}
+  nextScene: {fileID: 11400000, guid: 314b2c38762a2ef44ac388e720a04f26, type: 2}

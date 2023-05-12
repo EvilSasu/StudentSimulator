@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: PrologCz18Sklep
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: '*SKLEP*'
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Mleko... Bu\u0142ki... Kie\u0142basa..."
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: YO! Nowy!
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "M\u0119drzec! Co za niespodzianka!"
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Wiem, jestem do\u015B\u0107 nieprzywidywalny."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: ...
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Nowy, nie chc\u0119 si\u0119 wtr\u0105ca\u0107..."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: Ale?
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Ale robisz to wszystko \u017Ale! Kie\u0142basa za 20z\u0142! Kurczak za
+      30! Mo\u017Ce jeszcze kupisz browara za 7?"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: ...
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Na bog\xF3w! Student! Wiedzia\u0142em, \u017Ce jest z tob\u0105 \u017Ale,
+      ale nie, \u017Ce a\u017C tak!"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Lecz nie obawiaj si\u0119, znam prosty spos\xF3b na te ceny!"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Widzisz podczas wykonywania pewnych aktywno\u015Bci masz opcj\u0119 na
+      uzyskanie wi\u0119kszej ilo\u015Bci zasob\xF3w! "
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Niestety, ma to te\u017C swoje minusy. Widzisz nowy, je\u015Bli polegniesz
+      w trakcie wykonywania tych\u017Ce aktywno\u015Bci, to jedyne co zyskasz to
+      figa z makiem oraz stracony czas."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: Hmmm, teraz nie jestem do te tego przekonany.
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  - text: "Spokojnie nowy nie b\u0105d\u017A cykor. Poza tym jako, \u017Ce jest to
+      tw\xF3j pierwszy raz, zadbam o to aby\u015B nie wyszed\u0142 na tym kijowo."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+  backgroud: {fileID: 21300000, guid: fc25226ef75fb75429a76443e0044c6d, type: 3}
+  nextScene: {fileID: 0}
