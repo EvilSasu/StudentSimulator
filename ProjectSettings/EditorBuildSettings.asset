@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Minigames/Shop/Sklep.unity
     guid: e664e111ae9805f44bd70a3daabb3df2
+  - enabled: 1
+    path: Assets/Scenes/Prolog/Prolog2.unity
+    guid: ad5687f291a497d45b4364ebe3f7a6ff
   m_configObjects: {}
