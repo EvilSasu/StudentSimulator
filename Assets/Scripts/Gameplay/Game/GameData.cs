@@ -18,6 +18,14 @@ public class GameData : MonoBehaviour
     public int minute;
     public int second;
 
+    public int sceneIndex;
+
+    private void Awake()
+    {
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SaveSystem.gData = this;
+    }
+
     void Start()
     {
         SetupTime();

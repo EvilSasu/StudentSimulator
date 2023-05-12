@@ -8,6 +8,7 @@ TagManager:
   - Blocker
   - Pipe
   - GameData
+  - LevelLoader
   layers:
   - Default
   - TransparentFX
