@@ -680,11 +680,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: energy
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: hunger
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: winsdom
@@ -2750,7 +2750,7 @@ MonoBehaviour:
   background2: {fileID: 1505949247}
   animator: {fileID: 1585954428}
   gameMaster: {fileID: 193432264}
-  firstScene: {fileID: 11400000, guid: 99a09b7b13cf821438c5fcde5d0dd4ad, type: 2}
+  firstScene: {fileID: 11400000, guid: c5e0cd6f0f86b02419f8f12e16364ea9, type: 2}
 --- !u!114 &1602968306 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9121580736130393029, guid: 39416029594c1ac42a0501015208bb61, type: 3}
