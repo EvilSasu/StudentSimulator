@@ -7,6 +7,7 @@ public class ChooseController : MonoBehaviour
     public ChooseLabelController label;
     private Animator animator;
     public DialogueController dialogController;
+    public GameObject choiceBlocker;
 
     private RectTransform rectTransform;
     private float labelHeight = -1;
@@ -41,8 +42,9 @@ public class ChooseController : MonoBehaviour
 
     public void PerfomChoose(StoryScene scene)
     {
-        dialogController.PlayScene(scene);
+        choiceBlocker.SetActive(true);
         animator.SetTrigger("HideChoice");
+        dialogController.PlayScene(scene);
     }
 
     public void SetDisable()

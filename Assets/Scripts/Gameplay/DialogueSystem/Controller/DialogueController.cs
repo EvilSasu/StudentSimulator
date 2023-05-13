@@ -13,7 +13,7 @@ public class DialogueController : MonoBehaviour
     public GameObject phoneButton;
     public GameObject goToRoomButton;
     public GameObject phone;
-
+    public GameObject choiceBlocker;
     private State state = State.NORMAL;
     private PlayerData player;
     private enum State
@@ -42,11 +42,13 @@ public class DialogueController : MonoBehaviour
                 {
                     if ((currentScene as StoryScene).nextScene != null)
                     {
+                        choiceBlocker.SetActive(false);
                         PlayScene((currentScene as StoryScene).nextScene);
                     }
                     else
                     {
                         blocker.SetActive(false);
+                        choiceBlocker.SetActive(false);
                         phoneButton.GetComponent<Button>().interactable = true;
                         mapButton.GetComponent<Button>().interactable = true;
                         /*if(player.positionInGameMap == 3)

@@ -82,6 +82,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        controller.gameObject.GetComponent<CanvasGroup>().interactable = false;
         if (gameEvent != null && gameEvent is GameEvent && isWarunekSpelniony == true)
             (gameEvent as GameEvent).Raise();
 
