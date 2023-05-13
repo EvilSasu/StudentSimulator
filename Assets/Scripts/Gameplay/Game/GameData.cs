@@ -29,7 +29,7 @@ public class GameData : MonoBehaviour
     void Start()
     {
         SetupTime();
-
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
         if ((SceneManager.GetActiveScene().name == "Prolog" || SceneManager.GetActiveScene().name == "Prolog2") && firstGameStart)
         {
             Debug.Log("Jestem tutaj");
