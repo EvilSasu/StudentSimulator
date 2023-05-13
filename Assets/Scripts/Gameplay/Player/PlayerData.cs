@@ -11,8 +11,8 @@ public class PlayerData : MonoBehaviour
     public int mentalHealth;
     public int positionInGameMap = 0;
 
-    public GameObject GoToRoomButton;
-    public GameObject MiniGameButton;
+    /*public GameObject GoToRoomButton;
+    public GameObject MiniGameButton;*/
 
     private void Awake()
     {
@@ -21,7 +21,7 @@ public class PlayerData : MonoBehaviour
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name != "Prolog" && SceneManager.GetActiveScene().name != "MainMenu")
+        /*if(SceneManager.GetActiveScene().name != "Prolog" && SceneManager.GetActiveScene().name != "MainMenu")
         {
             if (positionInGameMap != 3 && positionInGameMap != 6)
             {
@@ -35,7 +35,7 @@ public class PlayerData : MonoBehaviour
             }            
         }
         if (SceneManager.GetActiveScene().name == "Prolog" && positionInGameMap == 5)
-            MiniGameButton.SetActive(true);
+            MiniGameButton.SetActive(true);*/
         
     }
 

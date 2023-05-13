@@ -15,7 +15,7 @@ MonoBehaviour:
   sentences:
   - text: "Jak na pierwszy raz posz\u0142o ci ca\u0142kiem nie\u017Ale..."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    gameEvent: {fileID: 0}
+    gameEvent: {fileID: 11400000, guid: f21dfdb14f2c2304ca8478d500dcda15, type: 2}
     gameEventValue: 0
   - text: "Widz\u0119 jak na mnie patrzysz... O co chodzi?"
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}

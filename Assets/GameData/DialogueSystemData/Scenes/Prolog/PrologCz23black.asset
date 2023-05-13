@@ -18,5 +18,9 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+  - text: ...
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: 390fa3577405e134faf95c966d7759d4, type: 2}
+    gameEventValue: 6
   backgroud: {fileID: 21300000, guid: 16cd669c77b826042998c386f67594a5, type: 3}
   nextScene: {fileID: 0}

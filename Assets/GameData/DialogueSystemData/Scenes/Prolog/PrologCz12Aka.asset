@@ -15,7 +15,7 @@ MonoBehaviour:
   sentences:
   - text: "Dobry, prosz\u0119 klucze do 605."
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    gameEvent: {fileID: 0}
+    gameEvent: {fileID: 11400000, guid: deef5c9f1f4a103438ab2705fc54ae70, type: 2}
     gameEventValue: 0
   - text: Ma.
     speaker: {fileID: 11400000, guid: 2e38bdcdbc1dbb5489090212650648b8, type: 2}
