@@ -11,7 +11,7 @@ public class GameEvent : MainGameEvent
     public void Raise()
     {
         for (int i = gameEventListeners.Count - 1; i >= 0; i--)
-            gameEventListeners[i].OnEventRaised();
+            gameEventListeners[i].OnEventRaised();  
     }
 
     public void RegisterListener(IGameEventListener listener)

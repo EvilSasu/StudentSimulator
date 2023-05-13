@@ -15,7 +15,7 @@ MonoBehaviour:
   sentences:
   - text: '*Idziesz do pokoju*'
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 0}
+    gameEvent: {fileID: 11400000, guid: deef5c9f1f4a103438ab2705fc54ae70, type: 2}
     gameEventValue: 0
   - text: "Po d\u0142ugim dniu wreszcie wracasz do pokoju, czuj\u0105c zm\u0119czenie
       postanawiasz po\u0142o\u017Cy\u0107 si\u0119 na \u0142\xF3\u017Cku. Twoje oczy
