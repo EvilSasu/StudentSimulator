@@ -45,6 +45,19 @@ public class Clock : MonoBehaviour
             seconds += value;
     }
 
+    public void GoToSleep(int hour)
+    {
+        player.IncreaseEnergy(10 * hour);
+        player.IncreaseHunger(2 * hour);
+        if ((hours + hour) >= 24)
+        {
+            hours = ((hours + hour) % 24);
+            calendar.CalculateDay(1);
+        }
+        else
+            hours += hour;
+    }
+
     private void CalculateStatusLost(int val)
     {
         int lostMulty = val / 15;
