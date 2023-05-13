@@ -274,8 +274,6 @@ MonoBehaviour:
   enemyManager: {fileID: 0}
   enemyHealth: 2
   hitEffect: {fileID: 112409071443043014, guid: 8abbf13c86ee6624f88ebea10c5e57c1, type: 3}
-  trigger: {fileID: 0}
-  isFalse: 0
 --- !u!114 &4942534829919295743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6507b1eee31199044b84587cafdd8296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 360666383609732214, guid: e617f3540e9d45b46bbc6568b8dc64dd, type: 3}
+  projectile: {fileID: 360666383609732214, guid: dddbd71218dbd984895a878b2d489d7e, type: 3}
   shootPoint: {fileID: 4942534828951581264}
   turnSpeed: 50
