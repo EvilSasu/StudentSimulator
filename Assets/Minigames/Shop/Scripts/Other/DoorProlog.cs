@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour
+public class DoorProlog : MonoBehaviour
 {
     public bool Key;
     public bool rKey, gKey, bKey;
@@ -30,7 +30,7 @@ public class Door : MonoBehaviour
                     //Scene sceneToLoad = SceneManager.GetSceneByName("ztestWorld");
                     //SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Additive);
                     //SceneManager.MoveGameObjectToScene(transform.gameObject, sceneToLoad);
-                    //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); //SceneManager.GetActiveScene().buildIndex + 1
+                    // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); //SceneManager.GetActiveScene().buildIndex + 1
                 }
             }
 
