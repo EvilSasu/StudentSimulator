@@ -199,6 +199,18 @@ PrefabInstance:
       propertyPath: m_Colors.m_NormalColor.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4580232074880756164, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1499017433}
+    - target: {fileID: 4580232074880756164, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowWholeMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580232074880756164, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EventSystemMaster, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5828104997111970414, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -433,3 +445,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1499017433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6028994861308347795, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+  m_PrefabInstance: {fileID: 532140331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86cae1c4885a614fb4a8b173adf63f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

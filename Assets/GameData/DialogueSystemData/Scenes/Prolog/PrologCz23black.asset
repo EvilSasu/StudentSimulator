@@ -16,8 +16,8 @@ MonoBehaviour:
   - text: "Na zako\u0144czenie dnia, zrobi\u0142e\u015B obfit\u0105 kolacj\u0119.
       Poszed\u0142e\u015B spa\u0107 najedzony."
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventValue: 0
+    gameEvent: {fileID: 11400000, guid: d431d0140f197d549b88487a79505a92, type: 2}
+    gameEventValue: 13
   - text: ...
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 11400000, guid: 390fa3577405e134faf95c966d7759d4, type: 2}

@@ -27,12 +27,12 @@ MonoBehaviour:
     gameEventValue: 0
   - text: "Hej, Goblin. Przynios\u0142em ci zupk\u0119."
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventValue: 0
+    gameEvent: {fileID: 11400000, guid: ae412038e3143e1459c40c05bff7639c, type: 2}
+    gameEventValue: 100
   - text: "Mmmmm... Prowiant... Po\u017Cywny... Dzi\u0119ki..."
     speaker: {fileID: 11400000, guid: 90f4b0c9b3206a64a9be7cf6be381b86, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventValue: 0
+    gameEvent: {fileID: 11400000, guid: 88e4fa6d92752aa409a57b7aaa026695, type: 2}
+    gameEventValue: 100
   - text: Spoko.
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
     gameEvent: {fileID: 0}

@@ -15,6 +15,12 @@ public class Calendar : MonoBehaviour
         dayOfWeekName = nameOfDay[dayOfWeek]; 
     }
 
+    private void Update()
+    {
+        if(dayOfWeekName != nameOfDay[dayOfWeek])
+            dayOfWeekName = nameOfDay[dayOfWeek];
+    }
+
     public void CalculateMonth(int val)
     {
         if ((month + val) > 12)
