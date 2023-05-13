@@ -191,6 +191,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1452453047006815228, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580232074880756164, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5828104997111970414, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -211,6 +219,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8252726895140406314, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338151022767878981, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1438856461}
     - target: {fileID: 8338151022821399576, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_RootOrder
       value: 2

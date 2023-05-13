@@ -56,6 +56,8 @@ public class SaveSystem : MonoBehaviour
                 levelLoader.LoadChoosenLevel(sceneToLoad);*/
             if (sceneToLoad != SceneManager.GetActiveScene().buildIndex && sceneToLoad == 0)
                 levelLoader.LoadChoosenLevel(sceneToLoad);
+            if(SceneManager.GetActiveScene().buildIndex == 0)
+                levelLoader.LoadChoosenLevel(sceneToLoad);
         }
     }
 
