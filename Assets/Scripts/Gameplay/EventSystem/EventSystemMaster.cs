@@ -29,7 +29,7 @@ public class EventSystemMaster : MonoBehaviour
     IEnumerator ShowWholeMapCor()
     {
         map.gameObject.SetActive(true);
-        for (int i = 0; i < map.gameObject.transform.childCount - 1; i++)
+        for (int i = 0; i < map.gameObject.transform.childCount; i++)
             map.gameObject.transform.GetChild(i).GetComponent<Button>().interactable = true;
         mapAnim.SetTrigger("ShowMap");
         yield return new WaitForSeconds(1f);

@@ -2754,7 +2754,7 @@ MonoBehaviour:
   background2: {fileID: 1505949247}
   animator: {fileID: 1585954428}
   gameMaster: {fileID: 193432264}
-  firstScene: {fileID: 11400000, guid: 99a09b7b13cf821438c5fcde5d0dd4ad, type: 2}
+  firstScene: {fileID: 11400000, guid: 080358f7d3679b94ebed37aa637fce68, type: 2}
 --- !u!114 &1602968306 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9121580736130393029, guid: 39416029594c1ac42a0501015208bb61, type: 3}
