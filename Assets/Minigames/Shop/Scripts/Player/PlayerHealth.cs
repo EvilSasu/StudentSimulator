@@ -17,6 +17,9 @@ public class PlayerHealth : MonoBehaviour
     public Image pickupHealthImage;
     float colorSmoothing = 6f;
     bool isTakingDamage = false;
+    public bool prolog = false;
+
+    public LevelLoaderScript loader;
 
     private static PlayerHealth _instance;
     public static PlayerHealth Instance
@@ -72,10 +75,26 @@ public class PlayerHealth : MonoBehaviour
         {
             //Debug.Log("YOU DIED");
             //reset poziomu po œmierci gracza
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(currentScene.buildIndex);
+            //Scene currentScene = SceneManager.GetActiveScene();
+            //SceneManager.LoadScene(currentScene.buildIndex);
             
             
+
+
+            if(prolog == true)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                loader.LoadChoosenLevel(4);
+            }
+            if (prolog == false)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                loader.LoadChoosenLevel(1);
+            }
+
+
             //Destroy(transform.gameObject);
 
         }

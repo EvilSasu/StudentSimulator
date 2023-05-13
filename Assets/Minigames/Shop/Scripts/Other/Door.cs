@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     public bool Key;
     public bool rKey, gKey, bKey;
 
+    public bool prolog = false;
     public LevelLoaderScript loader;
     public GameObject spawn;
     //public GameObject door;
@@ -22,7 +23,19 @@ public class Door : MonoBehaviour
                 //wymagany klucz
                 if (rKey && other.GetComponent<PlayerInventory>().rKey && gKey && other.GetComponent<PlayerInventory>().gKey && bKey && other.GetComponent<PlayerInventory>().bKey)
                 {
-                    loader.LoadChoosenLevel(4);
+
+                    if (prolog == true)
+                    {
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
+                        loader.LoadChoosenLevel(4);
+                    }
+                    if (prolog == false)
+                    {
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
+                        loader.LoadChoosenLevel(1);
+                    }
 
 
                     //spawn.SetActive(true);
