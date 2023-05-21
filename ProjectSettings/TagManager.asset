@@ -9,6 +9,7 @@ TagManager:
   - Pipe
   - GameData
   - LevelLoader
+  - OutCanvas
   layers:
   - Default
   - TransparentFX

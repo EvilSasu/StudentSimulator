@@ -14,6 +14,12 @@ public class PhoneController : MonoBehaviour
 
     private Animator animator;
     private bool phoneShowed = false;
+    private GameObject canvas;
+
+    private void Awake()
+    {
+        canvas = GameObject.FindGameObjectWithTag("OutCanvas");
+    }
 
     private void Start()
     {
@@ -48,7 +54,11 @@ public class PhoneController : MonoBehaviour
             wisdomSlider.value = playerData.wisdom;
             mindSlider.value = playerData.mentalHealth;
             energySlider.value = playerData.energy;
-        }
+            if (canvas != null)
+                canvas.gameObject.SetActive(false);
+        }else
+            if (canvas != null)
+                canvas.gameObject.SetActive(true);
     }
 
 }
