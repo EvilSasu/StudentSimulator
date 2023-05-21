@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: "Wsp\xF3\u0142lokator"
   textColor: {r: 0.645283, g: 1, b: 0.739752, a: 1}
-  image: {fileID: 21300000, guid: b565c11c23c5c39479e5091cd6cd11b9, type: 3}
+  image: {fileID: 21300000, guid: 84ca5ce2875347845b8e4bb33978405e, type: 3}

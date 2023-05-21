@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/RoomDoor.unity
     guid: a1bbaf86b71bffc418cd93a33772938d
+  - enabled: 1
+    path: Assets/Scenes/Game/Portiernia.unity
+    guid: cb282dd147cf9db4cb8db0eecd905c46
   m_configObjects: {}
