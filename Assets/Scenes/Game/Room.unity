@@ -955,6 +955,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3512016899229451833, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4580232074880756164, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
       value: 1
@@ -2151,3 +2155,4 @@ MonoBehaviour:
   slider: {fileID: 173725975}
   clock: {fileID: 1452036599}
   levelLoader: {fileID: 1215970498}
+  map: {fileID: 0}

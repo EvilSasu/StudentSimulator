@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Goblin
   m_EditorClassIdentifier: 
   speakerName: Goblin
-  textColor: {r: 0.64705884, g: 1, b: 0.7411765, a: 0}
-  image: {fileID: 21300000, guid: b565c11c23c5c39479e5091cd6cd11b9, type: 3}
+  textColor: {r: 0.64705884, g: 1, b: 0.7411765, a: 1}
+  image: {fileID: 21300000, guid: 5157eb3a27bdcba4f8a8df778195da82, type: 3}

@@ -6,6 +6,7 @@ public class FridgeController : MonoBehaviour
 {
     public Button button;
     public GameObject map;
+
     private void OnEnable()
     {
         button.gameObject.SetActive(false);
