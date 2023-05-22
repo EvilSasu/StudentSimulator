@@ -761,12 +761,67 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameMaster
       objectReference: {fileID: 0}
+    - target: {fileID: 8338151024800600121, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: backgroundController
+      value: 
+      objectReference: {fileID: 532140336}
     - target: {fileID: 8944191334770799099, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+--- !u!95 &532140332 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5885352779874452346, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+  m_PrefabInstance: {fileID: 532140331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &532140333 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7746580947236254350, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+  m_PrefabInstance: {fileID: 532140331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &532140334 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6266075029767950237, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+  m_PrefabInstance: {fileID: 532140331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &532140335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8338151022821399579, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+  m_PrefabInstance: {fileID: 532140331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &532140336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532140335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc24cd2b4df20174d8a109f9af5e73c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSwitched: 0
+  originalSceneBackground: {fileID: 0}
+  background1: {fileID: 532140334}
+  background2: {fileID: 532140333}
+  animator: {fileID: 532140332}
+  gameMaster: {fileID: 532140335}
+  firstScene: {fileID: 0}
 --- !u!1 &722693588
 GameObject:
   m_ObjectHideFlags: 0

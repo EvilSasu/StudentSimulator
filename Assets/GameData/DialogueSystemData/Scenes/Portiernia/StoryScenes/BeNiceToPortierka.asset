@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: "\u0179le!"
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 2e38bdcdbc1dbb5489090212650648b8, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
   - text: "Idzie ju\u017C, a nie zawraca g\u0142ow\u0119."
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 2e38bdcdbc1dbb5489090212650648b8, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
   backgroud: {fileID: 21300000, guid: cc90b1cde2eac464e80d570f28fb565a, type: 3}
