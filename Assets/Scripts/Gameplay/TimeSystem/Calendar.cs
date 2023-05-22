@@ -9,10 +9,12 @@ public class Calendar : MonoBehaviour
     public string dayOfWeekName;
 
     private string[] nameOfDay = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
+    private PlayerData player;
 
     private void Start()
     {
-        dayOfWeekName = nameOfDay[dayOfWeek]; 
+        dayOfWeekName = nameOfDay[dayOfWeek];
+        player = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
     }
 
     private void Update()
@@ -34,6 +36,7 @@ public class Calendar : MonoBehaviour
     public void CalculateDay(int val)
     {
         CalculateDayOfWeek();
+        PayForRent();
         if (month == 2)
         {
             if ((day + val) > 28)
@@ -87,5 +90,14 @@ public class Calendar : MonoBehaviour
             dayOfWeek++;
 
         dayOfWeekName = nameOfDay[dayOfWeek];
+    }
+
+    private void PayForRent()
+    {
+        if(player != null)
+        {
+            if (day == 10)
+                player.DecreaseMoney(430);
+        }
     }
 }
