@@ -110,3 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d78cfe88b2f9a41b02674d7a75e262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lostTile: {fileID: 5020531973850266311, guid: 7aeb34bcaadaeb14c8d4863acb628d6d, type: 3}
+  moveX: 0
