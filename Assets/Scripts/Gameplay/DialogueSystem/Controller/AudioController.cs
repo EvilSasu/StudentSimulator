@@ -6,6 +6,8 @@ public class AudioController : MonoBehaviour
 {
     public AudioSource musicSource;
     public AudioSource soundSource;
+    public AudioClip sceneMusic;
+
 
     private AudioVolume audioVolume = null;
     private void Awake()
@@ -22,7 +24,18 @@ public class AudioController : MonoBehaviour
             musicSource.volume = 0.5f;
             soundSource.volume = 0.5f;
         }
-            
+
+        if (sceneMusic != null)
+        {
+            musicSource.clip = sceneMusic;
+            musicSource.Play();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if(sceneMusic != null)
+            musicSource.Stop();
     }
 
     public void PlayAudio(AudioClip music, AudioClip sound)

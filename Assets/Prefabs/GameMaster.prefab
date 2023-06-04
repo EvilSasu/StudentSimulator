@@ -6467,3 +6467,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 7344107164177581273}
   soundSource: {fileID: 7076237294636378205}
+  sceneMusic: {fileID: 8300000, guid: c874bc64c5b11754ea101f1e5535ec10, type: 3}
