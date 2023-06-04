@@ -19,6 +19,9 @@ public class StoryScene : GameScene
         public Speaker speaker;
         public MainGameEvent gameEvent;
         public int gameEventValue;
+
+        public AudioClip music;
+        public AudioClip sound;
     }
 }
 

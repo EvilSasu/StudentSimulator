@@ -14,6 +14,9 @@ public class DialogueController : MonoBehaviour
     public GameObject goToRoomButton;
     public GameObject phone;
     public GameObject choiceBlocker;
+
+    public AudioController audioController;
+
     private State state = State.NORMAL;
     private PlayerData player;
     private enum State
@@ -61,6 +64,7 @@ public class DialogueController : MonoBehaviour
                 {
                     dialoguePanel.sentenceIndex++;
                     dialoguePanel.PlayNextSentence();
+                    PlayAudio((currentScene as StoryScene).sentences[dialoguePanel.GetSentenceIndex()]);
                 }
             }
             else if(!dialoguePanel.IsCompleted() && state == State.NORMAL)
@@ -106,6 +110,7 @@ public class DialogueController : MonoBehaviour
             StoryScene storyScene = scene as StoryScene;
             if (storyScene.backgroud != null)
                 backgroundController.SwitchImage(storyScene.backgroud);
+            PlayAudio(storyScene.sentences[0]);
             yield return new WaitForSeconds(1f);
             dialoguePanel.ClearText();
             dialoguePanel.ShowDialogue();
@@ -119,5 +124,10 @@ public class DialogueController : MonoBehaviour
             chooseController.SetupChoices(scene as ChooseScene);
         }
         
+    }
+
+    private void PlayAudio(StoryScene.Sentence sentence)
+    {
+        audioController.PlayAudio(sentence.music, sentence.sound);
     }
 }

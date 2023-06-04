@@ -7,11 +7,13 @@ using TMPro;
 
 public class OptionsMaster : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    //public AudioMixer audioMixer;
+    public AudioController audioController;
     public TMP_Dropdown resolutionDropdown;
     //public Dropdown resolutionDropdown;
     public Slider audioSlider;
     public Toggle FullscreenToggle;
+    public AudioVolume audioVolume;
     Resolution[] resolutions;
 
     private void Start()
@@ -43,7 +45,9 @@ public class OptionsMaster : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("Sounds", audioSlider.value);
+        //audioMixer.SetFloat("Sounds", audioSlider.value);
+        audioController.soundSource.volume = volume;
+        audioController.musicSource.volume = volume;
         //audioMixer.SetFloat("volume", volume);
     }
 
@@ -64,5 +68,12 @@ public class OptionsMaster : MonoBehaviour
             Screen.fullScreen = true;
         else
             Screen.fullScreen = false;
+    }
+
+    private void Update()
+    {
+        audioController.soundSource.volume = audioSlider.value;
+        audioController.musicSource.volume = audioSlider.value;
+        audioVolume.audioVolume = audioSlider.value;
     }
 }

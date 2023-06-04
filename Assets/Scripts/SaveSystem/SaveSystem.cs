@@ -153,6 +153,7 @@ public class SaveSystem : MonoBehaviour
             game.sceneIndex = data.sceneIndex;
             game.firstGameStart = data.firstStart;
             sceneToLoad = data.sceneIndex;
+            game.audioVolume = data.audioVolume;
         }
         else
         {

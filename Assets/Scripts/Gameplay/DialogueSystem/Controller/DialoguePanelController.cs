@@ -13,12 +13,12 @@ public class DialoguePanelController : MonoBehaviour
     public Animator animator;
     public int sentenceIndex = 0;
     public MainGameEvent gameEvent;
+    public AudioController audioController;
 
     private StoryScene currentScene;
     private float dialogueSpeed = 0.02f;   
     private State state = State.COMPLETED;
     private bool isHidden = false;
-    
 
     private void Start()
     {
@@ -96,6 +96,7 @@ public class DialoguePanelController : MonoBehaviour
     {
         StopAllCoroutines();
         dialogueText.text = currentScene.sentences[sentenceIndex].text;
+        StopSound();
         state = State.COMPLETED;
     }
 
@@ -122,6 +123,11 @@ public class DialoguePanelController : MonoBehaviour
         this.dialogueText.text = string.Empty;
     }
 
+    public int GetSentenceIndex()
+    {
+        return sentenceIndex;
+    }
+
     private enum State
     {
         PLAYING, COMPLETED
@@ -137,14 +143,32 @@ public class DialoguePanelController : MonoBehaviour
         while (state != State.COMPLETED)
         {
             dialogueText.text += text[wordIndex];
+
+            if (currentScene.sentences[sentenceIndex].speaker.typingSound != null)
+                PlaySound(currentScene.sentences[sentenceIndex].speaker.typingSound);
+
             yield return new WaitForSeconds(dialogueSpeed);
 
             if(++wordIndex == text.Length)
             {
                 state = State.COMPLETED;
+                StopSound();
                 break;
             }
         }
+    }
+
+    private void PlaySound(AudioClip sound)
+    {
+        audioController.soundSource.clip = sound;
+        audioController.soundSource.Play();
+        audioController.soundSource.loop = true;
+    }
+
+    private void StopSound()
+    {
+        audioController.soundSource.Stop();
+        audioController.soundSource.clip = null;
     }
 
 }

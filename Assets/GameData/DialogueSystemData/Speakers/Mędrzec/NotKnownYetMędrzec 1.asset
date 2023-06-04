@@ -15,3 +15,4 @@ MonoBehaviour:
   speakerName: ????
   textColor: {r: 0.9529412, g: 0.29803923, b: 0.29411766, a: 1}
   image: {fileID: 21300000, guid: 24899cb561769594c88264b3e260ea31, type: 3}
+  typingSound: {fileID: 8300000, guid: 6bd5dc49f03d8a34da5b033f11ee7686, type: 3}
