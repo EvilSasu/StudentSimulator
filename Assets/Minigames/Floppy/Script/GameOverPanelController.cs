@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameOverPanelController : MonoBehaviour
 {
     public Button restartButton;
+    public LevelLoaderScript loader;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class GameOverPanelController : MonoBehaviour
 
     void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //zmiana sceny
+        loader.LoadChoosenLevel(10);
     }
 }

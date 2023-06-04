@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartButton: {fileID: 1073908631}
+  loader: {fileID: 1319665841}
 --- !u!114 &22671880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,7 +652,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME OVER
+  m_text: KONIEC TESTU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -809,7 +810,7 @@ GameObject:
   - component: {fileID: 1073908632}
   - component: {fileID: 1073908631}
   m_Layer: 5
-  m_Name: RestartButton
+  m_Name: Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -833,8 +834,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 325, y: 87.6}
+  m_AnchoredPosition: {x: 0.0000038146973, y: 0}
+  m_SizeDelta: {x: 411.941, y: 87.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073908631
 MonoBehaviour:
@@ -995,6 +996,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+--- !u!114 &1319665841 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5051290481156187242, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}
+  m_PrefabInstance: {fileID: 1572839532}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57216aaa8b2271a4cab55118f28f22d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1572839532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1110,7 +1122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESTART
+  m_text: KONTYNUUJ
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1200,7 +1212,7 @@ GameObject:
   - component: {fileID: 1826444476}
   - component: {fileID: 1826444475}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1625,8 +1637,8 @@ MonoBehaviour:
   player: {fileID: 207573254}
   playerController: {fileID: 207573255}
   spawnInterval: 4
-  minYGap: -3
-  maxYGap: 3
+  minYGap: -2
+  maxYGap: 4
   spawnDistance: 12
 --- !u!1001 &4410228399229078186
 PrefabInstance:
