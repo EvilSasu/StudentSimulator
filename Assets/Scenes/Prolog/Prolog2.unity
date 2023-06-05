@@ -906,6 +906,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2.2299805
       objectReference: {fileID: 0}
+    - target: {fileID: 7446273138247158089, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 2fdb324140a4ba14688b8c85b1c6c765, type: 3}
     - target: {fileID: 7456671694220431194, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5662609

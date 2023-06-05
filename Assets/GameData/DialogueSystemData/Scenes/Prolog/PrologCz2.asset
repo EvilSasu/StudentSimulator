@@ -15,98 +15,176 @@ MonoBehaviour:
   sentences:
   - text: '*otwierasz oczy*'
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    animationTrigger: Switch
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Ho! Ho! Ho! Wiedzia\u0142em, \u017Ce podzia\u0142a. Zawsze dzia\u0142a."
     speaker: {fileID: 11400000, guid: 0f78db6eeebacd148b57fda83441fd61, type: 2}
-    animationTrigger: 
-  - text: "Keh! Keh! Keh! Co ty... Co ty do cholery poda\u0142e\u015B mi za g\xF3wno!"
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Keh! Keh! Keh! Co ty... Co ty do ******* poda\u0142e\u015B mi za *****!"
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Amarenk\u0119."
     speaker: {fileID: 11400000, guid: 0f78db6eeebacd148b57fda83441fd61, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: ....
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Ahh... Ale gdzie moje maniery, pozw\xF3l, \u017Ce si\u0119 przedstawi\u0119. "
     speaker: {fileID: 11400000, guid: 0f78db6eeebacd148b57fda83441fd61, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "M\xF3wi\u0105 na mnie M\u0119drzec. Pomagam takim zagubionym duszyczkom
       jak ty."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Umm... Dzi\u0119ki. Ja jestem...."
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "NIE OBCHODZI MNIE KIM JESTE\u015A! Jeste\u015B tu nowy, a do mnie nale\u017Cy
       dbanie o nowych."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: ....
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "M\xF3wi\u0105 na mnie M\u0119drzec, poniewa\u017C prowadz\u0119 nowych
       do skarbu kt\xF3rego sam nie jestem w stanie posi\u0105\u015B\u0107. Nasza
       uczelnia wyci\u0105ga ze student\xF3w najczarniejsze demony i tylko nielicznym
       b\u0119dzie dane j\u0105 uko\u0144czy\u0107. Dlatego nie b\u0119d\u0119 ci
       przeszkadza\u0142 w ewentualnej pr\xF3bie samob\xF3jstwa."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Droga studenta nie jest \u0142atwa. Je\u015Bli wi\u0119c chcesz jeszcze
       troch\u0119 po\u017Cy\u0107, trzymaj si\u0119 mnie,  a w zamian zaoferuj\u0119
       ci mo\u017Cliwo\u015B\u0107 sp\u0119dzenia najszcz\u0119\u015Bliwszych chwil
-      w \u017Cyciu razem z podobnymi tobie zjebami."
+      w \u017Cyciu razem z podobnymi tobie *******."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Brzmi zach\u0119caj\u0105co..."
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Dobrze, \u017Ce si\u0119 rozumiemy."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Zacznijmy wi\u0119c od rzeczy najwa\u017Cniejszych. Sprawd\u017A swoje
       kieszenie, nie podjeba\u0142 ci nikt telefonu czy portfela?"
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: '*Sprawdzasz kieszenie*'
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Ufff... Wygl\u0105da na to, \u017Ce nie."
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Masz szcz\u0119\u015Bcie nowy. Widzisz, aby prze\u017Cy\u0107 w tym \u015Bwiecie
       b\u0119dziesz musia\u0142 perfekcyjnie opanowa\u0107 zarz\u0105dzanie swoimi
       zasobami. A bez telefonu ci\u0119\u017Cko b\u0119dzie ci sprawdzi\u0107 ich
       stan. Dodatkowo bez pieni\u0119dzy, ***** w tym \u015Bwiecie zdzia\u0142asz
       , mo\u017Cesz umrze\u0107 z g\u0142odu, a co gorsza  z *he, he* pragnienia."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Pami\u0119taj nowy, czas kt\xF3rym dysponujesz r\xF3wnie\u017C jest ograniczony
       dlatego m\u0105drze wybieraj czynno\u015Bci kt\xF3rych si\u0119 podejmujesz."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Dzi\u0119ki, to przydatne informacje."
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Wiadomo, nie bez powodu m\xF3wi\u0105 na mnie m\u0119drzec."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Je\u015Bli chcesz, mog\u0119 ci\u0119 r\xF3wnie\u017C nauczy\u0107 wielu
       umiej\u0119tno\u015Bci. Na przyk\u0142ad jak zapobiec zatruciu."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Nie pogardzi\u0142bym tak\u0105 wiedz\u0105, m\xF3w."
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Hola, hola. Nie tak szybko. M\u0119drzec te\u017C musi z czego\u015B \u017Cy\u0107,
       taka wiedza nie przychodzi za darmo."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: Ile?
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Mmmmm... Powiedzmy... 5 z\u0142otych monet."
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    animationTrigger: 
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   backgroud: {fileID: 21300000, guid: 3e5ffcd2f6e5a68499f69ebf87d09e70, type: 3}
   nextScene: {fileID: 11400000, guid: 6e78f82121f2d2c42aa5a336179094a0, type: 2}
