@@ -15,6 +15,8 @@ public class GameDataSS
 
     public int sceneIndex;
     public bool firstStart;
+
+    public float audioVolume;
     public GameDataSS(GameData g)
     {
         month = g.month;
@@ -25,5 +27,6 @@ public class GameDataSS
         second = g.second;
         sceneIndex = g.sceneIndex;
         firstStart = g.firstGameStart;
+        audioVolume = g.audioVolume;
     }
 }

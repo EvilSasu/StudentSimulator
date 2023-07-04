@@ -10,6 +10,7 @@ TagManager:
   - GameData
   - LevelLoader
   - OutCanvas
+  - AudioVolume
   layers:
   - Default
   - TransparentFX

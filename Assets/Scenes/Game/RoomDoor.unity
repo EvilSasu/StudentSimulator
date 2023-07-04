@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &28596359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -693,6 +693,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7344107164177581273, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bdda33d5220b8e044a205d4d697a9972, type: 3}
+    - target: {fileID: 7446273138247158089, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: bdda33d5220b8e044a205d4d697a9972, type: 3}
     - target: {fileID: 7746580947236254350, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_Sprite
       value: 

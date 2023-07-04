@@ -9,4 +9,5 @@ public class Speaker : ScriptableObject
     public string speakerName;
     public Color textColor;
     public Sprite image;
+    public AudioClip typingSound;
 }

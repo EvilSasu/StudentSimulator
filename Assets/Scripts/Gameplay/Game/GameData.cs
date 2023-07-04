@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameData : MonoBehaviour
 {
     public TimeSystem timeSystem;
+    public AudioController audioController;
     public bool firstGameStart = true;
     /// <summary>
     /// Dane do zapisu
@@ -20,6 +21,8 @@ public class GameData : MonoBehaviour
 
     public int sceneIndex;
 
+    public float audioVolume = 0.5f;
+
     private void Awake()
     {
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -32,7 +35,6 @@ public class GameData : MonoBehaviour
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         if ((SceneManager.GetActiveScene().name == "Prolog" || SceneManager.GetActiveScene().name == "Prolog2") && firstGameStart)
         {
-            Debug.Log("Jestem tutaj");
             transform.parent.GetComponent<SceneMaster>().dialogueSystem.GetComponent<DialogueController>().backgroundController.PlayFirstDialogue();
             //transform.parent.GetComponent<BackgroundController>().PlayFirstDialogue();
             if(SceneManager.GetActiveScene().name == "Prolog2")
@@ -49,6 +51,8 @@ public class GameData : MonoBehaviour
         hour = timeSystem.clock.hours;
         minute = timeSystem.clock.minutes;
         second = timeSystem.clock.seconds;
+
+        audioVolume = audioController.musicSource.volume;
     }
 
     private void SetupTime()
@@ -61,5 +65,7 @@ public class GameData : MonoBehaviour
         timeSystem.clock.minutes = minute;
         timeSystem.clock.seconds = second;
     }
+
+
 
 }
