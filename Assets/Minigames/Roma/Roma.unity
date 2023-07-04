@@ -165,7 +165,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &144905676
 GameObject:
@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 732116342}
   - component: {fileID: 732116341}
   - component: {fileID: 732116340}
+  - component: {fileID: 732116343}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -325,6 +326,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &732116343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732116339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b60789b61011b148977630be0a8249d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1537487078}
+  follow: 0
 --- !u!4 &1074669068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5526076390277966867, guid: be65310bb6c989049a91c127d13a3f01, type: 3}
@@ -362,7 +377,7 @@ Transform:
   - {fileID: 1899784321}
   - {fileID: 1074669068}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537487077
 GameObject:
@@ -376,6 +391,7 @@ GameObject:
   - component: {fileID: 1537487081}
   - component: {fileID: 1537487080}
   - component: {fileID: 1537487079}
+  - component: {fileID: 1537487082}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -461,6 +477,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537487077}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1537487082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537487077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c736340a7ef0ca844a16cc0a744802ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 16
+  time: 0.4
+  gameStart: 0
 --- !u!1 &1622296401
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899784321}
+  - component: {fileID: 1899784322}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -934,6 +966,22 @@ Transform:
   m_Father: {fileID: 1519497554}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1899784322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899784320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d7c97598e662cd4895ea2d732ad416e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 20
+  time: 0.8
+  x: 10
+  gameStart: 0
 --- !u!1 &1951547928
 GameObject:
   m_ObjectHideFlags: 0
