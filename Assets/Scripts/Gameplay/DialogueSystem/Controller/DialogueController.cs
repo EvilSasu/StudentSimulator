@@ -54,8 +54,7 @@ public class DialogueController : MonoBehaviour
                         choiceBlocker.SetActive(false);
                         phoneButton.GetComponent<Button>().interactable = true;
                         mapButton.GetComponent<Button>().interactable = true;
-                        /*if(player.positionInGameMap == 3)
-                            goToRoomButton.SetActive(true);*/
+
                         gameObject.SetActive(false);
                     }
                                          
@@ -82,12 +81,10 @@ public class DialogueController : MonoBehaviour
 
     public void PlayDialogue()
     {
-        //dialoguePanel.gameObject.SetActive(true);
         if(currentScene.name != "PrologCz13Aka")
             phone.GetComponent<PhoneController>().HidePhone();
 
         dialoguePanel.PlayScene((currentScene as StoryScene));
-        //PlayScene((currentScene));
     }
 
     public void PlayScene(GameScene scene)
@@ -99,7 +96,7 @@ public class DialogueController : MonoBehaviour
     {
         phoneButton.GetComponent<Button>().interactable = false;
         mapButton.GetComponent<Button>().interactable = false;
-        //goToRoomButton.SetActive(false);
+ 
         state = State.ANIMATE;
         currentScene = scene;
         dialoguePanel.HideDialogue();
