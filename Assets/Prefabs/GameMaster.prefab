@@ -3916,6 +3916,7 @@ GameObject:
   - component: {fileID: 7838292053387863083}
   - component: {fileID: 1030116415274952651}
   - component: {fileID: 7071464017160609735}
+  - component: {fileID: 1230112828695334560}
   m_Layer: 0
   m_Name: PopUp
   m_TagString: Untagged
@@ -3930,14 +3931,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5868905598035006287}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8241227842406080759}
-  m_Father: {fileID: 9090002930385717801}
-  m_RootOrder: 0
+  m_Father: {fileID: 8338151022767878982}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4003,6 +4004,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1230112828695334560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5868905598035006287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134c6682d5f60594abfb42e5cb071613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfPopUp: 0
 --- !u!1 &5895678411941991154
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,8 +4549,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7417698156305237114}
+  m_Children: []
   m_Father: {fileID: 8338151022767878982}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5633,6 +5646,7 @@ RectTransform:
   - {fileID: 7281196059305897046}
   - {fileID: 8338151024800600118}
   - {fileID: 9090002930385717801}
+  - {fileID: 7417698156305237114}
   m_Father: {fileID: 8338151022821399576}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
