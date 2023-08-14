@@ -32,10 +32,9 @@ public class PopUp : MonoBehaviour
             yield return new WaitForSeconds(.01f);
         }
             
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         this.GetComponent<Animator>().SetTrigger("Hide");
-        yield return new WaitForSeconds(2f);
-        Debug.Log("jestem");
+        yield return new WaitForSeconds(1f);
         GameObject.Destroy(this.gameObject);
     }
 }
