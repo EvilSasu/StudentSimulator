@@ -27,7 +27,7 @@ MonoBehaviour:
     sound: {fileID: 0}
   - text: ...
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
-    gameEvent: {fileID: 0}
+    gameEvent: {fileID: 11400000, guid: c4eda185e092a874d949d43fb40a6fd9, type: 2}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}

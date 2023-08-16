@@ -29,7 +29,7 @@ MonoBehaviour:
     eventValue: 0
     warunekEventValue: 0
     warunekEventValue2: 0
-  - text: Szukam pracy.
+  - text: Szukam pracy. (PLAY MINIGAME)
     nextScene: {fileID: 11400000, guid: 56b7bf5b2e73c3940a86182cd6369fa5, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}

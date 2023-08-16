@@ -21,7 +21,7 @@ MonoBehaviour:
     sound: {fileID: 0}
   - text: "Dla mnie mo\u017Cesz zacz\u0105\u0107 od zaraz!"
     speaker: {fileID: 11400000, guid: 57ddd1360cc786e4da3b7330e768c142, type: 2}
-    gameEvent: {fileID: 0}
+    gameEvent: {fileID: 11400000, guid: 68ce6f4a38d857147bab1e216f50cacb, type: 2}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
