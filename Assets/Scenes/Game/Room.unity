@@ -947,6 +947,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 863546848334729155, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1347804269708484416, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 184.48999
@@ -1439,6 +1443,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820286984}
   m_CullTransparentMesh: 1
+--- !u!1 &1061633308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5895678411941991154, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+  m_PrefabInstance: {fileID: 532140331}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1110757668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,4 +2223,4 @@ MonoBehaviour:
   slider: {fileID: 173725975}
   clock: {fileID: 1452036599}
   levelLoader: {fileID: 1215970498}
-  map: {fileID: 0}
+  map: {fileID: 1061633308}

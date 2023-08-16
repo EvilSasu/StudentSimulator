@@ -10,6 +10,7 @@ public class PlayerData : MonoBehaviour
     public int wisdom;
     public int mentalHealth;
     public int positionInGameMap = 0;
+    public PopUpInfoMeneger popUpInfoMeneger;
 
     private void Awake()
     {
@@ -69,6 +70,7 @@ public class PlayerData : MonoBehaviour
     public void IncreaseMoney(int value)
     {
         money += value;
+        popUpInfoMeneger.CreatePopUp("Money", value, true);
     }
 
     public void IncreaseEnergy(int value)
@@ -76,6 +78,7 @@ public class PlayerData : MonoBehaviour
         energy += value;
         if ((energy + value) >= 100)
             energy = 100;
+        popUpInfoMeneger.CreatePopUp("Energy", value, true);
     }
 
     public void IncreaseHunger(int value)
@@ -86,6 +89,7 @@ public class PlayerData : MonoBehaviour
             mentalHealth -= ((hunger + value) - 100) / 10;
             hunger = 100;
         }
+        popUpInfoMeneger.CreatePopUp("Hunger", value, true);
     }
 
     public void IncreaseWinsdom(int value)
@@ -93,6 +97,7 @@ public class PlayerData : MonoBehaviour
         wisdom += value;
         if ((wisdom + value) >= 100)
             wisdom = 100;
+        popUpInfoMeneger.CreatePopUp("Wisdom", value, true);
     }
 
     public void IncreaseMentalHealth(int value)
@@ -100,6 +105,7 @@ public class PlayerData : MonoBehaviour
         mentalHealth += value;
         if ((mentalHealth + value) >= 100)
             mentalHealth = 100;
+        popUpInfoMeneger.CreatePopUp("Mental Health", value, true);
     }
 
     public void DecreaseMoney(int value)
@@ -107,6 +113,7 @@ public class PlayerData : MonoBehaviour
         money -= value;
         if ((money - value) <= 0)
             money = 0;
+        popUpInfoMeneger.CreatePopUp("Money", value, false);
     }
 
     public void DecreaseEnergy(int value)
@@ -116,7 +123,8 @@ public class PlayerData : MonoBehaviour
         {
             mentalHealth -= (value / 10);
             energy = 0;
-        }         
+        }
+        popUpInfoMeneger.CreatePopUp("Energy", value, false);
     }
 
     public void DecreaseHunger(int value)
@@ -124,6 +132,7 @@ public class PlayerData : MonoBehaviour
         hunger -= value;
         if ((hunger - value) <= 0)
             hunger = 0;
+        popUpInfoMeneger.CreatePopUp("Hunger", value, false);
     }
 
     public void DecreaseWinsdom(int value)
@@ -131,6 +140,7 @@ public class PlayerData : MonoBehaviour
         wisdom -= value;
         if ((wisdom - value) <= 0)
             wisdom = 0;
+        popUpInfoMeneger.CreatePopUp("Wisdom", value, false);
     }
 
     public void DecreaseMentalHealth(int value)
@@ -138,6 +148,7 @@ public class PlayerData : MonoBehaviour
         mentalHealth -= value;
         if ((mentalHealth - value) <= 0)
             mentalHealth = 0;
+        popUpInfoMeneger.CreatePopUp("Mental Health", value, false);
     }
 
     public int Getmoney()
