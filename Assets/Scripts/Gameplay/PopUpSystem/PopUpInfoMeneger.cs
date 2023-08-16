@@ -6,7 +6,7 @@ using TMPro;
 public class PopUpInfoMeneger : MonoBehaviour
 {
     public GameObject PopUp;
-    private List<GameObject> popUpList = new List<GameObject>();
+    public List<GameObject> popUpList = new List<GameObject>();
 
     public void CreatePopUp(string name, int value, bool isIncreased)
     {
@@ -18,6 +18,10 @@ public class PopUpInfoMeneger : MonoBehaviour
             newPopUP.transform.SetParent(this.transform);
             newPopUP.transform.localScale = new Vector3(1f, 1f, 1f);
             popUpList.Add(newPopUP);
+
+            newPopUP.transform.localPosition = new Vector3(newPopUP.transform.localPosition.x,
+                newPopUP.transform.localPosition.y - (popUpList.Count - 1 * 90), newPopUP.transform.localPosition.z);
+
             newPopUP.GetComponent<PopUp>().amountOfPopUp = popUpList.Count;
             newPopUP.SetActive(true);
 

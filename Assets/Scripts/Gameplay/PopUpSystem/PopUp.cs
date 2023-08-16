@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class PopUp : MonoBehaviour
 {
-   // bool hasAnimationStarted = false;
     public int amountOfPopUp = 0;
 
     private void Awake()
     {
         StartCoroutine(AnimatePopUp(amountOfPopUp));
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void StarAnimation(int amountOfPopUp)
@@ -35,6 +29,7 @@ public class PopUp : MonoBehaviour
         yield return new WaitForSeconds(4f);
         this.GetComponent<Animator>().SetTrigger("Hide");
         yield return new WaitForSeconds(1f);
+        transform.parent.GetComponent<PopUpInfoMeneger>().popUpList.Remove(this.gameObject);
         GameObject.Destroy(this.gameObject);
     }
 }
