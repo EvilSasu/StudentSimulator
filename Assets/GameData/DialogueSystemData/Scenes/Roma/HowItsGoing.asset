@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: HowItsGoing
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Ci\u0119\u017Cko..."
+    speaker: {fileID: 11400000, guid: 57ddd1360cc786e4da3b7330e768c142, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Studenci wol\u0105 siedzie\u0107 w tych akademikach zamiast spotka\u0107
+      si\u0119 u nas na piwko."
+    speaker: {fileID: 11400000, guid: 57ddd1360cc786e4da3b7330e768c142, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Ehhh... To ju\u017C nie te czasy."
+    speaker: {fileID: 11400000, guid: 57ddd1360cc786e4da3b7330e768c142, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Dodatkowo ostatniego kelnera przejecha\u0142 samoch\xF3d i nie ma kto
+      pracowa\u0107."
+    speaker: {fileID: 11400000, guid: 57ddd1360cc786e4da3b7330e768c142, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  backgroud: {fileID: 0}
+  nextScene: {fileID: 0}

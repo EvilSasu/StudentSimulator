@@ -12,6 +12,12 @@ public class PlayerData : MonoBehaviour
     public int positionInGameMap = 0;
     public PopUpInfoMeneger popUpInfoMeneger;
 
+    public int amountOfPizza;
+    public int amountOfBurger;
+    public int amountOfWater;
+    public int amountOfBeer;
+    public int amountOfBar;
+
     private void Awake()
     {
         SaveSystem.pData = this;
@@ -75,79 +81,87 @@ public class PlayerData : MonoBehaviour
 
     public void IncreaseEnergy(int value)
     {
-        energy += value;
         if ((energy + value) >= 100)
             energy = 100;
+        else
+            energy += value;
         popUpInfoMeneger.CreatePopUp("Energy", value, true);
     }
 
     public void IncreaseHunger(int value)
     {
-        hunger += value;
         if ((hunger + value) >= 100)
         {
             mentalHealth -= ((hunger + value) - 100) / 10;
             hunger = 100;
-        }
+        }else
+            hunger += value;
         popUpInfoMeneger.CreatePopUp("Hunger", value, true);
     }
 
     public void IncreaseWinsdom(int value)
     {
-        wisdom += value;
         if ((wisdom + value) >= 100)
             wisdom = 100;
+        else
+            wisdom += value;
         popUpInfoMeneger.CreatePopUp("Wisdom", value, true);
     }
 
     public void IncreaseMentalHealth(int value)
     {
-        mentalHealth += value;
         if ((mentalHealth + value) >= 100)
             mentalHealth = 100;
+        else
+            mentalHealth += value;
         popUpInfoMeneger.CreatePopUp("Mental Health", value, true);
     }
 
     public void DecreaseMoney(int value)
     {
-        money -= value;
         if ((money - value) <= 0)
             money = 0;
+        else
+            money -= value;
         popUpInfoMeneger.CreatePopUp("Money", value, false);
     }
 
     public void DecreaseEnergy(int value)
-    {
-        energy -= value;
+    {    
         if ((energy - value) <= 0)
         {
             mentalHealth -= (value / 10);
             energy = 0;
         }
+        else
+            energy -= value;
         popUpInfoMeneger.CreatePopUp("Energy", value, false);
     }
 
     public void DecreaseHunger(int value)
     {
-        hunger -= value;
         if ((hunger - value) <= 0)
             hunger = 0;
+        else
+            hunger -= value;
         popUpInfoMeneger.CreatePopUp("Hunger", value, false);
     }
 
     public void DecreaseWinsdom(int value)
     {
-        wisdom -= value;
         if ((wisdom - value) <= 0)
             wisdom = 0;
+        else
+            wisdom -= value;
         popUpInfoMeneger.CreatePopUp("Wisdom", value, false);
     }
 
     public void DecreaseMentalHealth(int value)
     {
-        mentalHealth -= value;
         if ((mentalHealth - value) <= 0)
             mentalHealth = 0;
+        else
+            mentalHealth -= value;
         popUpInfoMeneger.CreatePopUp("Mental Health", value, false);
     }
 
@@ -201,4 +215,52 @@ public class PlayerData : MonoBehaviour
         energy = value;
     }
 
+    public void AddBurger(int value)
+    {
+        amountOfBurger += value;
+    }
+    public void AddBar(int value)
+    {
+        amountOfBar += value;
+    }
+    public void AddWater(int value)
+    {
+        amountOfWater += value;
+    }
+    public void AddBeer(int value)
+    {
+        amountOfBeer += value;
+    }
+    public void AddPizza(int value)
+    {
+        amountOfPizza += value;
+    }
+    public void RemoveBurger(int value)
+    {
+        amountOfBurger -= value;
+        DecreaseHunger(30 * value);
+    }
+    public void RemoveBar(int value)
+    {
+        amountOfBar -= value;
+        DecreaseHunger(5 * value);
+        IncreaseEnergy(5 * value);
+    }
+    public void RemoveWater(int value)
+    {
+        amountOfWater -= value;
+        DecreaseHunger(2 * value);
+    }
+    public void RemoveBeer(int value)
+    {
+        amountOfBeer -= value;
+        DecreaseHunger(3 * value);
+        IncreaseEnergy(3 * value);
+        IncreaseMentalHealth(3 * value);
+    }
+    public void RemovePizza(int value)
+    {
+        amountOfPizza -= value;
+        DecreaseHunger(20 * value);
+    }
 }

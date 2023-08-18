@@ -41,4 +41,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Minigames/StacKing/StackKing.unity
     guid: f2db9ed8737411348b1b60ec87999928
+  - enabled: 1
+    path: Assets/Scenes/Game/Roma.unity
+    guid: cd3a3f038602d014e8f00aba113c6f54
+  - enabled: 1
+    path: Assets/Scenes/Game/Shop.unity
+    guid: 2917caa54b754bf478ed0c8bac3fbe32
+  - enabled: 1
+    path: Assets/Scenes/Game/Piramidy.unity
+    guid: 9e0e3575fa7c71a45bcc49e85e7b9441
   m_configObjects: {}

@@ -124,6 +124,12 @@ public class SaveSystem : MonoBehaviour
             player.mentalHealth = data.mentalHealth;
             player.positionInGameMap = data.positionInGameMap;
 
+            player.amountOfBar = data.amountOfBar;
+            player.amountOfBeer = data.amountOfBeer;
+            player.amountOfBurger = data.amountOfBurger;
+            player.amountOfPizza = data.amountOfPizza;
+            player.amountOfWater = data.amountOfWater;
+
         }
         else
         {
