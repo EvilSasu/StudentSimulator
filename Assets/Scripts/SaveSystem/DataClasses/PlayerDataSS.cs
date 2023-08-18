@@ -12,6 +12,12 @@ public class PlayerDataSS
     public int mentalHealth;
     public int positionInGameMap;
 
+    public int amountOfPizza;
+    public int amountOfBurger;
+    public int amountOfWater;
+    public int amountOfBeer;
+    public int amountOfBar;
+
     public PlayerDataSS(PlayerData p)
     {
         money = p.money;
@@ -20,5 +26,11 @@ public class PlayerDataSS
         wisdom = p.wisdom;
         mentalHealth = p.mentalHealth;
         positionInGameMap = p.positionInGameMap;
+
+        amountOfPizza = p.amountOfPizza;
+        amountOfBurger = p.amountOfBurger;
+        amountOfWater = p.amountOfWater;
+        amountOfBeer = p.amountOfBeer;
+        amountOfBar = p.amountOfBar;
     }
 }

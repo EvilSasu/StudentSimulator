@@ -12,6 +12,12 @@ public class PlayerData : MonoBehaviour
     public int positionInGameMap = 0;
     public PopUpInfoMeneger popUpInfoMeneger;
 
+    public int amountOfPizza;
+    public int amountOfBurger;
+    public int amountOfWater;
+    public int amountOfBeer;
+    public int amountOfBar;
+
     private void Awake()
     {
         SaveSystem.pData = this;
@@ -201,4 +207,52 @@ public class PlayerData : MonoBehaviour
         energy = value;
     }
 
+    public void AddBurger(int value)
+    {
+        amountOfBurger += value;
+    }
+    public void AddBar(int value)
+    {
+        amountOfBar += value;
+    }
+    public void AddWater(int value)
+    {
+        amountOfWater += value;
+    }
+    public void AddBeer(int value)
+    {
+        amountOfBeer += value;
+    }
+    public void AddPizza(int value)
+    {
+        amountOfPizza += value;
+    }
+    public void RemoveBurger(int value)
+    {
+        amountOfBurger -= value;
+        DecreaseHunger(30 * value);
+    }
+    public void RemoveBar(int value)
+    {
+        amountOfBar -= value;
+        DecreaseHunger(5 * value);
+        IncreaseEnergy(5 * value);
+    }
+    public void RemoveWater(int value)
+    {
+        amountOfWater -= value;
+        DecreaseHunger(2 * value);
+    }
+    public void RemoveBeer(int value)
+    {
+        amountOfBeer -= value;
+        DecreaseHunger(3 * value);
+        IncreaseEnergy(3 * value);
+        IncreaseMentalHealth(3 * value);
+    }
+    public void RemovePizza(int value)
+    {
+        amountOfPizza -= value;
+        DecreaseHunger(20 * value);
+    }
 }
