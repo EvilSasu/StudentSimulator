@@ -29,3 +29,11 @@ MonoBehaviour:
     eventValue: 0
     warunekEventValue: 0
     warunekEventValue2: 0
+  - text: "Chcia\u0142bym co\u015B kupi\u0107."
+    nextScene: {fileID: 11400000, guid: 372e19e1f11c47242aeff5bce3a52391, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
