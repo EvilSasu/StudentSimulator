@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6963102089491289277}
   - component: {fileID: 5051290481156187242}
+  - component: {fileID: 2861303107157363084}
   m_Layer: 0
   m_Name: LevelLoader
   m_TagString: LevelLoader
@@ -169,6 +170,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6963102088668552658}
+--- !u!114 &2861303107157363084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6963102089491289278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eae9eeec7ffa9408c061dfa91c6d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intEvent: {fileID: 11400000, guid: aa5a9a048b6055a46b2b2e415dce40d0, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5051290481156187242}
+        m_TargetAssemblyTypeName: LevelLoaderScript, Assembly-CSharp
+        m_MethodName: LoadChoosenLevel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6963102089709213039
 GameObject:
   m_ObjectHideFlags: 0

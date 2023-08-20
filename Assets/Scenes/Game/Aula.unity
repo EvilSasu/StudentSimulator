@@ -1027,11 +1027,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df2102221025e4d41a37f7481944c537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listOfGruszkaScenes: []
-  listOfKolekScenes: []
-  listOfRobotScenes: []
-  listOfZarowaScenes: []
-  listOfGargScenes: []
+  listOfGruszkaScenes:
+  - {fileID: 11400000, guid: ad00ccd6571f50d44a01cfdfd8368a7e, type: 2}
+  listOfKolekScenes:
+  - {fileID: 11400000, guid: 4d37686957ac93a4dbeac9b6d920c5ce, type: 2}
+  listOfRobotScenes:
+  - {fileID: 11400000, guid: e36c4056f30956b4c9c48382850f1943, type: 2}
+  listOfZarowaScenes:
+  - {fileID: 11400000, guid: c81b3be67f241a64d8ba3b63d085133f, type: 2}
+  listOfGargScenes:
+  - {fileID: 11400000, guid: 24f98a8901350794483fbebdb3205a49, type: 2}
+  - {fileID: 11400000, guid: 894e66ddb5a00c646a642d234318911d, type: 2}
+  gameMaster: {fileID: 1389224929}
 --- !u!4 &1478562549
 Transform:
   m_ObjectHideFlags: 0
@@ -1262,4 +1269,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 28596360}
+  playerData: {fileID: 0}
   map: {fileID: 1393138864}
+  pizza: {fileID: 0}
+  burger: {fileID: 0}
+  water: {fileID: 0}
+  beer: {fileID: 0}
+  bar: {fileID: 0}

@@ -14,12 +14,11 @@ public class UczelniaRandomEvents : MonoBehaviour
     private bool eventStarted = false;
     private PlayerData player;
     private GameData gameData;
-    private BackgroundController gameMaster;
+    public BackgroundController gameMaster;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
         gameData = GameObject.FindGameObjectWithTag("GameData").GetComponent<GameData>();
-        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<BackgroundController>();
         if (!waitEnding)
             StartCoroutine(StartWait());
     }
@@ -50,9 +49,18 @@ public class UczelniaRandomEvents : MonoBehaviour
 
     private void ChooseEvent(List<StoryScene> list)
     {
-        int choice = Random.Range(0, list.Count);
-        gameMaster.firstScene = list[choice];
-        gameMaster.PlayFirstDialogue();
+        int choiceIfNormalEvent = Random.Range(0, 100);
+        if(choiceIfNormalEvent <= 70)
+        {
+            gameMaster.firstScene = list[1];
+            gameMaster.PlayFirstDialogue();
+        }
+        else
+        {
+            int choice = Random.Range(1, list.Count);
+            gameMaster.firstScene = list[choice];
+            gameMaster.PlayFirstDialogue();
+        }       
     }
 
     IEnumerator StartWait()
