@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: ReallyBadAnswerEv3Garg
+  m_Name: BadAnswerEv2Gruszka
   m_EditorClassIdentifier: 
   sentences:
   - text: "* Odpowied\u017A *"
@@ -19,19 +19,17 @@ MonoBehaviour:
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "Nie! Nie! Nie! Mak\u0142owicza ci si\u0119 zachcia\u0142o. Ten wybitny
-      wirtuoz kulinarny niestety nie zaana\u017Cowa\u0142 si\u0119 w nasz\u0105 pi\u0119kn\u0105
-      bran\u017C\u0119, ale takie odpowiedzi zdecydowanie zgotuj\u0105 ci niezaliczenie
-      tego przedmiotu. "
-    speaker: {fileID: 11400000, guid: 7b04040ae6158ac4880fc6bbca71b786, type: 2}
+  - text: "Ojojojo... No nie uda\u0142o si\u0119... Ale prosz\u0119 si\u0119 nie
+      przejmowa\u0107. Nie ka\u017Cdy rodzi si\u0119 m\u0105dry."
+    speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "* Czujesz si\u0119 bardzo \u017Ale *"
+  - text: "* Czujesz si\u0119 \u017Ale *"
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 11400000, guid: aed5ee94304007e44901b99c4ae76a3f, type: 2}
-    gameEventValue: 20
+    gameEventValue: 10
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "* Czujesz si\u0119 g\u0142upszy *"

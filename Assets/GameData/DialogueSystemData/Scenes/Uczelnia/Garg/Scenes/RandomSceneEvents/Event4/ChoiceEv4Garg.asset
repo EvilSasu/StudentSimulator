@@ -10,27 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32c573cb1356c6d4c85181fb931a9f56, type: 3}
-  m_Name: ChoiceEv3Garg
+  m_Name: ChoiceEv4Garg
   m_EditorClassIdentifier: 
   labels:
-  - text: "uczenie dynamiczne, liniowe i uczenie wyk\u0142adnicze"
-    nextScene: {fileID: 11400000, guid: 5899406c6c7f780449086d216066ab46, type: 2}
+  - text: To to samo
+    nextScene: {fileID: 11400000, guid: 9e2a9c10e1758fd4a86b364b0c29ce47, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}
     eventValue: 0
     warunekEventValue: 0
     warunekEventValue2: 0
-  - text: "uczenie ta\u015Bmowe, mak\u0142owiczowe i uczenie tarasowe"
-    nextScene: {fileID: 11400000, guid: 58b3b3e0b121d0541a0f354549de28ba, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventWarunek: {fileID: 0}
-    gameEventWarunek2: {fileID: 0}
-    eventValue: 0
-    warunekEventValue: 0
-    warunekEventValue2: 0
-  - text: uczenie nadzorowane, nienadzorowane i uczenie ze wzmocnieniem
-    nextScene: {fileID: 11400000, guid: 50d44fe13438c404cbc5958833cc6da8, type: 2}
+  - text: To nie to samo
+    nextScene: {fileID: 11400000, guid: 393318a64ab178e44a1df53da2c7255e, type: 2}
     gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: BadAnswerEv3Garg
+  m_Name: RealllyBadAnswerEv3Gruszka
   m_EditorClassIdentifier: 
   sentences:
   - text: "* Odpowied\u017A *"
@@ -19,9 +19,9 @@ MonoBehaviour:
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "Nie! Nie! Nie! Nic nie umiesz. Jak tak s\u0142uchasz na moich zaj\u0119ciach
-      to mo\u017Cesz r\xF3wnie dobrze wyj\u015B\u0107!"
-    speaker: {fileID: 11400000, guid: 7b04040ae6158ac4880fc6bbca71b786, type: 2}
+  - text: "O jasna ciasna. Czy ty chocia\u017C wiesz, \u017Ce on nie by\u0142 nawet
+      kompozytorem?!"
+    speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
@@ -29,13 +29,13 @@ MonoBehaviour:
   - text: "* Czujesz si\u0119 \u017Ale *"
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 11400000, guid: aed5ee94304007e44901b99c4ae76a3f, type: 2}
-    gameEventValue: 10
+    gameEventValue: 20
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "* Czujesz si\u0119 g\u0142upszy *"
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 11400000, guid: e49062dcd1099414382b2e1e4aeeb8bc, type: 2}
-    gameEventValue: 10
+    gameEventValue: 15
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: '* Czas mija *'

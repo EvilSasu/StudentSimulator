@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: StartEvent3Garg
+  m_Name: StartEvent4Garg
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Witajcie inaczej inteligentni uczniowie naszej uczelni. Czy ktokolwiek
-      z was wie na jakie 3 podstawowe typy mo\u017Cemy podzieli\u0107 algorytmy uczenia
-      maszynowego?"
+  - text: "Witajcie przysz\u0142a elito intelektualna naszego kraju. Czy mo\u017Cecie
+      mi powiedzie\u0107: \"Czy alogrym dycyzyjny to to samo co sztuczna inteligencja?\""
     speaker: {fileID: 11400000, guid: 7b04040ae6158ac4880fc6bbca71b786, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
@@ -71,4 +70,4 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   backgroud: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 796d208c821fdd34a8493482aa71d360, type: 2}
+  nextScene: {fileID: 11400000, guid: ecd43ceae5df4174498ece5475933fa8, type: 2}
