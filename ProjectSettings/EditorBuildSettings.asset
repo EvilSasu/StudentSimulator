@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Piramidy.unity
     guid: 9e0e3575fa7c71a45bcc49e85e7b9441
+  - enabled: 1
+    path: Assets/Minigames/Frogger/Frogger.unity
+    guid: b1a3974c56fe15b4c8d092249de900e6
+  - enabled: 1
+    path: Assets/Minigames/Color/Color.unity
+    guid: 3a292790c84cb2449892fd0ea587ec9a
   m_configObjects: {}
