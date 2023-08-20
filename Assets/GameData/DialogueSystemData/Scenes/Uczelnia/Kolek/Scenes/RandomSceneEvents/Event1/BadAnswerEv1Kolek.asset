@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: BadAnswerEv1Gruszka
+  m_Name: BadAnswerEv1Kolek
   m_EditorClassIdentifier: 
   sentences:
   - text: "* Odpowied\u017A *"
