@@ -11,7 +11,7 @@ public class GameOverPanelController : MonoBehaviour
 
     void Start()
     {
-        restartButton.onClick.AddListener(RestartGame);
+        restartButton.onClick.AddListener(NextScene);
         Hide();
     }
 
@@ -25,7 +25,7 @@ public class GameOverPanelController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    void RestartGame()
+    void NextScene()
     {
         //zmiana sceny
         loader.LoadChoosenLevel(10);

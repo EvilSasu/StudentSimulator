@@ -75,7 +75,6 @@ public class Frogger : MonoBehaviour
                 FindObjectOfType<GameManager>().AdvancedRow();
             }
 
-            // Start leap animation
             StopAllCoroutines();
             StartCoroutine(Leap(destination));
         }

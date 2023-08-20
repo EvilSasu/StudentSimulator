@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     private Frogger frogger;
     private Home[] homes;
 
+    public LevelLoaderScript loader;
+
     public GameObject gameOverMenu;
     public Text timeText;
     public Text livesText;
@@ -90,23 +92,23 @@ public class GameManager : MonoBehaviour
         gameOverMenu.SetActive(true);
 
         StopAllCoroutines();
-        StartCoroutine(CheckForPlayAgain());
+        StartCoroutine(Continue());
     }
 
-    private IEnumerator CheckForPlayAgain()
+    private IEnumerator Continue()
     {
         bool playAgain = false;
 
         while (!playAgain)
         {
-            if (Input.GetKeyDown(KeyCode.Return)) {
+            if (Input.GetMouseButtonDown(0)) {
                 playAgain = true;
             }
 
             yield return null;
         }
 
-        NewGame();
+        NextScene();
     }
 
     public void AdvancedRow()
@@ -156,4 +158,10 @@ public class GameManager : MonoBehaviour
         livesText.text = lives.ToString();
     }
 
+
+    void NextScene()
+    {
+        //zmiana sceny
+        loader.LoadChoosenLevel(12);
+    }
 }
