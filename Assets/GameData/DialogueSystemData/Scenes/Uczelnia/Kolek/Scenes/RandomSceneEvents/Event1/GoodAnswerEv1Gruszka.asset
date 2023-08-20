@@ -10,22 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: StartEvent5TestGruszka
+  m_Name: GoodAnswerEv1Gruszka
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Drodzy, kochani napiszemy sobie dzisiaj ma\u0142\u0105 wej\u015Bci\xF3weczk\u0119."
+  - text: "* Odpowied\u017A *"
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Bardzo \u0142adnie! Tego si\u0119 spodziewa\u0142em po naszych m\u0105drych
+      uczniach."
     speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: Zaczynajmy
-    speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventValue: 0
+  - text: "* Czujesz si\u0119 lepiej *"
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: 4c05f40f326e9264dbecce9fe09ecf71, type: 2}
+    gameEventValue: 10
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: ...
+  - text: '* Czas mija *'
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 11400000, guid: 13800b66fd8b6b24092aea91fdcd2a64, type: 2}
     gameEventValue: 300
@@ -33,8 +40,8 @@ MonoBehaviour:
     sound: {fileID: 0}
   - text: ...
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 11400000, guid: 675caf2b98fc0454099a2227ed6f30aa, type: 2}
-    gameEventValue: 0
+    gameEvent: {fileID: 11400000, guid: aa5a9a048b6055a46b2b2e415dce40d0, type: 2}
+    gameEventValue: 9
     music: {fileID: 0}
     sound: {fileID: 0}
   backgroud: {fileID: 0}

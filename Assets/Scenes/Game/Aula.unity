@@ -1029,6 +1029,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listOfGruszkaScenes:
   - {fileID: 11400000, guid: ad00ccd6571f50d44a01cfdfd8368a7e, type: 2}
+  - {fileID: 11400000, guid: e2299e521f82f4b4a843f178324bdb61, type: 2}
+  - {fileID: 11400000, guid: 73eeadd2f37610a40bcac9c6a4a3d664, type: 2}
+  - {fileID: 11400000, guid: d78683a3569e45f4bae22e9c48ecb96f, type: 2}
+  - {fileID: 11400000, guid: 7ca8639043c06f54ca7382af7dfa6693, type: 2}
+  - {fileID: 11400000, guid: e1c20bf93c7356b449dbf5b74297f00f, type: 2}
   listOfKolekScenes:
   - {fileID: 11400000, guid: 4d37686957ac93a4dbeac9b6d920c5ce, type: 2}
   listOfRobotScenes:
@@ -1038,6 +1043,10 @@ MonoBehaviour:
   listOfGargScenes:
   - {fileID: 11400000, guid: 24f98a8901350794483fbebdb3205a49, type: 2}
   - {fileID: 11400000, guid: 894e66ddb5a00c646a642d234318911d, type: 2}
+  - {fileID: 11400000, guid: 2b52bead73816e440bec2ebc0a24c7fc, type: 2}
+  - {fileID: 11400000, guid: 7e58576919a261d438039c6de5179e51, type: 2}
+  - {fileID: 11400000, guid: 00633419f25a97141abfb006ddb2ebf8, type: 2}
+  - {fileID: 11400000, guid: 426361e2dbc99b447a7a209f2fd55579, type: 2}
   gameMaster: {fileID: 1389224929}
 --- !u!4 &1478562549
 Transform:

@@ -28,6 +28,12 @@ MonoBehaviour:
     sound: {fileID: 0}
   - text: ...
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: 13800b66fd8b6b24092aea91fdcd2a64, type: 2}
+    gameEventValue: 300
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ...
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 11400000, guid: 675caf2b98fc0454099a2227ed6f30aa, type: 2}
     gameEventValue: 0
     music: {fileID: 0}
