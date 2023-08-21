@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: StartEvent1Kolek
+  m_Name: StartEvent3Robot
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Dzie\u0144 dobry. Dzisiaj poromawiamy sobie o podstawach. Kto z was poda
-      mi wz\xF3r na delt\u0119?"
-    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+  - text: "Dzie\u0144 dobry. Rozpocz\u0119cie zaj\u0119\u0107. Pytanie do uczni\xF3w:
+      \"Wymie\u0144 3 j\u0119zyki programowania.\" "
+    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
@@ -26,20 +26,20 @@ MonoBehaviour:
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: Nikt?...
-    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+  - text: "* SZUKANIE CH\u0118TNEGO *"
+    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: Dobrze...
-    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+  - text: '* SKANOWANIE *'
+    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "To poprosz\u0119 Pana z numerem 12."
-    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+  - text: Numer 12.
+    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
@@ -50,8 +50,8 @@ MonoBehaviour:
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "Prosz\u0119 si\u0119 nie kr\u0119powa\u0107."
-    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+  - text: "* OCZEKIWANIE NA ODPOWIED\u0179 *"
+    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
@@ -63,4 +63,4 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   backgroud: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 5852b8d5916f1044ba1f9bbfeca4778d, type: 2}
+  nextScene: {fileID: 11400000, guid: 8c60c6e23397c9642ab0a1811832f2b9, type: 2}
