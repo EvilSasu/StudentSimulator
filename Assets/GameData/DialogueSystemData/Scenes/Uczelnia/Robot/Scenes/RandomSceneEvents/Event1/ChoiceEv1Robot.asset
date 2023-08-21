@@ -10,35 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32c573cb1356c6d4c85181fb931a9f56, type: 3}
-  m_Name: ChoiceEv1Kolek
+  m_Name: ChoiceEv1Robot
   m_EditorClassIdentifier: 
   labels:
-  - text: b^2 + 4ac
-    nextScene: {fileID: 11400000, guid: 9d3b2fc3eff61ad45a6ceed3b2d81281, type: 2}
+  - text: '"for-a-while", "while-do" i "do-while"'
+    nextScene: {fileID: 11400000, guid: 4d29b5f97b4cb814a9d7b20eabb2ebc2, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}
     eventValue: 0
     warunekEventValue: 0
     warunekEventValue2: 0
-  - text: b^2 - 4ac
-    nextScene: {fileID: 11400000, guid: a8434bfa8487a3a41b18f6ad77b1357a, type: 2}
+  - text: '"for", "while" i "do-while"'
+    nextScene: {fileID: 11400000, guid: 672f50ee2b2a2e34abe955484f9872a1, type: 2}
     gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}
     eventValue: 10
     warunekEventValue: 0
     warunekEventValue2: 0
-  - text: a^2 - 4bc
-    nextScene: {fileID: 11400000, guid: 9d3b2fc3eff61ad45a6ceed3b2d81281, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventWarunek: {fileID: 0}
-    gameEventWarunek2: {fileID: 0}
-    eventValue: 0
-    warunekEventValue: 0
-    warunekEventValue2: 0
-  - text: a^2 + 4bc
-    nextScene: {fileID: 11400000, guid: 9d3b2fc3eff61ad45a6ceed3b2d81281, type: 2}
+  - text: '"for", "while" i "while-do"'
+    nextScene: {fileID: 11400000, guid: 4d29b5f97b4cb814a9d7b20eabb2ebc2, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}

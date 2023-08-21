@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: StartEvent1Kolek
+  m_Name: StartEvent2Kolek
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Dzie\u0144 dobry. Dzisiaj poromawiamy sobie o podstawach. Kto z was poda
-      mi wz\xF3r na delt\u0119?"
+  - text: "Dzie\u0144 dobry. Kto mi powie ile wynosi suma k\u0105t\xF3w wewn\u0119trznych
+      tr\xF3jk\u0105ta?"
     speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
@@ -63,4 +63,4 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   backgroud: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 5852b8d5916f1044ba1f9bbfeca4778d, type: 2}
+  nextScene: {fileID: 11400000, guid: 36b10a3750f846d4da8c116915706e27, type: 2}

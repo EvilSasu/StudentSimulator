@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: BadAnswerEv1Kolek
+  m_Name: BadAnswerEv1Robot
   m_EditorClassIdentifier: 
   sentences:
   - text: "* Odpowied\u017A *"
@@ -19,8 +19,8 @@ MonoBehaviour:
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "Niestety pomyli\u0142 si\u0119 pan."
-    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+  - text: "* B\u0141\u0104D KRYTYCZNY *"
+    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}

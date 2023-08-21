@@ -10,34 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: BadAnswerEv1Kolek
+  m_Name: StartEvent5TestRobot
   m_EditorClassIdentifier: 
   sentences:
-  - text: "* Odpowied\u017A *"
-    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+  - text: "Dzie\u0144 dobry. Dzisiaj odb\u0119dzie si\u0119 test sprawdzaj\u0105cy
+      wiedz\u0119."
+    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "Niestety pomyli\u0142 si\u0119 pan."
-    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+  - text: '* START *'
+    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "* Czujesz si\u0119 \u017Ale *"
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 11400000, guid: aed5ee94304007e44901b99c4ae76a3f, type: 2}
-    gameEventValue: 10
-    music: {fileID: 0}
-    sound: {fileID: 0}
-  - text: "* Czujesz si\u0119 g\u0142upszy *"
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 11400000, guid: e49062dcd1099414382b2e1e4aeeb8bc, type: 2}
-    gameEventValue: 10
-    music: {fileID: 0}
-    sound: {fileID: 0}
-  - text: '* Czas mija *'
+  - text: ...
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 11400000, guid: 13800b66fd8b6b24092aea91fdcd2a64, type: 2}
     gameEventValue: 300
@@ -45,8 +34,8 @@ MonoBehaviour:
     sound: {fileID: 0}
   - text: ...
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 11400000, guid: aa5a9a048b6055a46b2b2e415dce40d0, type: 2}
-    gameEventValue: 9
+    gameEvent: {fileID: 11400000, guid: 675caf2b98fc0454099a2227ed6f30aa, type: 2}
+    gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
   backgroud: {fileID: 0}

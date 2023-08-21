@@ -1036,8 +1036,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e1c20bf93c7356b449dbf5b74297f00f, type: 2}
   listOfKolekScenes:
   - {fileID: 11400000, guid: 4d37686957ac93a4dbeac9b6d920c5ce, type: 2}
+  - {fileID: 11400000, guid: 1b640205865a23245a02dd8d47cd8aa1, type: 2}
+  - {fileID: 11400000, guid: 9847b9ee136fc0245ae122d1fbcc92de, type: 2}
+  - {fileID: 11400000, guid: 90e0256ecdd134a4cb90d584b8387500, type: 2}
+  - {fileID: 11400000, guid: 3cabe673470a89347ba2a961c3645945, type: 2}
+  - {fileID: 11400000, guid: 3d98924b5a3e5a34491a58db59a9518f, type: 2}
   listOfRobotScenes:
   - {fileID: 11400000, guid: e36c4056f30956b4c9c48382850f1943, type: 2}
+  - {fileID: 11400000, guid: f6c10d862a1ad424cb5ebc1f55a2ef25, type: 2}
+  - {fileID: 11400000, guid: 844dbd6f0f2721a47b37497dc9324d0e, type: 2}
+  - {fileID: 11400000, guid: efe99294cee358b4aaf2810f09393e0d, type: 2}
+  - {fileID: 11400000, guid: b1e4c82a73f54fd4dad1b875ff99f1ed, type: 2}
+  - {fileID: 11400000, guid: 43e2e292278b2dd46a6361812c2fd5ef, type: 2}
   listOfZarowaScenes:
   - {fileID: 11400000, guid: c81b3be67f241a64d8ba3b63d085133f, type: 2}
   listOfGargScenes:

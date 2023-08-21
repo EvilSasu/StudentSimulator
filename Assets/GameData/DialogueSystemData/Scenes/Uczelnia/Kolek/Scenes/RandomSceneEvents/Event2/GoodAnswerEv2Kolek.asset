@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: BadAnswerEv1Kolek
+  m_Name: GoodAnswerEv2Kolek
   m_EditorClassIdentifier: 
   sentences:
   - text: "* Odpowied\u017A *"
@@ -19,21 +19,15 @@ MonoBehaviour:
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "Niestety pomyli\u0142 si\u0119 pan."
+  - text: "Zgadza si\u0119."
     speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "* Czujesz si\u0119 \u017Ale *"
+  - text: "* Czujesz si\u0119 lepiej *"
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 11400000, guid: aed5ee94304007e44901b99c4ae76a3f, type: 2}
-    gameEventValue: 10
-    music: {fileID: 0}
-    sound: {fileID: 0}
-  - text: "* Czujesz si\u0119 g\u0142upszy *"
-    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
-    gameEvent: {fileID: 11400000, guid: e49062dcd1099414382b2e1e4aeeb8bc, type: 2}
+    gameEvent: {fileID: 11400000, guid: 4c05f40f326e9264dbecce9fe09ecf71, type: 2}
     gameEventValue: 10
     music: {fileID: 0}
     sound: {fileID: 0}
