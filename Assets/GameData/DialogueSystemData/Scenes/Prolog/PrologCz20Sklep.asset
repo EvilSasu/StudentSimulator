@@ -18,13 +18,25 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "To do nast\u0119pnego nowy!"
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: Na razie.
     speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ...
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   backgroud: {fileID: 21300000, guid: fc25226ef75fb75429a76443e0044c6d, type: 3}
   nextScene: {fileID: 11400000, guid: dc5aba54926b064459c4f3dda317cf03, type: 2}

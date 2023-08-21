@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c573cb1356c6d4c85181fb931a9f56, type: 3}
+  m_Name: ChoiceEv3Gruszka
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "Tadeusz Ko\u015Bciuszko"
+    nextScene: {fileID: 11400000, guid: 98fcae9eb6ea47d4b88e89171f0146fc, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: Wolfgang Amadeusz Mozart
+    nextScene: {fileID: 11400000, guid: 867bacf0e00f69143b6040113f262d6f, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: Ludwig van Beethoven
+    nextScene: {fileID: 11400000, guid: d39d6ac92d8a19c479bccc5affca1ff0, type: 2}
+    gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 10
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: Fryderyk Chopin
+    nextScene: {fileID: 11400000, guid: 867bacf0e00f69143b6040113f262d6f, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0

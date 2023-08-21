@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1ee830730190a499b3290863f51df2, type: 3}
-  m_Name: DrGruszkaNotKnown
+  m_Name: DrKolek
   m_EditorClassIdentifier: 
-  speakerName: ????
-  textColor: {r: 0.9843137, g: 0.7137255, b: 0.4392157, a: 1}
-  image: {fileID: 21300000, guid: 9359d4cd058d05246a4f881e7fde94b3, type: 3}
+  speakerName: Dr. Kolek
+  textColor: {r: 0.98039216, g: 0.5416705, b: 0.4392157, a: 1}
+  image: {fileID: 21300000, guid: 235a4f19e520041448c6de306d1f995e, type: 3}
+  typingSound: {fileID: 8300000, guid: e29369ba06afc2b43bc72e1a4277a6dd, type: 3}

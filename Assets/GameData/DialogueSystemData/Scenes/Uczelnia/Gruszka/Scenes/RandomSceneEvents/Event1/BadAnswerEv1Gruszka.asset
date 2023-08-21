@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: BadAnswerEv1Gruszka
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "* Odpowied\u017A *"
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Ojojojo... No nie uda\u0142o si\u0119... Ale prosz\u0119 si\u0119 nie
+      przejmowa\u0107. Nie ka\u017Cdy rodzi si\u0119 m\u0105dry."
+    speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "* Czujesz si\u0119 \u017Ale *"
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: aed5ee94304007e44901b99c4ae76a3f, type: 2}
+    gameEventValue: 10
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "* Czujesz si\u0119 g\u0142upszy *"
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: e49062dcd1099414382b2e1e4aeeb8bc, type: 2}
+    gameEventValue: 10
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: '* Czas mija *'
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: 13800b66fd8b6b24092aea91fdcd2a64, type: 2}
+    gameEventValue: 300
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ...
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 11400000, guid: aa5a9a048b6055a46b2b2e415dce40d0, type: 2}
+    gameEventValue: 9
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  backgroud: {fileID: 0}
+  nextScene: {fileID: 0}

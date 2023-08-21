@@ -15,3 +15,4 @@ MonoBehaviour:
   speakerName: Dr. Gruszka
   textColor: {r: 0.9811321, g: 0.71064883, b: 0.43873262, a: 1}
   image: {fileID: 21300000, guid: 9359d4cd058d05246a4f881e7fde94b3, type: 3}
+  typingSound: {fileID: 8300000, guid: e29369ba06afc2b43bc72e1a4277a6dd, type: 3}

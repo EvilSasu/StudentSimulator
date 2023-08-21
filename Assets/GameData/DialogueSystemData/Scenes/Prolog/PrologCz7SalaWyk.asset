@@ -17,11 +17,15 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Dzie\u0144 dobry. Nazywam si\u0119 Stanis\u0142aw Gruszka i b\u0119d\u0119
       prowadzi\u0142 dla Was zaj\u0119cia z [Historii muzyki]."
     speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Nasza uczelnia obra\u0142a sobie za cel, aby nawet najwi\u0119kszych idiot\xF3w,
       kt\xF3rzy bezw\u0105tpienia s\u0105 w\u015Br\xF3d was, przekszta\u0142ci\u0107
       w ludzi wykszta\u0142conych b\u0119d\u0105cych ekspertami w obranej specjalizacji.
@@ -31,19 +35,33 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Przedmiot ten nie nale\u017Cy do najprostszych, dlatego b\u0119d\u0119
       wymaga\u0142 od pa\u0144stwa aktywnego udzia\u0142u w zaj\u0119ciach."
     speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Na zaj\u0119ci z tego przedmiotu b\u0119dziecie pa\u0144stwo ucz\u0119szcza\u0107
       w poniedzia\u0142ki, w godzinach 8-16. "
     speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   - text: "Zacznijmy wi\u0119c."
     speaker: {fileID: 11400000, guid: bb2f251af610055448b8f7cdc031941c, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ...
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
   backgroud: {fileID: 21300000, guid: 7602bde28a3345348a143d654a87fea7, type: 3}
   nextScene: {fileID: 11400000, guid: 7eaf42c5b00417b41a0f9a72951e887e, type: 2}

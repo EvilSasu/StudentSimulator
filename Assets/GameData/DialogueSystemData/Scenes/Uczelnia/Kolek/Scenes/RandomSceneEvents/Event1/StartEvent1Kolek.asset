@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: StartEvent1Kolek
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Dzie\u0144 dobry kochani. Czy kto\u015B z was mo\u017Ce wie kto jest najwi\u0119kszym
+      polskim kompozytorem muzyki klasycznej?"
+    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ...
+    speaker: {fileID: 11400000, guid: b8fd879031a08324fb0307b80f1cdcd6, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Hmmm... Brak ch\u0119tnych co?"
+    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Kochani nie b\xF3jcie si\u0119."
+    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Dobrze... To wybierzemy kogo\u015B z listy."
+    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Poprosz\u0119 Pana z numerem 12."
+    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Musz\u0119?  ..."
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Musi !
+    speaker: {fileID: 11400000, guid: b7e3c083fddb12d4281addd69d3d8e48, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ...
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  backgroud: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 5852b8d5916f1044ba1f9bbfeca4778d, type: 2}
