@@ -52,7 +52,7 @@ public class UczelniaRandomEvents : MonoBehaviour
         int choiceIfNormalEvent = Random.Range(0, 100);
         if(choiceIfNormalEvent <= 70)
         {
-            gameMaster.firstScene = list[1];
+            gameMaster.firstScene = list[0];
             gameMaster.PlayFirstDialogue();
         }
         else

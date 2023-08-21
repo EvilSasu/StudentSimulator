@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - text: Fryderyk Chopin
-    nextScene: {fileID: 11400000, guid: 033a1998185585545a24f0bb962fc2f7, type: 2}
+    nextScene: {fileID: 11400000, guid: a8434bfa8487a3a41b18f6ad77b1357a, type: 2}
     gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}
@@ -22,23 +22,7 @@ MonoBehaviour:
     warunekEventValue: 0
     warunekEventValue2: 0
   - text: Jan Sebastian Bach.
-    nextScene: {fileID: 11400000, guid: 08e1b606f172eac49b797778327853e6, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventWarunek: {fileID: 0}
-    gameEventWarunek2: {fileID: 0}
-    eventValue: 0
-    warunekEventValue: 0
-    warunekEventValue2: 0
-  - text: Ludwig van Beethoven.
-    nextScene: {fileID: 11400000, guid: 08e1b606f172eac49b797778327853e6, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventWarunek: {fileID: 0}
-    gameEventWarunek2: {fileID: 0}
-    eventValue: 0
-    warunekEventValue: 0
-    warunekEventValue2: 0
-  - text: "Niccol\xF2 Paganini."
-    nextScene: {fileID: 11400000, guid: 08e1b606f172eac49b797778327853e6, type: 2}
+    nextScene: {fileID: 11400000, guid: 9d3b2fc3eff61ad45a6ceed3b2d81281, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}
