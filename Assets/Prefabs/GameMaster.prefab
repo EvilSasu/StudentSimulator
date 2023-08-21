@@ -4354,6 +4354,11 @@ MonoBehaviour:
   mentalHealth: 0
   positionInGameMap: 0
   popUpInfoMeneger: {fileID: 7399846154034722607}
+  amountOfPizza: 0
+  amountOfBurger: 0
+  amountOfWater: 0
+  amountOfBeer: 0
+  amountOfBar: 0
 --- !u!114 &7023821572792851087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4540,7 +4545,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5906076943657413634}
         m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
-        m_MethodName: IncreaseMetalHealth
+        m_MethodName: IncreaseMentalHealth
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4568,7 +4573,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5906076943657413634}
         m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
-        m_MethodName: DecreaseMetalHealth
+        m_MethodName: DecreaseMentalHealth
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c573cb1356c6d4c85181fb931a9f56, type: 3}
+  m_Name: ChoiceEv4Gruszka
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "Skrzypce, b\u0119ben i saksofon"
+    nextScene: {fileID: 11400000, guid: 3cee9304e5a8c064bb2ac78a66863edf, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: "Saksofon, b\u0119ben i flet"
+    nextScene: {fileID: 11400000, guid: 3cee9304e5a8c064bb2ac78a66863edf, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: Skrzypce, flet i klawesyn
+    nextScene: {fileID: 11400000, guid: b82a30fd7c7ac4e4aa8578cce5c9b17c, type: 2}
+    gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 10
+    warunekEventValue: 0
+    warunekEventValue2: 0

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c573cb1356c6d4c85181fb931a9f56, type: 3}
+  m_Name: ChoiceEv2Gruszka
+  m_EditorClassIdentifier: 
+  labels:
+  - text: 1725
+    nextScene: {fileID: 11400000, guid: e89d9bf098a0b7b4ba0e0cb8e67163b0, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: 1723
+    nextScene: {fileID: 11400000, guid: 0f605b148c931ab48b3beb3ceaa1887d, type: 2}
+    gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 10
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: 1811
+    nextScene: {fileID: 11400000, guid: e89d9bf098a0b7b4ba0e0cb8e67163b0, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: 1813
+    nextScene: {fileID: 11400000, guid: e89d9bf098a0b7b4ba0e0cb8e67163b0, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
