@@ -59,4 +59,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Shop2.unity
     guid: b57e334a536ac9047b7a44c770e494ce
+  - enabled: 1
+    path: Assets/Scenes/Menu/WinScene.unity
+    guid: 138b65c775553b948bfae0cc084fca7c
+  - enabled: 1
+    path: Assets/Scenes/Menu/LoseScene.unity
+    guid: 591b7cdfc8448e44a81093fb5c8647b3
   m_configObjects: {}

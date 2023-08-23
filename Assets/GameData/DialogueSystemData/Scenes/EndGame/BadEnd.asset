@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: BadEnd
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: Ahhh.....
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Nie uda\u0142o mu si\u0119...."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Ch\u0142opak za\u0142ama\u0142 si\u0119...."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ....
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Jago umys\u0142 nie wytrzyma\u0142 nadmiaru stresu..."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ....
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ....
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Ja zawsze m\xF3wi\u0142em..."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Uczelnia nie jest dla ka\u017Cdego..."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  backgroud: {fileID: 0}
+  nextScene: {fileID: 0}

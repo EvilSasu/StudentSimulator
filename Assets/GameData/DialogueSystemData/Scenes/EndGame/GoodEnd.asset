@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: GoodEnd
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: HA!!!
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Wiedzia\u0142, \u017Ce Ci si\u0119 uda!"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Od pocz\u0105tku wiedzia\u0142em, \u017Ce Ci dobrze z oczu patrzy."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Dokona\u0142e\u015B czego\u015B, co ma\u0142o komu si\u0119 udaje!"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Sta\u0142e\u015B si\u0119 najm\u0105drzejszy!"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Wytrzyma\u0142e\u015B ca\u0142y ten stres i nie umar\u0142e\u015B \u015Bmierci\u0105
+      g\u0142odow\u0105."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Wszyscy powinni bra\u0107 z Ciebie przyk\u0142ad !"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Tutaj si\u0119 ko\u0144czy twoja przygoda."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Bo po co si\u0119 dalej uczy\u0107 na tych studiach jak wiesz ju\u017C
+      wszystko."
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Chyba nie przyszed\u0142e\u015B tu tylko po papierek?"
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Prawda?!
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ...
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: ...
+    speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  backgroud: {fileID: 0}
+  nextScene: {fileID: 0}
