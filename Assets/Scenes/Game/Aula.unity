@@ -1050,6 +1050,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 43e2e292278b2dd46a6361812c2fd5ef, type: 2}
   listOfZarowaScenes:
   - {fileID: 11400000, guid: c81b3be67f241a64d8ba3b63d085133f, type: 2}
+  - {fileID: 11400000, guid: e8716dcc125de104a8f80354640b859a, type: 2}
+  - {fileID: 11400000, guid: d0091d358e30dea498974a68f97b0d93, type: 2}
+  - {fileID: 11400000, guid: df073b198df1a2448a18e74f0e0db958, type: 2}
+  - {fileID: 11400000, guid: ef5505eb5c214d04689af2b5ab0431d1, type: 2}
+  - {fileID: 11400000, guid: b7db5b0d2cb0842418bcc2f6364951ea, type: 2}
   listOfGargScenes:
   - {fileID: 11400000, guid: 24f98a8901350794483fbebdb3205a49, type: 2}
   - {fileID: 11400000, guid: 894e66ddb5a00c646a642d234318911d, type: 2}

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32c573cb1356c6d4c85181fb931a9f56, type: 3}
-  m_Name: ChoiceEv1Zar
+  m_Name: ChoiceEv3Zar
   m_EditorClassIdentifier: 
   labels:
-  - text: User Interpolation
+  - text: Przezroczysta warstwa graficzna
     nextScene: {fileID: 11400000, guid: 7a672481934e28848b4ac3e446263e44, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
@@ -21,19 +21,27 @@ MonoBehaviour:
     eventValue: 0
     warunekEventValue: 0
     warunekEventValue2: 0
-  - text: User Interface
+  - text: Stylizowana czcionka
+    nextScene: {fileID: 11400000, guid: 7a672481934e28848b4ac3e446263e44, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: "Jednostka d\u0142ugo\u015Bci"
+    nextScene: {fileID: 11400000, guid: 7a672481934e28848b4ac3e446263e44, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: Najmniejszy element obrazu na ekranie
     nextScene: {fileID: 11400000, guid: 134b25b6719fd7e4499726ffc13d8422, type: 2}
     gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
     gameEventWarunek: {fileID: 0}
     gameEventWarunek2: {fileID: 0}
     eventValue: 10
-    warunekEventValue: 0
-    warunekEventValue2: 0
-  - text: Useless Interface
-    nextScene: {fileID: 11400000, guid: 7a672481934e28848b4ac3e446263e44, type: 2}
-    gameEvent: {fileID: 0}
-    gameEventWarunek: {fileID: 0}
-    gameEventWarunek2: {fileID: 0}
-    eventValue: 0
     warunekEventValue: 0
     warunekEventValue2: 0

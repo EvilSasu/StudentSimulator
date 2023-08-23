@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
-  m_Name: StartEvent1Zar
+  m_Name: StartEvent3Zar
   m_EditorClassIdentifier: 
   sentences:
   - text: "Dzie\u0144 dobry. A teraz moi ponadprzeci\u0119tnie g\u0142upi uczniowie,
-      powiedzcie mi co oznacza skr\xF3t UI?"
+      powiedzcie mi co to jest \"piksel\"?"
     speaker: {fileID: 11400000, guid: 92642cccc63907843a1217219507e9e3, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
@@ -63,4 +63,4 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   backgroud: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 79e72d52960cdd94eb12bd73d61bd270, type: 2}
+  nextScene: {fileID: 11400000, guid: d9f91cf4c1ab66748a781b0f83d06e67, type: 2}

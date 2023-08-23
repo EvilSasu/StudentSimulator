@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32c573cb1356c6d4c85181fb931a9f56, type: 3}
-  m_Name: ChoiceEv1Zar
+  m_Name: ChoiceEv2Zar
   m_EditorClassIdentifier: 
   labels:
-  - text: User Interpolation
+  - text: Do korygowania perspektywy obrazu
     nextScene: {fileID: 11400000, guid: 7a672481934e28848b4ac3e446263e44, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
@@ -21,7 +21,7 @@ MonoBehaviour:
     eventValue: 0
     warunekEventValue: 0
     warunekEventValue2: 0
-  - text: User Interface
+  - text: "Do p\u0142ynnego przej\u015Bcia mi\u0119dzy dwoma kolorami"
     nextScene: {fileID: 11400000, guid: 134b25b6719fd7e4499726ffc13d8422, type: 2}
     gameEvent: {fileID: 11400000, guid: 011400dfb6a752245a4cf8cfe282d709, type: 2}
     gameEventWarunek: {fileID: 0}
@@ -29,7 +29,15 @@ MonoBehaviour:
     eventValue: 10
     warunekEventValue: 0
     warunekEventValue2: 0
-  - text: Useless Interface
+  - text: "Do rysowania kszta\u0142t\xF3w geometrycznych"
+    nextScene: {fileID: 11400000, guid: 7a672481934e28848b4ac3e446263e44, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0
+  - text: Do tworzenia 3D modeli
     nextScene: {fileID: 11400000, guid: 7a672481934e28848b4ac3e446263e44, type: 2}
     gameEvent: {fileID: 0}
     gameEventWarunek: {fileID: 0}
