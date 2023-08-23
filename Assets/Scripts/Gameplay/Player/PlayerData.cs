@@ -76,7 +76,7 @@ public class PlayerData : MonoBehaviour
     public void IncreaseMoney(int value)
     {
         money += value;
-        popUpInfoMeneger.CreatePopUp("Money", value, true);
+        popUpInfoMeneger.CreatePopUp("pieni¹dzy", value, true);
     }
 
     public void IncreaseEnergy(int value)
@@ -85,18 +85,21 @@ public class PlayerData : MonoBehaviour
             energy = 100;
         else
             energy += value;
-        popUpInfoMeneger.CreatePopUp("Energy", value, true);
+        popUpInfoMeneger.CreatePopUp("energii", value, true);
     }
 
     public void IncreaseHunger(int value)
     {
         if ((hunger + value) >= 100)
         {
-            mentalHealth -= ((hunger + value) - 100) / 10;
+            int val = ((hunger + value) - 100) / 10;
+            mentalHealth -= val;
+            if(val > 0)
+                popUpInfoMeneger.CreateSpecialPopUp("Twoje zdrowie psychinczne spada o " + val + " z powodu g³odu");
             hunger = 100;
         }else
             hunger += value;
-        popUpInfoMeneger.CreatePopUp("Hunger", value, true);
+        popUpInfoMeneger.CreatePopUp("g³ódu", value, true);
     }
 
     public void IncreaseWinsdom(int value)
@@ -105,7 +108,7 @@ public class PlayerData : MonoBehaviour
             wisdom = 100;
         else
             wisdom += value;
-        popUpInfoMeneger.CreatePopUp("Wisdom", value, true);
+        popUpInfoMeneger.CreatePopUp("wiedzy", value, true);
     }
 
     public void IncreaseMentalHealth(int value)
@@ -114,7 +117,7 @@ public class PlayerData : MonoBehaviour
             mentalHealth = 100;
         else
             mentalHealth += value;
-        popUpInfoMeneger.CreatePopUp("Mental Health", value, true);
+        popUpInfoMeneger.CreatePopUp("zdrowia psychicznego", value, true);
     }
 
     public void DecreaseMoney(int value)
@@ -123,7 +126,7 @@ public class PlayerData : MonoBehaviour
             money = 0;
         else
             money -= value;
-        popUpInfoMeneger.CreatePopUp("Money", value, false);
+        popUpInfoMeneger.CreatePopUp("pieni¹dzy", value, false);
     }
 
     public void DecreaseEnergy(int value)
@@ -135,7 +138,7 @@ public class PlayerData : MonoBehaviour
         }
         else
             energy -= value;
-        popUpInfoMeneger.CreatePopUp("Energy", value, false);
+        popUpInfoMeneger.CreatePopUp("energii", value, false);
     }
 
     public void DecreaseHunger(int value)
@@ -144,7 +147,7 @@ public class PlayerData : MonoBehaviour
             hunger = 0;
         else
             hunger -= value;
-        popUpInfoMeneger.CreatePopUp("Hunger", value, false);
+        popUpInfoMeneger.CreatePopUp("g³ódu", value, false);
     }
 
     public void DecreaseWinsdom(int value)
@@ -153,7 +156,7 @@ public class PlayerData : MonoBehaviour
             wisdom = 0;
         else
             wisdom -= value;
-        popUpInfoMeneger.CreatePopUp("Wisdom", value, false);
+        popUpInfoMeneger.CreatePopUp("wiedzy", value, false);
     }
 
     public void DecreaseMentalHealth(int value)
@@ -162,7 +165,7 @@ public class PlayerData : MonoBehaviour
             mentalHealth = 0;
         else
             mentalHealth -= value;
-        popUpInfoMeneger.CreatePopUp("Mental Health", value, false);
+        popUpInfoMeneger.CreatePopUp("zdrowia psychicznego", value, false);
     }
 
     public int Getmoney()

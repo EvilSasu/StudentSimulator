@@ -19,7 +19,7 @@ public class PopUp : MonoBehaviour
     private IEnumerator AnimatePopUp(int amountOfPopUp)
     {
         yield return new WaitForSeconds(1f);
-        float posToMove = 500f - 75f - ((amountOfPopUp - 1) * 50f);
+        float posToMove = 500f - 75f - ((amountOfPopUp - 1) * 80f);
         while (this.transform.localPosition.y <= posToMove)
         {
             this.transform.position = Vector2.MoveTowards(this.transform.position, 
