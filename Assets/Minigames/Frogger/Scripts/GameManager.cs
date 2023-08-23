@@ -168,7 +168,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator EndScene()
     {
-        int moneyToEarn = score / 100;
+        int moneyToEarn = score / 10;
         player.IncreaseMoney(moneyToEarn);
         clock.AddMinutes(480);
         player.DecreaseMentalHealth(moneyToEarn / 10);

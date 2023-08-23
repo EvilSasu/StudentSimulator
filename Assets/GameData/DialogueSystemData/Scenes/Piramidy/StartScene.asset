@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d266b164af8f45af56086d20ea927, type: 3}
+  m_Name: StartScene
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "I ja mu wtedy \"Zobaczymy kto wi\u0119cej wypije\"."
+    speaker: {fileID: 11400000, guid: 87effeb56ee832d48b456cabcd1172f1, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "No, a o co innego mog\u0142e\u015B si\u0119 za\u0142o\u017Cy\u0107..."
+    speaker: {fileID: 11400000, guid: fed58aad63a5cb643b869b5e250cc39d, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: O patrzcie nowy!
+    speaker: {fileID: 11400000, guid: 9e645f50681e0634984cc3ac3ca43fd6, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Yyyy... Cze\u015B\u0107?"
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: '* Burp *'
+    speaker: {fileID: 11400000, guid: ce90ba150bc4e97459868cb5407a57cf, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Siemka nowy! Chcesz z nami zagra\u0107?"
+    speaker: {fileID: 11400000, guid: 87effeb56ee832d48b456cabcd1172f1, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: A w co?...
+    speaker: {fileID: 11400000, guid: 38e6f7ea34c6e04429aca13b0ce5bb00, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "W stawianie wie\u017Cy."
+    speaker: {fileID: 11400000, guid: 9e645f50681e0634984cc3ac3ca43fd6, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Ty to tylko by\u015B stawia\u0142 wie\u017Ce!"
+    speaker: {fileID: 11400000, guid: fed58aad63a5cb643b869b5e250cc39d, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: '* Burp * HAHAHA * Burp *'
+    speaker: {fileID: 11400000, guid: ce90ba150bc4e97459868cb5407a57cf, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "HAHA.. To jak? Wpisowe wynosi 5 z\u0142. Za ka\u017Cde 20 punkt\xF3w dostajesz
+      browara."
+    speaker: {fileID: 11400000, guid: 87effeb56ee832d48b456cabcd1172f1, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventValue: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  backgroud: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: dba4fb05a138b5e49ba4b3bdbda243d9, type: 2}

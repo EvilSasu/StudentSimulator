@@ -76,7 +76,7 @@ public class PlayerData : MonoBehaviour
     public void IncreaseMoney(int value)
     {
         money += value;
-        popUpInfoMeneger.CreatePopUp("pieni¹dzy", value, true);
+        popUpInfoMeneger.CreatePopUp("pieniêdzy", value, true);
     }
 
     public void IncreaseEnergy(int value)
@@ -99,7 +99,7 @@ public class PlayerData : MonoBehaviour
             hunger = 100;
         }else
             hunger += value;
-        popUpInfoMeneger.CreatePopUp("g³ódu", value, true);
+        popUpInfoMeneger.CreatePopUp("g³odu", value, true);
     }
 
     public void IncreaseWinsdom(int value)
@@ -126,7 +126,7 @@ public class PlayerData : MonoBehaviour
             money = 0;
         else
             money -= value;
-        popUpInfoMeneger.CreatePopUp("pieni¹dzy", value, false);
+        popUpInfoMeneger.CreatePopUp("pieniêdzy", value, false);
     }
 
     public void DecreaseEnergy(int value)
@@ -147,7 +147,7 @@ public class PlayerData : MonoBehaviour
             hunger = 0;
         else
             hunger -= value;
-        popUpInfoMeneger.CreatePopUp("g³ódu", value, false);
+        popUpInfoMeneger.CreatePopUp("g³odu", value, false);
     }
 
     public void DecreaseWinsdom(int value)

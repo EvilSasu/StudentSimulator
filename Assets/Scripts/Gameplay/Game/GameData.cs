@@ -23,6 +23,9 @@ public class GameData : MonoBehaviour
 
     public float audioVolume = 0.5f;
 
+    public int playingTime;
+    private bool countStarted = false;
+
     private void Awake()
     {
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -53,6 +56,9 @@ public class GameData : MonoBehaviour
         second = timeSystem.clock.seconds;
 
         audioVolume = audioController.musicSource.volume;
+
+        if (!countStarted)
+            StartCoroutine(StartCoutingTime());
     }
 
     private void SetupTime()
@@ -66,6 +72,12 @@ public class GameData : MonoBehaviour
         timeSystem.clock.seconds = second;
     }
 
-
+    private IEnumerator StartCoutingTime()
+    {
+        countStarted = true;
+        playingTime++;
+        yield return new WaitForSecondsRealtime(1f);
+        countStarted = false;
+    }
 
 }

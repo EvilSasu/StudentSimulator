@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1ee830730190a499b3290863f51df2, type: 3}
+  m_Name: Szarek
+  m_EditorClassIdentifier: 
+  speakerName: Szarek
+  textColor: {r: 1, g: 0.48627448, b: 0.8727829, a: 1}
+  image: {fileID: 21300000, guid: 3db4850e40531d6469cc2ac43bc37ea9, type: 3}
+  typingSound: {fileID: 8300000, guid: 6bd5dc49f03d8a34da5b033f11ee7686, type: 3}

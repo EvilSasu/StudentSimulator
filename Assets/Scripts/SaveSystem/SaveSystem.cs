@@ -52,8 +52,7 @@ public class SaveSystem : MonoBehaviour
         {
             LoadPlayerData();
             LoadGameData();
-            /*if(sceneToLoad != SceneManager.GetActiveScene().buildIndex)
-                levelLoader.LoadChoosenLevel(sceneToLoad);*/
+
             if (sceneToLoad != SceneManager.GetActiveScene().buildIndex && sceneToLoad == 0)
                 levelLoader.LoadChoosenLevel(sceneToLoad);
             if(SceneManager.GetActiveScene().buildIndex == 0)
@@ -160,6 +159,7 @@ public class SaveSystem : MonoBehaviour
             game.firstGameStart = data.firstStart;
             sceneToLoad = data.sceneIndex;
             game.audioVolume = data.audioVolume;
+            game.playingTime = data.playingTime;
         }
         else
         {

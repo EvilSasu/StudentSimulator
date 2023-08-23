@@ -1774,6 +1774,7 @@ GameObject:
   - component: {fileID: 1800569276561929751}
   - component: {fileID: 3087193649794215730}
   - component: {fileID: 1794257615890873586}
+  - component: {fileID: 1870338525356012769}
   m_Layer: 0
   m_Name: MiniGameController
   m_TagString: Untagged
@@ -1809,6 +1810,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LL: {fileID: 0}
+  playerData: {fileID: 5906076943657413634}
+  pop: {fileID: 7399846154034722607}
 --- !u!114 &8921026361869998071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,6 +1915,34 @@ MonoBehaviour:
       - m_Target: {fileID: 5902666783775967397}
         m_TargetAssemblyTypeName: StartMinigamesEvents, Assembly-CSharp
         m_MethodName: StartUczelniaMinigame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1870338525356012769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2547832580408615418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c2ffe7b4f7bb74e8f2071fb02d0fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event: {fileID: 11400000, guid: be487438dac49f24494c2897ed361b1d, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5902666783775967397}
+        m_TargetAssemblyTypeName: StartMinigamesEvents, Assembly-CSharp
+        m_MethodName: StartPiramidyMinigame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

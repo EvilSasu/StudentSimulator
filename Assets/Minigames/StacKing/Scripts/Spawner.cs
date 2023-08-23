@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
 {
 
     public LevelLoaderScript loader;
+    public PlayerData playerData;
 
     [SerializeField]
     GameObject tile, bottomTile, button;
@@ -118,7 +119,8 @@ public class Spawner : MonoBehaviour
         if (gameEnd)
         {
             //Zmiana poziomu
-            loader.LoadChoosenLevel(2);
+            playerData.AddBeer((stack.Count - 1) / 20);
+            loader.LoadChoosenLevel(14);
         }
         else
         {

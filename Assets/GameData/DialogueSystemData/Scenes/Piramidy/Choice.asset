@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c573cb1356c6d4c85181fb931a9f56, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "Ch\u0119tnie."
+    nextScene: {fileID: 11400000, guid: e2deb02e2136a5e49adebd665df80ff2, type: 2}
+    gameEvent: {fileID: 11400000, guid: 2c323779474b8bc4dacd75c6b107d78f, type: 2}
+    gameEventWarunek: {fileID: 11400000, guid: b6fb98a3bdb108b4ab6429409e052653, type: 2}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 5
+    warunekEventValue: 5
+    warunekEventValue2: 0
+  - text: "Podzi\u0119kuje..."
+    nextScene: {fileID: 11400000, guid: c8007f22fcbd43f468caed290b91bb42, type: 2}
+    gameEvent: {fileID: 0}
+    gameEventWarunek: {fileID: 0}
+    gameEventWarunek2: {fileID: 0}
+    eventValue: 0
+    warunekEventValue: 0
+    warunekEventValue2: 0

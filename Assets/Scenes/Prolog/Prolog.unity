@@ -699,12 +699,28 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: amountOfBar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: metalHealth
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: amountOfBeer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: mentalHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: amountOfPizza
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: amountOfWater
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: GoToRoomButton
@@ -714,6 +730,10 @@ PrefabInstance:
       propertyPath: MiniGameButton
       value: 
       objectReference: {fileID: 1251940340}
+    - target: {fileID: 5906076943657413634, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: amountOfBurger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5996329161657761300, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_TagString
       value: PlayerData
