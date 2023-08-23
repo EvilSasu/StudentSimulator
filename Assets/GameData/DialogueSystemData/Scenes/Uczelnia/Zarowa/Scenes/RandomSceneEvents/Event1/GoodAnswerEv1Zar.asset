@@ -19,8 +19,9 @@ MonoBehaviour:
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "Poprawnie. Kontynuujemy zaj\u0119cja."
-    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
+  - text: "Oooo... Trafi\u0142 pan. Przynajmniej szcz\u0119scia panu w \u017Cyciu
+      nie brakuje."
+    speaker: {fileID: 11400000, guid: 92642cccc63907843a1217219507e9e3, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}

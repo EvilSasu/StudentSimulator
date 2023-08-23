@@ -19,8 +19,8 @@ MonoBehaviour:
     gameEventValue: 0
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "* B\u0141\u0104D KRYTYCZNY *"
-    speaker: {fileID: 11400000, guid: d1ca3b1bdd9e36c4d92703e9a610d556, type: 2}
+  - text: "Oczywi\u015Bcie. Widzia\u0142em, \u017Ce to pytanie pana przero\u015Bnie."
+    speaker: {fileID: 11400000, guid: 92642cccc63907843a1217219507e9e3, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0
     music: {fileID: 0}
