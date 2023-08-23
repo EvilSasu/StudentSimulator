@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public float startDelay = 2f;
 
-    private int score;
+    public int score;
     private float timeSinceLastScore;
     private float scoreInterval;
     private bool startDelayElapsed;

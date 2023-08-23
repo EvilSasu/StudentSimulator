@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
     private Home[] homes;
 
     public LevelLoaderScript loader;
-
+    public Clock clock;
+    public PlayerData player;
     public GameObject gameOverMenu;
     public Text timeText;
     public Text livesText;
@@ -162,6 +163,16 @@ public class GameManager : MonoBehaviour
     void NextScene()
     {
         //zmiana sceny
+        StartCoroutine(EndScene());        
+    }
+
+    private IEnumerator EndScene()
+    {
+        int moneyToEarn = score / 100;
+        player.IncreaseMoney(moneyToEarn);
+        clock.AddMinutes(480);
+        player.DecreaseMentalHealth(moneyToEarn / 10);
+        yield return new WaitForSeconds(3f);   
         loader.LoadChoosenLevel(12);
     }
 }

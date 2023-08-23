@@ -9,6 +9,8 @@ public enum BLOCKCOLOR
 public class GameMenager : MonoBehaviour
 {
     public LevelLoaderScript loader;
+    public Clock clock;
+    public PlayerData playerData;
 
     [SerializeField]
     private GameObject startButton, endPanel, player, left, right, blockPrefab;
@@ -184,7 +186,8 @@ public class GameMenager : MonoBehaviour
 
     public void GameOver()
     {
-        Time.timeScale = 0f;
+        //Time.timeScale = 0.5f;
+        player.SetActive(false);
         endPanel.SetActive(true);
         if(score > highScore)
         {
@@ -193,7 +196,8 @@ public class GameMenager : MonoBehaviour
         }
 
         highScoreEndText.text = "BEST " + highScore.ToString();
-
+        playerData.IncreaseMentalHealth(score);
+        clock.AddMinutes(60);
     }
 
     public void GameRestart()
@@ -203,7 +207,12 @@ public class GameMenager : MonoBehaviour
 
     public void NextScene()
     {
-        //zmiana sceny
+        StartCoroutine(EndScene());
+    }
+
+    private IEnumerator EndScene()
+    {
+        yield return new WaitForSeconds(3f);
         loader.LoadChoosenLevel(6);
     }
 }

@@ -34,7 +34,7 @@ public class Door : MonoBehaviour
                     {
                         Cursor.lockState = CursorLockMode.None;
                         Cursor.visible = true;
-                        loader.LoadChoosenLevel(2);
+                        loader.LoadChoosenLevel(17);
                     }
 
 

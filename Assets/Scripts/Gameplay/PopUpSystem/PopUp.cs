@@ -24,7 +24,7 @@ public class PopUp : MonoBehaviour
         {
             this.transform.position = Vector2.MoveTowards(this.transform.position, 
                 new Vector2(this.transform.position.x, posToMove), 0.1f);
-            yield return new WaitForSeconds(.01f);
+            yield return new WaitForSecondsRealtime(.01f);
         }
             
         yield return new WaitForSeconds(4f);

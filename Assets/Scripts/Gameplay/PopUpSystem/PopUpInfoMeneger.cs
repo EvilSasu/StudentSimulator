@@ -14,7 +14,7 @@ public class PopUpInfoMeneger : MonoBehaviour
         {
             string textOnPopUP;
             GameObject newPopUP = Instantiate(PopUp, new Vector3(0f, 0f, 0f), Quaternion.identity);
-            
+
             newPopUP.transform.SetParent(this.transform);
             newPopUP.transform.localScale = new Vector3(1f, 1f, 1f);
             popUpList.Add(newPopUP);

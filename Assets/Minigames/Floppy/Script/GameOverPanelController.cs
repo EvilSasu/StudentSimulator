@@ -8,6 +8,8 @@ public class GameOverPanelController : MonoBehaviour
 {
     public Button restartButton;
     public LevelLoaderScript loader;
+    public PlayerData playerData;
+    public ScoreManager scoreManager;
 
     void Start()
     {
@@ -25,9 +27,16 @@ public class GameOverPanelController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    void NextScene()
+    public void NextScene()
     {
         //zmiana sceny
-        loader.LoadChoosenLevel(10);
+        StartCoroutine(EndScene());
+    }
+    private IEnumerator EndScene()
+    {
+        int wisdomToAdd = (int) scoreManager.score;
+        playerData.IncreaseWinsdom(wisdomToAdd);
+        yield return new WaitForSeconds(2f);
+        loader.LoadChoosenLevel(9);
     }
 }
