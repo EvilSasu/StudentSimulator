@@ -9,7 +9,6 @@ public class enemyAI : MonoBehaviour
     private Transform playersTransform;
     private NavMeshAgent enemyNavMeshAgent;
 
-    public bool isRange;
     public bool isMelee;
 
     private void Start()
@@ -28,19 +27,9 @@ public class enemyAI : MonoBehaviour
                 if (isMelee)
                     {
                         enemyNavMeshAgent.SetDestination(playersTransform.position);
-            }
-
-                // Poruszanie siê - Range (ucieka od przeciwnika)
-                if (isRange)
-                    {
-                    enemyNavMeshAgent.SetDestination(transform.position + playersTransform.position);
-                    //Vector3 enemyRun = transform.position - playersTransform.position;
-                    //Vector3 newPos = transform.position + enemyRun;
-                    //enemyNavMeshAgent.SetDestination(newPos);
                 }
             }
-            // Domyœlnie przeciwnik stoi w miejscu
-            // Poruszanie siê - Stacionarny
+
             else
             {
                 enemyNavMeshAgent.SetDestination(transform.position);

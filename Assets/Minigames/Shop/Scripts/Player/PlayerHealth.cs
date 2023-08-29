@@ -73,13 +73,6 @@ public class PlayerHealth : MonoBehaviour
         //sprawdzanie czy gracz jest martwy
         if (hp <= 0)
         {
-            //Debug.Log("YOU DIED");
-            //reset poziomu po œmierci gracza
-            //Scene currentScene = SceneManager.GetActiveScene();
-            //SceneManager.LoadScene(currentScene.buildIndex);
-            
-            
-
 
             if(prolog == true)
             {
@@ -93,9 +86,6 @@ public class PlayerHealth : MonoBehaviour
                 Cursor.visible = true;
                 loader.LoadChoosenLevel(13);
             }
-
-
-            //Destroy(transform.gameObject);
 
         }
         UiManager.Instance.UpdateHp(hp);
