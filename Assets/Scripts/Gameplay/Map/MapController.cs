@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class MapController : MonoBehaviour
 {
     public MapButtonController button;
+    public PhoneController phone;
+    public GameObject phoneButton;
     private GameObject canvas;
 
     private void Awake()
@@ -15,12 +17,15 @@ public class MapController : MonoBehaviour
     private void OnDisable()
     {
         button.GetComponent<Button>().interactable = true;
-        if(canvas != null)
+        phoneButton.SetActive(false);
+        if (canvas != null)
             canvas.gameObject.SetActive(false);
     }
     private void OnEnable()
     {
+        phone.HidePhone();
         button.GetComponent<Button>().interactable = false;
+        phoneButton.SetActive(true);
         if (canvas != null)
             canvas.gameObject.SetActive(true);
     }

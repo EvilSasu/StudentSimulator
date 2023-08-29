@@ -552,6 +552,10 @@ PrefabInstance:
       propertyPath: m_VerticalAlignment
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 4092236531773414228, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+      propertyPath: phone
+      value: 
+      objectReference: {fileID: 853804833}
     - target: {fileID: 4580232074880756164, guid: 39416029594c1ac42a0501015208bb61, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
       value: 1
@@ -1082,6 +1086,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &853804833 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4509835307349395892, guid: 39416029594c1ac42a0501015208bb61, type: 3}
+  m_PrefabInstance: {fileID: 532140331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc0fc7de3232604090fd07c14f9c635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1215970498 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5051290481156187242, guid: f76b3fdfd13578846aa0467695fd015f, type: 3}

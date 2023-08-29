@@ -171,7 +171,7 @@ public class GameManager : MonoBehaviour
         int moneyToEarn = score / 10;
         player.IncreaseMoney(moneyToEarn);
         clock.AddMinutes(480);
-        player.DecreaseMentalHealth(moneyToEarn / 10);
+        player.DecreaseMentalHealth(10);
         yield return new WaitForSeconds(3f);   
         loader.LoadChoosenLevel(12);
     }

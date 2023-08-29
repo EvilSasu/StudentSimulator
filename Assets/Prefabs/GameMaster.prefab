@@ -4351,6 +4351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 4586170355765145931}
+  phone: {fileID: 4509835307349395892}
+  phoneButton: {fileID: 8017970513901302800}
 --- !u!1 &5996329161657761300
 GameObject:
   m_ObjectHideFlags: 0
