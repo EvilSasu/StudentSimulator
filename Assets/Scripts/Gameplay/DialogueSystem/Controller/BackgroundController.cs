@@ -20,24 +20,6 @@ public class BackgroundController : MonoBehaviour
 
     public void SwitchImage(Sprite sprite)
     {
-        /*if (!isSwitched)
-        {
-            if(background2 != background1 && background2!= originalSceneBackground)
-            {
-                background2.sprite = sprite;
-                animator.SetTrigger("Switch1");
-                isSwitched = !isSwitched;
-            }       
-        }
-        else
-        {
-            if (background1 != background2 && background1 != originalSceneBackground)
-            {
-                background1.sprite = sprite;
-                animator.SetTrigger("Switch2");
-                isSwitched = !isSwitched;
-            }           
-        }*/
         if (!isSwitched)
         {
             background2.sprite = sprite;

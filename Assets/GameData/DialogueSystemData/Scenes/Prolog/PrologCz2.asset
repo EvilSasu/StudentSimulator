@@ -107,7 +107,7 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "Zacznijmy wi\u0119c od rzeczy najwa\u017Cniejszych. Sprawd\u017A swoje
-      kieszenie, nie podjeba\u0142 ci nikt telefonu czy portfela?"
+      kieszenie, nie ******** ci nikt telefonu czy portfela?"
     speaker: {fileID: 11400000, guid: 9a69103ebe61942439b7fd0296f6a2a5, type: 2}
     gameEvent: {fileID: 0}
     gameEventValue: 0

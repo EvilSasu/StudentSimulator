@@ -9,7 +9,6 @@ public class StoryScene : GameScene
 {
     public List<Sentence> sentences;
     public Sprite backgroud;
-    //public StoryScene nextScene;
     public GameScene nextScene;
 
     [System.Serializable]

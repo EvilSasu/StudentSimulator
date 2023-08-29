@@ -60,5 +60,4 @@ public class PhoneController : MonoBehaviour
             if (canvas != null)
                 canvas.gameObject.SetActive(true);
     }
-
 }
