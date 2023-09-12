@@ -21,6 +21,7 @@ public class PlayerData : MonoBehaviour
     private void Awake()
     {
         SaveSystem.pData = this;
+        gameObject.tag = "PlayerData";
     }
 
     private void Update()

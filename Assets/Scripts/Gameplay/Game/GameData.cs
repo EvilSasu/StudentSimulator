@@ -30,6 +30,7 @@ public class GameData : MonoBehaviour
     {
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         SaveSystem.gData = this;
+        gameObject.tag = "GameData";
     }
 
     void Start()
