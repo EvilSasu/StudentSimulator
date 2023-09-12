@@ -1699,8 +1699,8 @@ MonoBehaviour:
   player: {fileID: 207573254}
   playerController: {fileID: 207573255}
   spawnInterval: 4
-  minYGap: -2
-  maxYGap: 4
+  minYGap: -2.5
+  maxYGap: 3.5
   spawnDistance: 12
 --- !u!1001 &4410228399229078186
 PrefabInstance:

@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
 
         if (Cleared())
         {
-            SetLives(lives + 1);
+            //SetLives(lives + 1);
             SetScore(score + 1000);
             Invoke(nameof(NewLevel), 1f);
         }
