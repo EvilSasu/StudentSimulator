@@ -137,7 +137,95 @@
 **Key Features**:
 - Starts specific minigames like Shop, Roma, Uczelnia, Room, and Piramidy based on the player's energy and game conditions.
 
+## UnityGameEventListener
+**Purpose**: This class listens for and responds to custom game events. It connects `GameEvent` with a `UnityEvent` to trigger Unity actions when the event is raised.
 
+**Key Features**:
+- Registers and unregisters itself as a listener for a specific `GameEvent` when enabled or disabled.
+- Invokes the specified `UnityEvent` (response) when the event is triggered.
+- Can handle events that do not require additional parameters (`OnEventRaised`).
+
+## UnityIntGameEventListener
+**Purpose**: This class listens for game events that pass an integer as an argument. It connects `IntGameEvent` to a `UnityEvent` that takes an integer parameter.
+
+**Key Features**:
+- Registers and unregisters itself as a listener for an `IntGameEvent`.
+- Invokes a `UnityEvent<int>` when the event is triggered, passing the integer value from the event.
+
+## GameData
+**Purpose**: This class holds and manages the game data, such as the current time, audio volume, and scene information. It also tracks the game’s overall progress and settings.
+
+**Key Features**:
+- Stores game time (month, day, hour, minute, second) and scene data.
+- Manages audio volume and playing time.
+- Handles the initialization of game data on startup and updates game data during gameplay.
+- Tracks whether it’s the first time the game is started and plays initial dialogues.
+
+## MapController
+**Purpose**: This class manages the map UI, including button interactions and the display of a phone button.
+
+**Key Features**:
+- Toggles the visibility of the phone UI and map interaction buttons.
+- Handles enabling and disabling of buttons and canvas components.
+  
+## PhoneController
+**Purpose**: This class controls the phone UI, displaying the player's stats and managing its visibility and animations.
+
+**Key Features**:
+- Displays player data (money, hunger, wisdom, energy, etc.) on the phone interface.
+- Animates the phone's appearance and disappearance based on user interactions.
+- Updates UI elements (like sliders and text) when the phone is shown.
+
+## PlayerData
+**Purpose**: This class manages the player's personal data, such as money, hunger, energy, and mental health. It also handles items and stats related to the player's progression.
+
+**Key Features**:
+- Tracks various player attributes, including money, energy, hunger, and wisdom.
+- Allows modifications to these attributes, including increasing and decreasing values based on gameplay.
+- Contains methods to check if attributes exceed certain values (e.g., checking if money is greater than a specified amount).
+- Manages inventory (pizza, burgers, water, etc.), with methods to add and remove items.
+
+## PopUp  
+**Purpose**: This class manages the pop-up animations and behaviors for displaying temporary notifications in the game UI.
+
+**Key Features**:
+- Handles the animation of pop-up UI elements based on the `amountOfPopUp` value, ensuring they appear sequentially.
+- Initiates the pop-up animation when the game starts through the `AnimatePopUp` coroutine.
+- Provides the `StarAnimation` method to allow external triggers for starting the animation.
+- After a set duration, triggers a "Hide" animation and removes the pop-up object from the scene.
+
+## PopUpInfoMeneger  
+**Purpose**: This class controls the creation and management of multiple pop-ups in the game UI, ensuring proper alignment and handling of different pop-up types.
+
+**Key Features**:
+- Instantiates new pop-up objects dynamically when called through `CreatePopUp` or `CreateSpecialPopUp`.
+- Adjusts the vertical position of each pop-up to prevent overlap, maintaining an organized UI layout.
+- Supports two types of pop-ups: regular ones with dynamic text (showing increases or decreases in values) and special pop-ups with custom text.
+
+## Calendar  
+**Purpose**: This class tracks the in-game calendar, including days, months, and the day of the week. It also manages day transitions and special in-game events like rent payments.
+
+**Key Features**:
+- Handles transitions between months and days, accounting for the number of days in each month (e.g., February, months with 31 or 30 days).
+- Tracks the day of the week, ensuring it is updated correctly as days pass.
+- Automates rent payment on specific days (e.g., 10th of each month), deducting money from the player's resources.
+- Computes and updates the current day of the week after each day transition.
+
+## Clock  
+**Purpose**: This class manages in-game time, including hours, minutes, and seconds, and handles time-related actions such as sleeping and updating the player’s status.
+
+**Key Features**:
+- Allows for precise adjustments to in-game time (e.g., adding hours, minutes, or seconds), ensuring smooth transitions between them.
+- Tracks time-related status changes for the player, such as energy depletion and hunger increase, based on the time spent.
+- Includes the ability for the player to go to sleep, which restores energy and increases hunger, while also advancing the game time by a set number of hours.
+
+## TimeSystem  
+**Purpose**: This class controls the flow of time in the game, updating the clock and calendar UI on-screen and managing the ticking of time.
+
+**Key Features**:
+- Updates the in-game clock every second, incrementing the seconds counter and handling the flow of time seamlessly.
+- Displays the current time and date on-screen in a formatted manner using `TextMeshProUGUI`, including leading zeros for consistency.
+- Manages the visual representation of the time and calendar, ensuring that the UI remains accurate and easy to read.
 
 
 ## License
