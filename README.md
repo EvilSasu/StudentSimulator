@@ -227,6 +227,149 @@
 - Displays the current time and date on-screen in a formatted manner using `TextMeshProUGUI`, including leading zeros for consistency.
 - Manages the visual representation of the time and calendar, ensuring that the UI remains accurate and easy to read.
 
+## **DataToAnalsis**
+**Purpose**: This class handles the logging of player and game data to a CSV file for analysis, including tracking gameplay statistics such as money, energy, hunger, and other player attributes over time.
+
+**Key Features**:
+- Creates a folder and a CSV file to store gameplay data if they do not already exist.
+- Logs time spent in the game and tracks player data (money, energy, hunger, wisdom, mental health, etc.) every minute.
+- Writes the collected data into a CSV file with the current date and game session details.
+- Provides the ability to delete the folder containing the data, helping with data management and cleanup.
+- Includes time tracking functionality with a timer that updates every second for more precise game session analysis.
+
+## **DontDestroyOnSceneChange**
+**Purpose**: This class ensures that the attached GameObject persists across different scene transitions, preventing it from being destroyed when loading a new scene.
+
+**Key Features**:
+- Uses `DontDestroyOnLoad` to maintain the object through scene changes, useful for objects that need to persist, such as music players or game managers.
+- Keeps objects from being destroyed by Unity's scene loading process, ensuring their data or state is maintained across scenes.
+
+## **FPSScript**
+**Purpose**: This class tracks and displays the current frames per second (FPS) of the game, providing real-time performance metrics for the user.
+
+**Key Features**:
+- Measures and calculates the average FPS every frame using `Time.smoothDeltaTime`.
+- Displays the calculated FPS on screen using `TextMeshProUGUI` for better readability and visual feedback.
+- Allows the user to toggle the FPS display on or off using a UI `Toggle` control.
+- Ensures the game runs at a consistent 60 FPS by adjusting the target frame rate.
+
+## **LevelLoaderScript**
+**Purpose**: This class manages the loading and transitioning between game scenes, utilizing an animator for scene transitions and handling the logic for scene changes.
+
+**Key Features**:
+- Provides methods to load the next level or a specific chosen level based on the scene index.
+- Uses an animator to create smooth scene transitions with a delay, improving the user experience when loading new scenes.
+- Handles loading levels based on the build index, allowing for seamless navigation between scenes.
+
+## **SceneMaster**
+**Purpose**: This class controls the overall flow of the game's scenes, including starting the game, quitting, and managing dialogue systems.
+
+**Key Features**:
+- Handles the transition to the next scene or level when starting the game.
+- Manages the starting of new dialogue scenes by activating the dialogue system and controlling the flow of conversation.
+- Allows for easy navigation to different parts of the game by managing scene and dialogue state transitions.
+
+## **OptionsMaster**
+**Purpose**: This class provides functionality for managing in-game options such as audio settings, screen resolution, and display settings.
+
+**Key Features**:
+- Allows players to adjust game volume and resolution using sliders, toggles, and dropdowns.
+- Provides control for switching between fullscreen and windowed modes.
+- Automatically loads available screen resolutions and populates a dropdown list for user selection.
+- Updates and applies audio and graphical settings in real-time.
+
+## **SaveSystem**
+**Purpose**: This class is responsible for saving and loading player and game data, ensuring that progress is persistent across game sessions.
+
+**Key Features**:
+- Saves and loads player and game data, including attributes like money, energy, and game time, using binary serialization.
+- Handles file management by checking for existing saves and allowing deletion of saved data if needed.
+- Ensures that game progress is retained between sessions, including the current scene and level.
+- Uses a separate save system for player and game data to organize the information more effectively.
+- Manages the loading of specific scenes based on saved data, allowing for a seamless continuation of the game.
+
+## **BuyButtonController**
+**Purpose**: This class manages the functionality of the buy button in the shop, allowing players to purchase items based on their available money and selected quantities.
+
+**Key Features**:
+- Enables or disables the buy button based on whether the player has enough money to make a purchase.
+- Collects the selected quantities of various items (e.g., food and drinks) from sliders.
+- Deducts the player's money and adds the selected items (pizza, beer, burger, etc.) to their inventory.
+
+## **SumUpTextInShop**
+**Purpose**: This class calculates and displays the total cost of all selected items in the shop.
+
+**Key Features**:
+- Sums the final prices of multiple items (pizza, beer, burger, etc.) based on the individual item costs and quantities selected via sliders.
+- Displays the total cost on screen using `TextMeshProUGUI`.
+
+## **TextOfItemsValue**
+**Purpose**: This class calculates the cost of a single item based on the slider value (quantity selected) and displays the cost in the shop.
+
+**Key Features**:
+- Multiplies the slider value (quantity of the item) by the cost per item to calculate the final price.
+- Displays the calculated price on screen using `TextMeshProUGUI`.
+
+## **FridgeController**
+**Purpose**: This class manages the fridge UI and displays available food items (pizza, burger, water, beer, and bar) based on the player's inventory.
+
+**Key Features**:
+- Activates/deactivates food items based on the player's inventory.
+- Displays the quantity of each food item on screen.
+- Controls the visibility of food items when the map is active or when the fridge is interacted with.
+
+## **InteractiveObjectController**
+**Purpose**: This class handles the interaction of the player with UI objects (like buttons) that change their appearance when hovered over or clicked.
+
+**Key Features**:
+- Changes the color of an object when the player interacts with it, providing visual feedback on mouse events (click, hover).
+- Uses `Image` component to change colors to indicate different interaction states (default, selected, clicked).
+
+## **MapButtonController**
+**Purpose**: This class manages the interactability of the map button.
+
+**Key Features**:
+- Provides methods to enable or disable the map button's interaction, making it unclickable or clickable depending on the game state.
+
+## **OnClickChangeLevelWithLevelLoader**
+**Purpose**: This class triggers the loading of a new level when a button is clicked.
+
+**Key Features**:
+- Loads the chosen level based on the specified index using the `LevelLoaderScript`.
+
+## **PhoneButtonController**
+**Purpose**: This class manages the interactability of the phone button.
+
+**Key Features**:
+- Provides methods to enable or disable the phone button's interaction, allowing or preventing the player from using the phone.
+
+## **SleepPanelController**
+**Purpose**: This class manages the sleep panel functionality, allowing the player to sleep and progress in time.
+
+**Key Features**:
+- Allows the player to sleep for a specified amount of time by adjusting a slider.
+- Loads the current level after sleeping, and hides the sleep panel when the map is active.
+
+## **SliderController**
+**Purpose**: This class manages the appearance of the slider fill color based on its value.
+
+**Key Features**:
+- Changes the color of the slider fill to represent different states (e.g., green for high, yellow for medium, red for low) based on the value.
+- Special behavior for hunger slider, which uses a reversed color scheme (red for high, green for low).
+
+## **SliderValueShowController**
+**Purpose**: This class displays the current value of a slider as text on screen.
+
+**Key Features**:
+- Displays the slider's current value as an integer using `TextMeshProUGUI`.
+
+## **UczelniaDoorToStartController**
+**Purpose**: This class controls the behavior of the door to the university, checking conditions before allowing the player to proceed.
+
+**Key Features**:
+- Verifies that the player has enough energy and the correct time (weekdays between 8 AM and 4 PM) to use the door.
+- If conditions are met, it loads the university scene; otherwise, it shows a pop-up with a message.
+
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
